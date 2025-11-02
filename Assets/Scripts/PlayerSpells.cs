@@ -62,7 +62,32 @@ public class PlayerSpells : MonoBehaviour
 
         p.isWind = (prefab == windPrefab);
         p.isFire = (prefab == firePrefab);
-        
+        p.isIce  = (prefab == icePrefab);
+
+        if (prefab == windPrefab)
+        {
+            p.damage = 5; // utility spell
+            p.windPushForce = 1f;
+        }
+        else if (prefab == icePrefab)
+        {
+            p.damage = 5;
+            p.slowMultiplier = 0.4f;
+            p.slowDuration   = 3f;
+        }
+        else if (prefab == firePrefab)
+        {
+            p.damage = 3;
+        }
+        else if (prefab == lightPrefab)
+        {
+            p.damage = 3;
+        }
+        else
+        {
+            p.damage = 1;
+        }
+            
     }
 
     public float GetCooldownRemaining(int spell)

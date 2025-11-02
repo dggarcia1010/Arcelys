@@ -1,71 +1,110 @@
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
-    public class Projectile2D : MonoBehaviour
+public class Projectile2D : MonoBehaviour
+{
+    [Header("Movimiento")]
+    public Vector2 direction = Vector2.up;
+    public float speed = 5f;
+    public float lifeTime = 2f;
+
+    [Header("Daño base")]
+    public int damage = 1; // cuánto quita el proyectil
+
+    [Header("Wind")]
+    public bool isWind = false;
+    public string pushableTag = "Pushable";
+    public float windPushForce = 1f; // fuerza del empuje
+
+    [Header("Fire")]
+    public bool isFire = false;
+    public string flammableTag = "Flammable";
+
+    [Header("Ice")]
+    public bool isIce = false;
+    public float slowMultiplier = 0.4f; // 40% velocidad
+    public float slowDuration = 3f;     // 3 segundos
+
+    void Start()
     {
-        [Header("Movimiento")]
-        public Vector2 direction = Vector2.up;
-        public float speed = 5f;
-        public float lifeTime = 2f;
+        Destroy(gameObject, lifeTime);
+    }
 
-        [Header("Wind")]
-        public bool isWind = false;            // <- lo marca PlayerSpells al instanciar wind
-        public string pushableTag = "Pushable";
-        public float windPushForce = 1f;       // impulso aplicado al objeto empujable
+    void Update()
+    {
+        transform.position += (Vector3)(direction * speed * Time.deltaTime);
+    }
 
-        [Header("Fire")]
-        public bool isFire = false;
-        public string flammableTag = "Flammable";
-
-        void Start()
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        // 1) Si choco con un ENEMIGO
+        if (collision.CompareTag("Enemy"))
         {
-            Destroy(gameObject, lifeTime);
-        }
-
-        void Update()
-        {
-            transform.position += (Vector3)(direction * speed * Time.deltaTime);
-        }
-
-        private void OnTriggerEnter2D(Collider2D collision)
-        {
-            if (isWind && collision.CompareTag(pushableTag))
+            EnemyHealth hp = collision.GetComponent<EnemyHealth>();
+            if (hp != null)
             {
-                var rb = collision.attachedRigidbody;
-                if (rb != null)
-                {
-                    Vector2 pushDir = ((Vector2)collision.transform.position - (Vector2)transform.position).normalized;
-                    rb.AddForce(pushDir * windPushForce, ForceMode2D.Impulse);
-                }
-                Destroy(gameObject);
-                return;
+                hp.TakeDamage(damage);
             }
 
-            if (isFire && collision.CompareTag(flammableTag))
+            // ❄ HIELO -> ralentiza
+            if (isIce)
             {
-                // Buscar Light2D en el objeto, hijos (incluso inactivos) o padres
-                Light2D light2D =
+                EnemySlow slowComponent = collision.GetComponent<EnemySlow>();
+                if (slowComponent != null)
+                {
+                    slowComponent.ApplySlow(slowMultiplier, slowDuration);
+                }
+            }
+
+            // 🌪 VIENTO -> empuja al enemigo también
+            if (isWind)
+            {
+                var rbEnemy = collision.attachedRigidbody;
+                if (rbEnemy != null)
+                {
+                    Vector2 pushDir = ((Vector2)collision.transform.position - (Vector2)transform.position).normalized;
+                    rbEnemy.AddForce(pushDir * windPushForce, ForceMode2D.Impulse);
+                }
+            }
+
+            Destroy(gameObject);
+            return;
+        }
+
+        // 2) Si choco con objeto "Pushable" (cajas, etc)
+
+        if (isWind && collision.CompareTag(pushableTag))
+        {
+            var rb = collision.attachedRigidbody;
+            if (rb != null)
+            {
+                Vector2 pushDir = ((Vector2)collision.transform.position - (Vector2)transform.position).normalized;
+                rb.AddForce(pushDir * windPushForce, ForceMode2D.Impulse);
+            }
+
+            Destroy(gameObject);
+            return;
+        }
+
+        // 3) Si choco con objeto "Flammable" (antorcha)
+
+        if (isFire && collision.CompareTag(flammableTag))
+        {
+            Light2D light2D =
                 collision.GetComponent<Light2D>() ??
                 collision.GetComponentInChildren<Light2D>(true) ??
                 collision.GetComponentInParent<Light2D>(true);
 
-                if (light2D != null)
-                {
-                    // Si el GameObject donde está la luz está desactivado, lo activamos primero
-                    if (!light2D.gameObject.activeSelf)
-                        light2D.gameObject.SetActive(true);
-
-                    // Encender la luz (si prefieres alternar: light2D.enabled = !light2D.enabled;)
-                    light2D.enabled = true;
-                }
-
-                Destroy(gameObject);
-                return;
-            }
-
-            if (collision.CompareTag("Enemy"))
+            if (light2D != null)
             {
-                Destroy(gameObject);
+                if (!light2D.gameObject.activeSelf)
+                    light2D.gameObject.SetActive(true);
+
+                light2D.enabled = true;
             }
+
+            Destroy(gameObject);
+            return;
         }
     }
+}
