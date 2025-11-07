@@ -2,12 +2,20 @@ using UnityEngine;
 
 public class PlayerSpells : MonoBehaviour
 {
+    public enum SpellType { None, Wind, Ice, Fire, Light }
+
+    [Header("Selección actual (solo lectura)")]
+    [SerializeField] private SpellType currentSpell = SpellType.None;
+
+    [Header("Estado")]
+    [SerializeField] private bool magicUnlocked = false;
+    public bool MagicUnlocked => magicUnlocked;
 
     [Header("Cooldowns (segundos)")]
     public float windCooldown = 2f;
-    public float iceCooldown = 3f;
+    public float iceCooldown  = 3f;
     public float fireCooldown = 4f;
-    public float lightCooldown = 5f;
+    public float lightCooldown= 5f;
 
     private float windTimer;
     private float iceTimer;
@@ -25,28 +33,81 @@ public class PlayerSpells : MonoBehaviour
 
     void Update()
     {
-        windTimer -= Time.deltaTime;
-        iceTimer -= Time.deltaTime;
-        fireTimer -= Time.deltaTime;
-        lightTimer -= Time.deltaTime;
+        if (windTimer  > 0) windTimer  -= Time.deltaTime;
+        if (iceTimer   > 0) iceTimer   -= Time.deltaTime;
+        if (fireTimer  > 0) fireTimer  -= Time.deltaTime;
+        if (lightTimer > 0) lightTimer -= Time.deltaTime;
 
-        if (Input.GetKeyDown(KeyCode.Alpha1)) CastSpell(windPrefab, ref windTimer, windCooldown, "VIENTO");
-        if (Input.GetKeyDown(KeyCode.Alpha2)) CastSpell(icePrefab, ref iceTimer, iceCooldown, "HIELO");
-        if (Input.GetKeyDown(KeyCode.Alpha3)) CastSpell(firePrefab, ref fireTimer, fireCooldown, "FUEGO");
-        if (Input.GetKeyDown(KeyCode.Alpha4)) CastSpell(lightPrefab, ref lightTimer, lightCooldown, "LUZ");
+        if (!magicUnlocked) return;
+
+        // Seleccionar (1–4)
+        if (Input.GetKeyDown(KeyCode.Alpha1)) SelectSpell(SpellType.Wind);
+        if (Input.GetKeyDown(KeyCode.Alpha2)) SelectSpell(SpellType.Ice);
+        if (Input.GetKeyDown(KeyCode.Alpha3)) SelectSpell(SpellType.Fire);
+        if (Input.GetKeyDown(KeyCode.Alpha4)) SelectSpell(SpellType.Light);
+
+        // Lanzar (Espacio)
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            CastSelectedSpell();
+        }
     }
 
-    void CastSpell(GameObject prefab, ref float timer, float cooldown, string spellName)
+    public void UnlockMagic()
     {
-        if (timer > 0 || prefab == null) return;
+        if (magicUnlocked) return;
+        magicUnlocked = true;
+        Debug.Log("🪄 ¡Magia habilitada! Usa 1–4 para elegir y Espacio para lanzar.");
+    }
+
+    void SelectSpell(SpellType spell)
+    {
+        currentSpell = spell;
+        Debug.Log($"Hechizo seleccionado: {currentSpell}");
+    }
+
+    void CastSelectedSpell()
+    {
+        if (currentSpell == SpellType.None)
+        {
+            Debug.Log("No hay hechizo seleccionado. Usa 1-4 para seleccionar.");
+            return;
+        }
+
+        GameObject prefab = null;
+        float cooldown = 0f;
+        ref float timer = ref windTimer;
+
+        switch (currentSpell)
+        {
+            case SpellType.Wind:
+                prefab = windPrefab; cooldown = windCooldown; timer = ref windTimer; break;
+            case SpellType.Ice:
+                prefab = icePrefab;  cooldown = iceCooldown;  timer = ref iceTimer;  break;
+            case SpellType.Fire:
+                prefab = firePrefab; cooldown = fireCooldown; timer = ref fireTimer; break;
+            case SpellType.Light:
+                prefab = lightPrefab;cooldown = lightCooldown;timer = ref lightTimer;break;
+        }
+
+        if (prefab == null)
+        {
+            Debug.LogWarning($"Prefab no asignado para {currentSpell}.");
+            return;
+        }
+
+        if (timer > 0f)
+        {
+            Debug.Log($"[{currentSpell}] en cooldown: {timer:0.00}s");
+            return;
+        }
 
         timer = cooldown;
-        Debug.Log($"Lanzaste {spellName}");
+        Debug.Log($"Lanzaste {currentSpell}");
 
-        float distanceToCamera = Mathf.Abs(Camera.main.transform.position.z - transform.position.z);
-
+        float distToCam = Mathf.Abs(Camera.main.transform.position.z - transform.position.z);
         Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(
-            new Vector3(Input.mousePosition.x, Input.mousePosition.y, distanceToCamera)
+            new Vector3(Input.mousePosition.x, Input.mousePosition.y, distToCam)
         );
         mouseWorldPos.z = transform.position.z;
 
@@ -60,26 +121,26 @@ public class PlayerSpells : MonoBehaviour
         p.direction = direction;
         p.speed = projectileSpeed;
 
-        p.isWind = (prefab == windPrefab);
-        p.isFire = (prefab == firePrefab);
-        p.isIce  = (prefab == icePrefab);
+        p.isWind = (currentSpell == SpellType.Wind);
+        p.isIce  = (currentSpell == SpellType.Ice);
+        p.isFire = (currentSpell == SpellType.Fire);
 
-        if (prefab == windPrefab)
+        if (currentSpell == SpellType.Wind)
         {
-            p.damage = 5; // utility spell
-            p.windPushForce = 1f;
+            p.damage = 1;
+            p.windPushForce = 2f;
         }
-        else if (prefab == icePrefab)
+        else if (currentSpell == SpellType.Ice)
         {
-            p.damage = 5;
+            p.damage = 1;
             p.slowMultiplier = 0.4f;
             p.slowDuration   = 3f;
         }
-        else if (prefab == firePrefab)
+        else if (currentSpell == SpellType.Fire)
         {
-            p.damage = 3;
+            p.damage = 2;
         }
-        else if (prefab == lightPrefab)
+        else if (currentSpell == SpellType.Light)
         {
             p.damage = 3;
         }
@@ -87,18 +148,21 @@ public class PlayerSpells : MonoBehaviour
         {
             p.damage = 1;
         }
-            
     }
 
-    public float GetCooldownRemaining(int spell)
+    // PARA FUTURO UI
+    public float GetCooldownRemaining(SpellType spell)
     {
         switch (spell)
         {
-            case 1: return Mathf.Max(0, windTimer);
-            case 2: return Mathf.Max(0, iceTimer);
-            case 3: return Mathf.Max(0, fireTimer);
-            case 4: return Mathf.Max(0, lightTimer);
+            case SpellType.Wind: return Mathf.Max(0, windTimer);
+            case SpellType.Ice: return Mathf.Max(0, iceTimer);
+            case SpellType.Fire: return Mathf.Max(0, fireTimer);
+            case SpellType.Light: return Mathf.Max(0, lightTimer);
             default: return 0;
         }
     }
+    
+    //PARA FUTURO HUD
+    public SpellType CurrentSpell => currentSpell;
 }

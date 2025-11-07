@@ -75,11 +75,20 @@ public class Projectile2D : MonoBehaviour
 
         if (isWind && collision.CompareTag(pushableTag))
         {
-            var rb = collision.attachedRigidbody;
-            if (rb != null)
+            // Dirección desde el proyectil hacia el objeto
+            Vector2 pushDir = ((Vector2)collision.transform.position - (Vector2)transform.position).normalized;
+
+            // Si tiene componente Pushable -> desbloquear, empujar y re-bloquear
+            var pushable = collision.GetComponent<Pushable>();
+            if (pushable != null)
             {
-                Vector2 pushDir = ((Vector2)collision.transform.position - (Vector2)transform.position).normalized;
-                rb.AddForce(pushDir * windPushForce, ForceMode2D.Impulse);
+                pushable.UnlockAndPush(pushDir, windPushForce);
+            }
+            else
+            {
+                // Fallback (por si olvidaste añadir el componente)
+                var rb = collision.attachedRigidbody;
+                if (rb != null) rb.AddForce(pushDir * windPushForce, ForceMode2D.Impulse);
             }
 
             Destroy(gameObject);
