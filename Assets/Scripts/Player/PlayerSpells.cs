@@ -46,8 +46,8 @@ public class PlayerSpells : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha3)) SelectSpell(SpellType.Fire);
         if (Input.GetKeyDown(KeyCode.Alpha4)) SelectSpell(SpellType.Light);
 
-        // Lanzar (Espacio)
-        if (Input.GetKeyDown(KeyCode.Space))
+        // Lanzar (Click izquierdo del ratón)
+        if (Input.GetMouseButtonDown(0))
         {
             CastSelectedSpell();
         }
@@ -57,7 +57,7 @@ public class PlayerSpells : MonoBehaviour
     {
         if (magicUnlocked) return;
         magicUnlocked = true;
-        Debug.Log("🪄 ¡Magia habilitada! Usa 1–4 para elegir y Espacio para lanzar.");
+        Debug.Log("🪄 ¡Magia habilitada! Usa 1–4 para elegir y ClickIzq para lanzar.");
     }
 
     void SelectSpell(SpellType spell)

@@ -229,7 +229,7 @@ MonoBehaviour:
   m_text: 'Pulsa 1 (Viento), 2 (Hielo), 3 (Fuego), 4 (Luz) para seleccionar el hechizo.
 
     Pulsa
-    ESPACIO para lanzarlo donde apuntes con el cursor.'
+    Click Izquierdo para lanzarlo donde apuntes con el cursor.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
