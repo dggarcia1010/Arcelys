@@ -19,6 +19,12 @@ public class ScenePortalFade : MonoBehaviour
     bool isLoading = false;
     Collider2D col;
 
+    // ---------- NUEVO: sistema de spawn ----------
+    [Header("Spawn en escena destino")]
+    public string targetSpawnId;         // ID del punto de spawn en la escena destino
+    public static string nextSpawnId;    // lo leerá el SpawnPoint en la escena cargada
+    // ---------------------------------------------
+
     void Awake()
     {
         col = GetComponent<Collider2D>();
@@ -41,13 +47,24 @@ public class ScenePortalFade : MonoBehaviour
 
         Time.timeScale = 1f;
 
+        // Guardamos a qué spawn queremos ir en la escena destino
+        nextSpawnId = targetSpawnId;
+
+        // Aseguramos que existe un ScreenFader
         var fader = ScreenFader.Instance;
         if (fader == null)
         {
-            Debug.LogError("Portal: No existe ScreenFader en escena. Coloca uno en la escena inicial.");
-            isLoading = false;
-            col.enabled = true;
-            return;
+            if (faderPrefab != null)
+            {
+                fader = Instantiate(faderPrefab);
+            }
+            else
+            {
+                Debug.LogError("Portal: No existe ScreenFader ni faderPrefab asignado.");
+                isLoading = false;
+                col.enabled = true;
+                return;
+            }
         }
 
         fader.StartCoroutine(FadeLoadThenCleanup(fader));
@@ -55,15 +72,20 @@ public class ScenePortalFade : MonoBehaviour
 
     IEnumerator FadeLoadThenCleanup(ScreenFader fader)
     {
+        // Fade out
         yield return fader.FadeTo(1f, fadeOutDuration, true);
+
+        // Cargar escena
         AsyncOperation op = SceneManager.LoadSceneAsync(sceneToLoad, LoadSceneMode.Single);
         while (!op.isDone) yield return null;
 
+        // Fade in
         yield return fader.FadeTo(0f, fadeInDuration, true);
 
-        Destroy(fader.gameObject);
+        // IMPORTANTE: ya NO destruimos el fader
+        // Destroy(fader.gameObject);
 
         isLoading = false;
-        if (col != null) col.enabled = true;
+        if (col != null) col.enabled = true;  // el objeto se destruirá con la escena anterior igualmente
     }
 }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2e00c4f30ef5b17a4b2153c543406236
+guid: 89bdac8558507074284e70e4367dcea7
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -150,7 +150,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
@@ -174,7 +174,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -195,19 +195,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -216,7 +203,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 22
         width: 433
         height: 554
       alignment: 0
@@ -959,33 +946,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Overworld_34
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 560
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9f943f1c32522044cb8536042122b447
-      internalID: 1982137432
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 84d080e1ece96854694ed5c99bc793d5
+    spriteID: 9eeaa798b7d49144cba0b77e69f0b1fb
     internalID: 0
     vertices: []
     indices: 
@@ -1023,7 +988,6 @@ TextureImporter:
       Overworld_31: 4304790786426730767
       Overworld_32: -3594059735059639123
       Overworld_33: 4003859095993293133
-      Overworld_34: 1982137432
       Overworld_4: 136357672767500387
       Overworld_5: 8004674553903682165
       Overworld_6: -4047186976618406303

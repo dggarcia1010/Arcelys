@@ -54,47 +54,34 @@ public class PlayerMovement : MonoBehaviour
 
 
     void Update()
-
     {
-
-        // --- Reinicia el Animator cada cierto tiempo para evitar el overflow ---
-
         animatorResetTimer += Time.deltaTime;
-
         if (animatorResetTimer >= animatorResetInterval)
-
         {
-
             ResetAnimatorState();
-
             animatorResetTimer = 0f;
-
         }
-
 
         change = Vector3.zero;
-
         change.x = Input.GetAxisRaw("Horizontal");
-
         change.y = Input.GetAxisRaw("Vertical");
 
+        if (change == Vector3.zero && currentState == PlayerState.walk)
+        {
+            if (myRigidbody.linearVelocity.magnitude < 0.05f)
+            {
+                myRigidbody.linearVelocity = Vector2.zero; 
+            }
+        }
 
         if (Input.GetButtonDown("attack") && currentState != PlayerState.attack)
-
         {
-
             StartCoroutine(AttackCo());
-
         }
-
         else if (currentState == PlayerState.walk)
-
         {
-
             UpdateAnimationAndMove();
-
         }
-
     }
 
 
@@ -146,17 +133,17 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-    void MoveCharacter()
+        void MoveCharacter()
 
-    {
+        {
 
-        myRigidbody.MovePosition(
+            myRigidbody.MovePosition(
 
-            transform.position + change * speed * Time.deltaTime
+                transform.position + change * speed * Time.deltaTime
 
-        );
+            );
 
-    }
+        }
 
 
 
