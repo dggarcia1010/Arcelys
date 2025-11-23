@@ -8986,7 +8986,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 294758879}
-  smoothing: 0.1
+  smoothing: 5
   map: {fileID: 1347729612}
 --- !u!114 &519420034
 MonoBehaviour:
