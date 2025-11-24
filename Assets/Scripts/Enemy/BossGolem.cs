@@ -1,149 +1,157 @@
-using UnityEngine;
-using System.Collections;
+    using UnityEngine;
+    using System.Collections;
 
-public class BossGolem : Enemy
-{
-    [Header("IA Golem")]
-    public float aggroDistance = 12f;
-    public float slowdownRadius = 3f;
-    public float stopDistance = 1.5f;
-
-    [Header("Ataque de golpeo")]
-    public float slamRange = 2.5f;
-    public float slamRadius = 3f;
-    public float slamDamage = 2f;
-    public float attackTotalDuration = 0.8f;  // duración TOTAL de la anim de ataque
-    public float slamCooldown = 2.5f;
-
-    [Header("FX")]
-    public GameObject slamWavePrefab;
-    public LayerMask playerLayer;
-
-    private float nextSlamTime = 0f;
-    private Vector3 originalScale;
-
-    protected override void Start()
+    public class BossGolem : Enemy
     {
-        base.Start();
-        originalScale = transform.localScale;
-    }
+        [Header("IA Golem")]
+        public float aggroDistance = 12f;
+        public float slowdownRadius = 3f;
+        public float stopDistance = 1.5f;
 
-    protected override void Move()
-    {
-        if (playerTransform == null || rb == null) return;
+        [Header("Ataque de golpeo")]
+        public float slamRange = 2.5f;
+        public float slamRadius = 3f;
+        public float slamDamage = 2f;
+        public float attackTotalDuration = 0.8f;  // duración TOTAL de la anim de ataque
+        public float slamCooldown = 2.5f;
 
-        Vector2 playerPos = playerTransform.position;
-        Vector2 currentPos = rb.position;
-        float distance = Vector2.Distance(currentPos, playerPos);
+        [Header("FX")]
+        public GameObject slamWavePrefab;
+        public LayerMask playerLayer;
 
-        // Si el jugador está muy lejos, nos quedamos quietos
-        if (distance > aggroDistance)
+        private float nextSlamTime = 0f;
+        private Vector3 originalScale;
+
+        protected override void Start()
         {
+            base.Start();
+            originalScale = transform.localScale;
+        }
+
+        protected override void Move()
+        {
+            if (playerTransform == null || rb == null) return;
+
+            Vector2 playerPos = playerTransform.position;
+            Vector2 currentPos = rb.position;
+            float distance = Vector2.Distance(currentPos, playerPos);
+
+            // Si el jugador está muy lejos, nos quedamos quietos
+            if (distance > aggroDistance)
+            {
+                rb.linearVelocity = Vector2.zero; // para el Animator (Speed = 0)
+                return;
+            }
+
+            // ¿Podemos atacar?
+            if (!isAttacking && distance <= slamRange && Time.time >= nextSlamTime)
+            {
+                rb.linearVelocity = Vector2.zero; // Speed = 0 mientras ataca
+                StartCoroutine(SlamAttackCo());
+                return;
+            }
+
+            if (isAttacking)
+            {
+                rb.linearVelocity = Vector2.zero;
+                return;
+            }
+
+            // --- Persecución suave usando MovePosition (real) + linearVelocity (solo para anim) ---
+
+            Vector2 animVelocity = Vector2.zero;
+            Vector2 newPos = currentPos;
+
+            if (distance > stopDistance)
+            {
+                Vector2 dir = (playerPos - currentPos).normalized;
+                float targetSpeed = speed;
+
+                // Frenar al acercarnos
+                if (distance < slowdownRadius)
+                    targetSpeed = speed * (distance / slowdownRadius);
+
+                animVelocity = dir * targetSpeed;
+
+                // Movimiento real del golem (aunque sea Kinematic)
+                newPos = currentPos + animVelocity * Time.fixedDeltaTime;
+            }
+
+            // 👇 Esto es SOLO para que Enemy.cs vea una velocidad > 0
+            rb.linearVelocity = animVelocity;
+
+            // 👇 Esto mueve físicamente al golem
+            rb.MovePosition(newPos);
+        }
+
+        private IEnumerator SlamAttackCo()
+        {
+            isAttacking = true;
             rb.linearVelocity = Vector2.zero;
-            return;
+
+            // mirar hacia el jugador
+            if (playerTransform != null)
+            {
+                Vector2 dir = (playerTransform.position - transform.position);
+                if (dir.sqrMagnitude > 0.001f)
+                    currentDirection = dir.normalized;
+            }
+
+            // Esperar a que termine la animación de ataque
+            yield return new WaitForSeconds(attackTotalDuration);
+
+            isAttacking = false;
+            nextSlamTime = Time.time + slamCooldown;
         }
 
-        // ¿Podemos atacar?
-        if (!isAttacking && distance <= slamRange && Time.time >= nextSlamTime)
+        // 👇 Esta función la llamará la ANIMACIÓN (Animation Event)
+        public void OnSlamHit()
         {
-            rb.linearVelocity = Vector2.zero;
-            StartCoroutine(SlamAttackCo());
-            return;
+            DoSlamDamage();
+
+            if (slamWavePrefab != null)
+                Instantiate(slamWavePrefab, transform.position, Quaternion.identity);
         }
 
-        if (isAttacking) return;
-
-        // --- Persecución suave ---
-        Vector2 desiredVelocity;
-
-        if (distance > stopDistance)
+        private void DoSlamDamage()
         {
-            Vector2 dir = (playerPos - currentPos).normalized;
-            float targetSpeed = speed;
+            Collider2D[] hits;
 
-            if (distance < slowdownRadius)
-                targetSpeed = speed * (distance / slowdownRadius);
+            if (playerLayer.value != 0)
+                hits = Physics2D.OverlapCircleAll(transform.position, slamRadius, playerLayer);
+            else
+                hits = Physics2D.OverlapCircleAll(transform.position, slamRadius);
 
-            desiredVelocity = dir * targetSpeed;
+            foreach (var hit in hits)
+            {
+                if (!hit.CompareTag("Player")) continue;
+
+                var hs = hit.GetComponent<HealthSystem>();
+                if (hs != null)
+                    hs.TakeDamage(slamDamage);
+            }
         }
-        else
+
+        void LateUpdate()
         {
-            desiredVelocity = Vector2.zero;
+            // Flip izquierda/derecha sin cambiar tamaño
+            if (currentDirection.x > 0.1f)
+                transform.localScale = new Vector3(Mathf.Abs(originalScale.x), originalScale.y, originalScale.z);
+            else if (currentDirection.x < -0.1f)
+                transform.localScale = new Vector3(-Mathf.Abs(originalScale.x), originalScale.y, originalScale.z);
         }
 
-        Vector2 steeringForce = desiredVelocity - rb.linearVelocity;
-        steeringForce = Vector2.ClampMagnitude(steeringForce, maxForce);
-        rb.AddForce(steeringForce);
-    }
-
-    private IEnumerator SlamAttackCo()
-    {
-        isAttacking = true;
-        rb.linearVelocity = Vector2.zero;
-
-        // mirar hacia el jugador
-        if (playerTransform != null)
+    #if UNITY_EDITOR
+        private void OnDrawGizmosSelected()
         {
-            Vector2 dir = (playerTransform.position - transform.position);
-            if (dir.sqrMagnitude > 0.001f)
-                currentDirection = dir.normalized;
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(transform.position, slamRadius);
+
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawWireSphere(transform.position, slamRange);
+
+            Gizmos.color = Color.cyan;
+            Gizmos.DrawWireSphere(transform.position, aggroDistance);
         }
-
-        // Esperar a que termine la animación de ataque
-        yield return new WaitForSeconds(attackTotalDuration);
-
-        isAttacking = false;
-        nextSlamTime = Time.time + slamCooldown;
+    #endif
     }
-
-    // 👇 Esta función la llamará la ANIMACIÓN (Animation Event)
-    public void OnSlamHit()
-    {
-        DoSlamDamage();
-
-        if (slamWavePrefab != null)
-            Instantiate(slamWavePrefab, transform.position, Quaternion.identity);
-    }
-
-    private void DoSlamDamage()
-    {
-        Collider2D[] hits;
-
-        if (playerLayer.value != 0)
-            hits = Physics2D.OverlapCircleAll(transform.position, slamRadius, playerLayer);
-        else
-            hits = Physics2D.OverlapCircleAll(transform.position, slamRadius);
-
-        foreach (var hit in hits)
-        {
-            if (!hit.CompareTag("Player")) continue;
-
-            var hs = hit.GetComponent<HealthSystem>();
-            if (hs != null)
-                hs.TakeDamage(slamDamage);
-        }
-    }
-
-    void LateUpdate()
-    {
-        // Flip izquierda/derecha sin cambiar tamaño
-        if (currentDirection.x > 0.1f)
-            transform.localScale = new Vector3(Mathf.Abs(originalScale.x), originalScale.y, originalScale.z);
-        else if (currentDirection.x < -0.1f)
-            transform.localScale = new Vector3(-Mathf.Abs(originalScale.x), originalScale.y, originalScale.z);
-    }
-
-#if UNITY_EDITOR
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, slamRadius);
-
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, slamRange);
-
-        Gizmos.color = Color.cyan;
-        Gizmos.DrawWireSphere(transform.position, aggroDistance);
-    }
-#endif
-}
