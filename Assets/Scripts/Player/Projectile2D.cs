@@ -99,6 +99,7 @@ public class Projectile2D : MonoBehaviour
 
         if (isFire && collision.CompareTag(flammableTag))
         {
+            // encender luz visual
             Light2D light2D =
                 collision.GetComponent<Light2D>() ??
                 collision.GetComponentInChildren<Light2D>(true) ??
@@ -106,10 +107,14 @@ public class Projectile2D : MonoBehaviour
 
             if (light2D != null)
             {
-                if (!light2D.gameObject.activeSelf)
-                    light2D.gameObject.SetActive(true);
-
                 light2D.enabled = true;
+            }
+
+            // informar al puzzle
+            var torch = collision.GetComponent<FlammableTorch>();
+            if (torch != null)
+            {
+                torch.TurnOn();
             }
 
             Destroy(gameObject);
