@@ -10984,7 +10984,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71762f43e9c188245820dda2af5e2480, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: EscenaSiguiente
+  sceneToLoad: Escena2
   playerTag: Player
   faderPrefab: {fileID: 1673921442}
   fadeOutDuration: 0.6
