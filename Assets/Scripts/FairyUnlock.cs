@@ -1,5 +1,4 @@
 using UnityEngine;
-using TMPro;
 
 [RequireComponent(typeof(Collider2D))]
 public class FairyUnlock : MonoBehaviour
@@ -16,9 +15,14 @@ public class FairyUnlock : MonoBehaviour
     [Header("Panel de instrucciones")]
     public InstructionPanel instructionPanel; // <-- arrástralo desde el Canvas
 
+    [Header("Diálogo del hada")]
+    public Dialogue fairyDialogue; // <-- diálogo que se mostrará antes del panel
+
     [Header("Estado")]
-    public bool unlocked = false;
-    public bool oneTime = true;
+    public bool unlocked = false;     // ya se ha desbloqueado todo
+    public bool oneTime = true;       // solo se puede hacer una vez
+
+    private bool isUnlocking = false; // se está ejecutando la secuencia (dialogo + unlock)
 
     Collider2D triggerCol;
 
@@ -41,18 +45,18 @@ public class FairyUnlock : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (!unlocked && other.CompareTag(playerTag) && interactText != null)
+        if (!unlocked && !isUnlocking && other.CompareTag(playerTag) && interactText != null)
             interactText.SetActive(true);
     }
 
     void OnTriggerStay2D(Collider2D other)
     {
-        if (unlocked) return;
+        if (unlocked || isUnlocking) return;
         if (!other.CompareTag(playerTag)) return;
 
         if (Input.GetKeyDown(interactKey))
         {
-            Unlock();
+            StartUnlockSequence();
         }
     }
 
@@ -62,11 +66,37 @@ public class FairyUnlock : MonoBehaviour
             interactText.SetActive(false);
     }
 
-    void Unlock()
+    /// <summary>
+    /// Empieza la secuencia: primero diálogo, luego desbloquear y mostrar panel.
+    /// </summary>
+    void StartUnlockSequence()
+    {
+        isUnlocking = true;
+
+        if (interactText != null)
+            interactText.SetActive(false);
+
+        // Si hay diálogo y DialogueManager, lo mostramos primero
+        if (fairyDialogue != null && DialogueManager.Instance != null)
+        {
+            DialogueManager.Instance.StartDialogue(fairyDialogue, AfterDialogue);
+        }
+        else
+        {
+            // Si no hay diálogo, vamos directos al desbloqueo
+            AfterDialogue();
+        }
+    }
+
+    /// <summary>
+    /// Lógica que antes estaba en Unlock: se ejecuta al terminar el diálogo.
+    /// </summary>
+    void AfterDialogue()
     {
         unlocked = true;
 
-        if (playerSpells != null) playerSpells.UnlockMagic();
+        if (playerSpells != null) 
+            playerSpells.UnlockMagic();
 
         if (followFairy != null)
         {
@@ -75,19 +105,17 @@ public class FairyUnlock : MonoBehaviour
             if (phys != null) phys.isTrigger = true;
         }
 
-        if (interactText != null)
-            interactText.SetActive(false);
-
-        // 👇 Mostrar panel con instrucciones
+        // Mostrar panel con instrucciones
         if (instructionPanel != null)
         {
             instructionPanel.Show(
-                "Pulsa 1 (Viento), 2 (Hielo), 3 (Fuego), 4 (Luz) para seleccionar el hechizo.\nPulsa ESPACIO para lanzarlo hacia el ratón.",
-                0f // 0 = no autocierra; si quieres auto-ocultar en 4s, cambia a 4f
+                "Para seleccionar un hechizo pulsa 1 (Viento), 2 (Hielo), 3 (Fuego), 4 (Luz). Por ahora solo tienes desbloqueado el Viento. \n Pulsa Click Izquierdo para lanzarlo donde apuntes con el cursor.\n Para interactuar utiliza la tecla E.\n Para avanzar en los dialogos utiliza la tecla Espacio o la Z.",
+                0f // 0 = no autocierra
             );
         }
 
         if (oneTime) Destroy(this);
-        Debug.Log("Magia desbloqueada y hada activada.");
+
+        Debug.Log("Magia desbloqueada, diálogo del hada mostrado y panel de instrucciones abierto.");
     }
 }

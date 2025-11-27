@@ -1,46 +1,54 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro; // importante
+using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager Instance;
 
     [Header("Referencias UI")]
-    public GameObject dialogueBox;       // aquí va el prefab instanciado o el objeto en escena
-    public TMP_Text dialogueText;        // el TextMeshPro dentro del cuadro
+    public GameObject dialogueBox;
+    public TMP_Text dialogueText;
 
     [Header("Configuración")]
-    public float typingSpeed = 0.03f;    // velocidad de escritura
+    public float typingSpeed = 0.03f;
+
+    [Tooltip("Si está activo, el juego se pausa mientras haya un diálogo abierto.")]
+    public bool pauseGameWhileDialogue = true;
 
     private Queue<string> sentences;
     private bool isShowingDialogue = false;
     private bool isTyping = false;
     private string currentSentence = "";
 
+    private Action onDialogueFinished;
+    private float previousTimeScale = 1f;
+
+    // ⬇️ NUEVO: propiedad pública y estática para consultar desde fuera
+    public bool IsDialogueActive => isShowingDialogue;
+    public static bool IsAnyDialogueActive => Instance != null && Instance.isShowingDialogue;
+
     void Awake()
     {
-        // Singleton sencillo
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
 
         sentences = new Queue<string>();
 
         if (dialogueBox != null)
-            dialogueBox.SetActive(false);  // asegurarse de que empieza oculto
+            dialogueBox.SetActive(false);
     }
 
     void Update()
     {
         if (!isShowingDialogue) return;
 
-        // Tecla para avanzar (puedes dejar sólo Space si quieres)
         if (Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.Space))
         {
             if (isTyping)
             {
-                // Terminar de escribir la frase de golpe
                 StopAllCoroutines();
                 dialogueText.text = currentSentence;
                 isTyping = false;
@@ -52,17 +60,31 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    public void StartDialogue(Dialogue dialogue)
+    public void StartDialogue(Dialogue dialogue, Action onFinished = null)
     {
+        if (dialogue == null) return;
+
+        // ⬇️ IMPORTANTE: si ya hay un diálogo, ignoramos la llamada
+        if (isShowingDialogue)
+            return;
+
         if (dialogueBox != null)
             dialogueBox.SetActive(true);
 
         isShowingDialogue = true;
         sentences.Clear();
 
+        onDialogueFinished = onFinished;
+
         foreach (string sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
+        }
+
+        if (pauseGameWhileDialogue)
+        {
+            previousTimeScale = Time.timeScale;
+            Time.timeScale = 0f;
         }
 
         DisplayNextSentence();
@@ -88,7 +110,7 @@ public class DialogueManager : MonoBehaviour
         foreach (char letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
-            yield return new WaitForSeconds(typingSpeed);
+            yield return new WaitForSecondsRealtime(typingSpeed);
         }
         isTyping = false;
     }
@@ -96,7 +118,17 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         isShowingDialogue = false;
+
         if (dialogueBox != null)
             dialogueBox.SetActive(false);
+
+        if (pauseGameWhileDialogue)
+        {
+            Time.timeScale = previousTimeScale;
+        }
+
+        var callback = onDialogueFinished;
+        onDialogueFinished = null;
+        callback?.Invoke();
     }
 }
