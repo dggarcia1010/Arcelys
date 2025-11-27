@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="11" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="23">
- <tileset firstgid="1" source="../gfx/Inner.tsx"/>
- <tileset firstgid="1001" source="HouseInterior.tsx"/>
+ <tileset firstgid="1" source="../tilesets/gfx/Inner.tsx"/>
+ <tileset firstgid="1001" source="../tilesets/House/HouseInterior.tsx"/>
  <layer id="1" name="ground" width="16" height="11">
   <data encoding="csv">
 247,247,247,247,247,247,247,247,247,247,247,247,247,247,247,248,

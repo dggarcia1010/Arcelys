@@ -37,15 +37,16 @@ public class NPCDialoguePuzzle : MonoBehaviour
     {
         if (!playerInRange) return;
 
+        if (DialogueManager.IsAnyDialogueActive)
+            return;
+
         if (Input.GetKeyDown(interactKey))
         {
-            // 1) Lanzar TU sistema de diálogo
             if (dialogue != null && DialogueManager.Instance != null)
             {
                 DialogueManager.Instance.StartDialogue(dialogue);
             }
 
-            // 2) Avisar al puzzle de qué NPC ha sido
             if (VillagePuzzleManager.Instance != null)
             {
                 VillagePuzzleManager.Instance.TalkTo(this);

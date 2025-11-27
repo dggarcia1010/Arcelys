@@ -296,10 +296,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Pulsa 1 (Viento), 2 (Hielo), 3 (Fuego), 4 (Luz) para seleccionar el hechizo.
+  m_text: 'Para seleccionar un hechizo pulsa 1 (Viento), 2 (Hielo), 3 (Fuego), 4
+    (Luz). Por ahora solo tienes desbloqueado el Viento.
 
-    Pulsa
-    Click Izquierdo para lanzarlo donde apuntes con el cursor.'
+    Pulsa Click Izquierdo
+    para lanzarlo donde apuntes con el cursor.
+
+    Para interactuar utiliza la tecla
+    E.
+
+    Para avanzar en los dialogos pulsa el espacio.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8902,10 +8908,12 @@ MonoBehaviour:
   instructionPanel: {fileID: 1944086723}
   fairyDialogue:
     sentences:
-    - '"Hada de Viento": Ayudaaaa!!!! Derrepente todo se ha vuelto oscuro y me han
-      empezado a perseguir esas plantas.'
-    - "\"Hada de Viento\": Te dare mi bendici\xF3n para que puedas ayudarme ya que
-      yo solo no tengo el poder suficiente."
+    - '"Lira Hada de Viento": Ayudaaaa!!! Esas plantas no paran de intentar devorarme.'
+    - "\"Hada de Viento\": Necesito que me ayudes, la oscuridad ha invadido toda
+      la zona y sin mis hermanas no ser\xE9 capaz de hacer volver todo a la normalidad."
+    - "\"Lira Hada de Viento\": Te dar\xE9 mi bendici\xF3n, con ella ser\xE1s capaz
+      de manejar el viento a tu voluntad. Yo sola no puedo derrotar a esos enemigos
+      asique ay\xFAdame."
   unlocked: 0
   oneTime: 1
 --- !u!61 &462275623
@@ -11734,6 +11742,56 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1600213993
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1600213995}
+  - component: {fileID: 1600213994}
+  m_Layer: 0
+  m_Name: Intro
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1600213994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600213993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a3338e5af1443468e1879494b5fcb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  introDialogue:
+    sentences:
+    - "\u201CHubo un tiempo en que la luz y la oscuridad coexist\xEDan en armon\xEDa\u2026
+      hasta que la reliquia sagrada fue quebrada.\u201D"
+    - "\"Aurelio\" : \xBFEs de noche?  \xBFQu\xE9 fue ese sue\xF1o?\r\nMe ha parecido
+      escuchar un ruido, deber\xEDa ir a ver que ha sido."
+--- !u!4 &1600213995
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600213993}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.173891, y: -20.049664, z: -0.09808547}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1673921442 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: -1265430129771043807, guid: 56d31eb2ca40f8342bb34d93c3fe904d, type: 3}
@@ -13189,3 +13247,4 @@ SceneRoots:
   - {fileID: 1031752458}
   - {fileID: 1381454979}
   - {fileID: 190267000}
+  - {fileID: 1600213995}
