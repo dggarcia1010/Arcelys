@@ -118,11 +118,11 @@ PrefabInstance:
       objectReference: {fileID: 7518402921079862753}
     - target: {fileID: 7435676059115810697, guid: 764e24a4123407e5b8ba17c332859a1c, type: 3}
       propertyPath: maxHealth
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7763838023264213954, guid: 764e24a4123407e5b8ba17c332859a1c, type: 3}
       propertyPath: m_Name
-      value: MeleeEnemy Variant
+      value: MeleeEnemy Variant 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
