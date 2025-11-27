@@ -1,46 +1,49 @@
+using System;                      // ⬅️ NUEVO
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro; // importante
+using TMPro; // si usas TextMeshPro
 
 public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager Instance;
 
     [Header("Referencias UI")]
-    public GameObject dialogueBox;       // aquí va el prefab instanciado o el objeto en escena
-    public TMP_Text dialogueText;        // el TextMeshPro dentro del cuadro
+    public GameObject dialogueBox;       // el panel
+    public TMP_Text dialogueText;        // el texto dentro
 
     [Header("Configuración")]
-    public float typingSpeed = 0.03f;    // velocidad de escritura
+    public float typingSpeed = 0.03f;    // velocidad de "escritura"
 
     private Queue<string> sentences;
     private bool isShowingDialogue = false;
     private bool isTyping = false;
     private string currentSentence = "";
 
+    // ⬇️ NUEVO: callback cuando termina el diálogo
+    private Action onDialogueFinished;
+
     void Awake()
     {
-        // Singleton sencillo
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
 
         sentences = new Queue<string>();
 
         if (dialogueBox != null)
-            dialogueBox.SetActive(false);  // asegurarse de que empieza oculto
+            dialogueBox.SetActive(false);
     }
 
     void Update()
     {
         if (!isShowingDialogue) return;
 
-        // Tecla para avanzar (puedes dejar sólo Space si quieres)
+        // tecla para avanzar diálogo (puedes cambiarla)
         if (Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.Space))
         {
             if (isTyping)
             {
-                // Terminar de escribir la frase de golpe
+                // terminar la frase instantáneamente
                 StopAllCoroutines();
                 dialogueText.text = currentSentence;
                 isTyping = false;
@@ -52,13 +55,18 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    public void StartDialogue(Dialogue dialogue)
+    // ⬇️ CAMBIA esto: ahora acepta un callback opcional
+    public void StartDialogue(Dialogue dialogue, Action onFinished = null)
     {
+        if (dialogue == null) return;
+
         if (dialogueBox != null)
             dialogueBox.SetActive(true);
 
         isShowingDialogue = true;
         sentences.Clear();
+
+        onDialogueFinished = onFinished; // guardamos el callback
 
         foreach (string sentence in dialogue.sentences)
         {
@@ -96,7 +104,13 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         isShowingDialogue = false;
+
         if (dialogueBox != null)
             dialogueBox.SetActive(false);
+
+        // ⬇️ LLAMAMOS AL CALLBACK SI EXISTE
+        var callback = onDialogueFinished;
+        onDialogueFinished = null;
+        callback?.Invoke();
     }
 }
