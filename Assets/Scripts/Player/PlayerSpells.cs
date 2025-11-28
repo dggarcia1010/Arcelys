@@ -7,9 +7,15 @@ public class PlayerSpells : MonoBehaviour
     [Header("Selección actual (solo lectura)")]
     [SerializeField] private SpellType currentSpell = SpellType.None;
 
-    [Header("Estado")]
+    [Header("Estado global de la magia")]
     [SerializeField] private bool magicUnlocked = false;
     public bool MagicUnlocked => magicUnlocked;
+
+    [Header("Hechizos activos en ESTA escena")]
+    public bool windEnabled  = true;
+    public bool iceEnabled   = true;
+    public bool fireEnabled  = true;
+    public bool lightEnabled = true;
 
     [Header("Cooldowns (segundos)")]
     public float windCooldown = 2f;
@@ -40,7 +46,7 @@ public class PlayerSpells : MonoBehaviour
 
         if (!magicUnlocked) return;
 
-        // Seleccionar (1–4)
+        // Seleccionar (1–4) solo si el hechizo está habilitado en esta escena
         if (Input.GetKeyDown(KeyCode.Alpha1)) SelectSpell(SpellType.Wind);
         if (Input.GetKeyDown(KeyCode.Alpha2)) SelectSpell(SpellType.Ice);
         if (Input.GetKeyDown(KeyCode.Alpha3)) SelectSpell(SpellType.Fire);
@@ -60,8 +66,26 @@ public class PlayerSpells : MonoBehaviour
         Debug.Log("🪄 ¡Magia habilitada! Usa 1–4 para elegir y ClickIzq para lanzar.");
     }
 
+    bool IsSpellEnabled(SpellType spell)
+    {
+        switch (spell)
+        {
+            case SpellType.Wind:  return windEnabled;
+            case SpellType.Ice:   return iceEnabled;
+            case SpellType.Fire:  return fireEnabled;
+            case SpellType.Light: return lightEnabled;
+            default:              return false;
+        }
+    }
+
     void SelectSpell(SpellType spell)
     {
+        if (!IsSpellEnabled(spell))
+        {
+            Debug.Log($"El hechizo {spell} no está disponible en esta escena.");
+            return;
+        }
+
         currentSpell = spell;
         Debug.Log($"Hechizo seleccionado: {currentSpell}");
     }
@@ -71,6 +95,13 @@ public class PlayerSpells : MonoBehaviour
         if (currentSpell == SpellType.None)
         {
             Debug.Log("No hay hechizo seleccionado. Usa 1-4 para seleccionar.");
+            return;
+        }
+
+        // Por si acaso, evitar castear uno que esté deshabilitado
+        if (!IsSpellEnabled(currentSpell))
+        {
+            Debug.Log($"El hechizo {currentSpell} está desactivado en esta escena.");
             return;
         }
 
@@ -150,19 +181,17 @@ public class PlayerSpells : MonoBehaviour
         }
     }
 
-    // PARA FUTURO UI
     public float GetCooldownRemaining(SpellType spell)
     {
         switch (spell)
         {
-            case SpellType.Wind: return Mathf.Max(0, windTimer);
-            case SpellType.Ice: return Mathf.Max(0, iceTimer);
-            case SpellType.Fire: return Mathf.Max(0, fireTimer);
+            case SpellType.Wind:  return Mathf.Max(0, windTimer);
+            case SpellType.Ice:   return Mathf.Max(0, iceTimer);
+            case SpellType.Fire:  return Mathf.Max(0, fireTimer);
             case SpellType.Light: return Mathf.Max(0, lightTimer);
-            default: return 0;
+            default:              return 0;
         }
     }
-    
-    //PARA FUTURO HUD
+
     public SpellType CurrentSpell => currentSpell;
 }

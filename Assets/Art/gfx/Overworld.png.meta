@@ -268,10 +268,10 @@ TextureImporter:
       name: Overworld_3
       rect:
         serializedVersion: 2
-        x: 543
-        y: 527
-        width: 50
-        height: 45
+        x: 544
+        y: 529
+        width: 16
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,7 +334,7 @@ TextureImporter:
       name: Overworld_6
       rect:
         serializedVersion: 2
-        x: 531
+        x: 529
         y: 529
         width: 11
         height: 14

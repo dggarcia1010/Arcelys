@@ -17,6 +17,15 @@ public class TorchSimonPuzzle : MonoBehaviour
     public float timeLimit = 10f;
     public float nextRoundDelay = 2f;
 
+    [Header("Acciones al completar puzzle")]
+    [Tooltip("Collider que desaparecerá al completar la última ronda del puzzle.")]
+    public Collider2D colliderToDisable;
+    [Tooltip("Si está activado, se desactiva todo el GameObject del collider. Si no, solo se pone en isTrigger.")]
+    public bool disableObject = true;
+
+    [Header("Diálogo opcional al completar puzzle")]
+    public Dialogue puzzleCompleteDialogue;
+
     private List<int> sequence = new List<int>();
     private int inputIndex = 0;
     private float timer = 0f;
@@ -29,14 +38,12 @@ public class TorchSimonPuzzle : MonoBehaviour
 
     void Update()
     {
-        // Empezar puzzle con E
         if (playerInside && !puzzleActive && !isShowingSequence && Input.GetKeyDown(KeyCode.E))
         {
             Debug.Log("Puzzle iniciado");
             StartCoroutine(StartRound());
         }
 
-        // Cuenta atrás mientras el jugador responde
         if (puzzleActive)
         {
             timer -= Time.deltaTime;
@@ -45,7 +52,6 @@ public class TorchSimonPuzzle : MonoBehaviour
         }
     }
 
-    // Llamado por FlammableTorch cuando el jugador la enciende con fuego
     public void TorchActivated(FlammableTorch torch)
     {
         if (!puzzleActive) return;
@@ -57,7 +63,6 @@ public class TorchSimonPuzzle : MonoBehaviour
         {
             inputIndex++;
 
-            // Ha acertado TODA la secuencia
             if (inputIndex >= sequence.Count)
             {
                 PuzzleCompletedRound();
@@ -65,7 +70,6 @@ public class TorchSimonPuzzle : MonoBehaviour
         }
         else
         {
-            // Fallo → reiniciar
             PuzzleFailed();
         }
     }
@@ -75,23 +79,19 @@ public class TorchSimonPuzzle : MonoBehaviour
         puzzleActive = false;
         isShowingSequence = true;
 
-        // APAGAR TODAS las antorchas antes de empezar
         TurnOffAllTorches();
         yield return new WaitForSeconds(0.2f);
 
         sequence.Clear();
 
-        // Obtener longitud desde patrón
         int lengthIndex = Mathf.Clamp(round - 1, 0, patternLengths.Length - 1);
         int patternLength = patternLengths[lengthIndex];
 
         Debug.Log($"Ronda {round} → patrón de {patternLength} pasos");
 
-        // Generar secuencia
         for (int i = 0; i < patternLength; i++)
             sequence.Add(Random.Range(0, torches.Count));
 
-        // Mostrar la secuencia animada
         yield return ShowSequence();
 
         inputIndex = 0;
@@ -106,27 +106,15 @@ public class TorchSimonPuzzle : MonoBehaviour
     {
         Debug.Log("Mostrando secuencia…");
 
-        List<int> seq = new List<int>(sequence);
-
-        foreach (int index in seq)
+        foreach (int index in sequence)
         {
-            if (index < 0 || index >= torches.Count)
-                continue;
-
             var t = torches[index];
             if (t == null) continue;
 
-            // Encender antorcha
             t.ShowPuzzleFlash();
-
-            // Dejar un frame para refrescar el Light2D
             yield return null;
-
             yield return new WaitForSeconds(showTime);
-
-            // Apagarla
             t.TurnOff();
-
             yield return new WaitForSeconds(delayBetween);
         }
     }
@@ -156,6 +144,17 @@ public class TorchSimonPuzzle : MonoBehaviour
         {
             Debug.Log("🎉 Puzzle COMPLETADO");
             TurnOffAllTorches();
+
+            // 🔥 Lanzar diálogo si existe
+            if (puzzleCompleteDialogue != null && DialogueManager.Instance != null)
+            {
+                DialogueManager.Instance.StartDialogue(puzzleCompleteDialogue, AfterDialogue);
+            }
+            else
+            {
+                AfterDialogue();
+            }
+
             return;
         }
 
@@ -164,16 +163,27 @@ public class TorchSimonPuzzle : MonoBehaviour
 
     IEnumerator NextRoundCoroutine()
     {
-        // Esperar 0.25s para que SE VEA la última antorcha encendida
         yield return new WaitForSeconds(0.25f);
-
-        // Apagar todo
         TurnOffAllTorches();
-
-        // Pausa antes de demostrar nuevo patrón
         yield return new WaitForSeconds(nextRoundDelay);
-
         StartCoroutine(StartRound());
+    }
+
+    void AfterDialogue()
+    {
+        if (colliderToDisable != null)
+        {
+            if (disableObject)
+            {
+                colliderToDisable.gameObject.SetActive(false);
+                Debug.Log("✔ Collider desactivado: " + colliderToDisable.name);
+            }
+            else
+            {
+                colliderToDisable.isTrigger = true;
+                Debug.Log("✔ Collider puesto como trigger: " + colliderToDisable.name);
+            }
+        }
     }
 
     void TurnOffAllTorches()

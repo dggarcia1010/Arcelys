@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="40" height="25" tilewidth="16" tileheight="16" infinite="0" nextlayerid="10" nextobjectid="32">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="40" height="25" tilewidth="16" tileheight="16" infinite="0" nextlayerid="10" nextobjectid="33">
  <tileset firstgid="1" source="../tilesets/gfx/Overworld.tsx"/>
  <tileset firstgid="1441" source="../tilesets/House/exterior.tsx"/>
  <tileset firstgid="2410" source="../tilesets/House/SmokeAnimation.tsx"/>
@@ -34,7 +34,7 @@
  </layer>
  <layer id="3" name="limits" width="40" height="25">
   <data encoding="csv">
-522,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,524,
+522,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,523,604,0,0,0,602,523,523,524,
 564,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,564,
 564,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,564,
 564,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,564,
@@ -221,7 +221,8 @@
   <object id="26" x="112.667" y="384" width="526.667" height="15.3333"/>
   <object id="27" x="623.333" y="336" width="16" height="63.3333"/>
   <object id="28" x="623.333" y="0.666667" width="15.3333" height="287.333"/>
-  <object id="30" x="-1" y="-1" width="640" height="15"/>
+  <object id="30" x="-1" y="-1" width="528" height="15"/>
   <object id="31" x="713" y="44"/>
+  <object id="32" x="577" y="-1" width="58.5" height="14.5"/>
  </objectgroup>
 </map>

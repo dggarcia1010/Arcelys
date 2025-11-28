@@ -346,6 +346,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentSpell: 0
   magicUnlocked: 1
+  windEnabled: 0
+  iceEnabled: 0
+  fireEnabled: 0
+  lightEnabled: 0
   windCooldown: 2
   iceCooldown: 3
   fireCooldown: 1
@@ -1705,8 +1709,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1534882206}
   - component: {fileID: 1534882205}
-  - component: {fileID: 1534882204}
   - component: {fileID: 1534882202}
+  - component: {fileID: 1534882204}
   - component: {fileID: 1534882207}
   m_Layer: 0
   m_Name: Square
@@ -2292,6 +2296,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   missionAccepted: 0
   catRescued: 0
+  colliderToRemoveName: ColliderPaso
 --- !u!4 &2074503011
 Transform:
   m_ObjectHideFlags: 0

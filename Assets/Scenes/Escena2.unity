@@ -119,6 +119,74 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &68648255
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2451699463228516394, guid: db39e1f29696a60d8b6704e0547e5a86, type: 3}
+      propertyPath: m_Name
+      value: MeleeEnemy Variant 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036728123826453957, guid: db39e1f29696a60d8b6704e0547e5a86, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 23.685654
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036728123826453957, guid: db39e1f29696a60d8b6704e0547e5a86, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -14.927053
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036728123826453957, guid: db39e1f29696a60d8b6704e0547e5a86, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036728123826453957, guid: db39e1f29696a60d8b6704e0547e5a86, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036728123826453957, guid: db39e1f29696a60d8b6704e0547e5a86, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036728123826453957, guid: db39e1f29696a60d8b6704e0547e5a86, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036728123826453957, guid: db39e1f29696a60d8b6704e0547e5a86, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036728123826453957, guid: db39e1f29696a60d8b6704e0547e5a86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036728123826453957, guid: db39e1f29696a60d8b6704e0547e5a86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036728123826453957, guid: db39e1f29696a60d8b6704e0547e5a86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: db39e1f29696a60d8b6704e0547e5a86, type: 3}
+--- !u!114 &68648256 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3353015525166586977, guid: db39e1f29696a60d8b6704e0547e5a86, type: 3}
+  m_PrefabInstance: {fileID: 68648255}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed51be881503514797027c6134cddc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &184430300
 GameObject:
   m_ObjectHideFlags: 0
@@ -379,6 +447,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentSpell: 0
   magicUnlocked: 1
+  windEnabled: 1
+  iceEnabled: 0
+  fireEnabled: 0
+  lightEnabled: 0
   windCooldown: 2
   iceCooldown: 3
   fireCooldown: 1
@@ -763,6 +835,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: ClaroBosque
       objectReference: {fileID: 0}
+    - target: {fileID: -3061451374138651599, guid: f9960fb9370b1b042b41b18acccbee8a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.88
+      objectReference: {fileID: 0}
+    - target: {fileID: -3061451374138651599, guid: f9960fb9370b1b042b41b18acccbee8a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 32.71
+      objectReference: {fileID: 0}
     - target: {fileID: 6844374207320506037, guid: f9960fb9370b1b042b41b18acccbee8a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1084,11 +1164,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5036728123826453957, guid: 3bd16926ea92c044d9b6194511f93b24, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.158209
+      value: 16.8
       objectReference: {fileID: 0}
     - target: {fileID: 5036728123826453957, guid: 3bd16926ea92c044d9b6194511f93b24, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -16.796824
+      value: -16.1
       objectReference: {fileID: 0}
     - target: {fileID: 5036728123826453957, guid: 3bd16926ea92c044d9b6194511f93b24, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1127,6 +1207,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bd16926ea92c044d9b6194511f93b24, type: 3}
+--- !u!114 &1299781797 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3353015525166586977, guid: 3bd16926ea92c044d9b6194511f93b24, type: 3}
+  m_PrefabInstance: {fileID: 1299781796}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed51be881503514797027c6134cddc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1610089583
 GameObject:
   m_ObjectHideFlags: 0
@@ -1405,6 +1496,63 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1779875863
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1779875865}
+  - component: {fileID: 1779875864}
+  m_Layer: 0
+  m_Name: EnemyGroupDialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1779875864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779875863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9f68bbced73b24d9e7e7312d59474c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemies:
+  - {fileID: 1299781797}
+  - {fileID: 68648256}
+  dialogue:
+    sentences:
+    - "\"Lira Hada de Viento\": Esa manera de derrotar a la plantas\u2026 Creo que
+      eres el elegido."
+    - '"Lira Hada de Viento": Tu puedes ayudarnos a restablecer la paz y acabar con
+      el ente oscuro. '
+    - '"Lira Hada de Viento": Bueno por ahora busquemos a la persona que pedia ayuda.. '
+    - '"Lira Hada de Viento": Alomejor se ha escondido en esa casa.'
+  delayAfterAllDead: 2
+  fairyToMove: {fileID: 0}
+--- !u!4 &1779875865
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779875863}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.6695175, y: -18.00509, z: -0.24574706}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1838749058
 GameObject:
   m_ObjectHideFlags: 0
@@ -1608,6 +1756,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueBox
       objectReference: {fileID: 0}
+    - target: {fileID: 1294678598302792286, guid: 60747b00a42870f4e9858fab8c79727c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3698570271095203226, guid: 60747b00a42870f4e9858fab8c79727c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1779,15 +1931,31 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1541492841656835551, guid: 4c40738dde630f346bf961f3878efebe, type: 3}
       propertyPath: introDialogue.sentences.Array.size
-      value: 3
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1541492841656835551, guid: 4c40738dde630f346bf961f3878efebe, type: 3}
+      propertyPath: 'introDialogue.sentences.Array.data[0]'
+      value: "\"???????\" : Lira, sigues negando lo inevitable\u2026 Yo nazco de
+        su voluntad."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1541492841656835551, guid: 4c40738dde630f346bf961f3878efebe, type: 3}
+      propertyPath: 'introDialogue.sentences.Array.data[1]'
+      value: "\"Lira Hada de Viento\": \xBFQue ha sido eso? Me ha parecido escuchar
+        a ..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1541492841656835551, guid: 4c40738dde630f346bf961f3878efebe, type: 3}
+      propertyPath: 'introDialogue.sentences.Array.data[2]'
+      value: "\"Aldeano\": Al\xE9jate flor monstruosa. Como le hag\xE1is algo a mi
+        querido Wilson."
       objectReference: {fileID: 0}
     - target: {fileID: 1541492841656835551, guid: 4c40738dde630f346bf961f3878efebe, type: 3}
       propertyPath: 'introDialogue.sentences.Array.data[3]'
-      value: '"Algo esta pasando"'
+      value: '"Lira Hada de Viento": Hay alguien en problemas, tenemos que ayudarle.'
       objectReference: {fileID: 0}
     - target: {fileID: 1541492841656835551, guid: 4c40738dde630f346bf961f3878efebe, type: 3}
       propertyPath: 'introDialogue.sentences.Array.data[4]'
-      value: '"Algo esta pasando"'
+      value: '"Lira Hada de Viento": Aurelio, escuho gritos de auxilio, vamos a ver
+        que pasa.'
       objectReference: {fileID: 0}
     - target: {fileID: 4615073786270039285, guid: 4c40738dde630f346bf961f3878efebe, type: 3}
       propertyPath: m_Name
@@ -1836,8 +2004,33 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4615073786270039285, guid: 4c40738dde630f346bf961f3878efebe, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7860323529244255970}
   m_SourcePrefab: {fileID: 100100000, guid: 4c40738dde630f346bf961f3878efebe, type: 3}
+--- !u!1 &7860323529244255969 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4615073786270039285, guid: 4c40738dde630f346bf961f3878efebe, type: 3}
+  m_PrefabInstance: {fileID: 7860323529244255968}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7860323529244255970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7860323529244255969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9f68bbced73b24d9e7e7312d59474c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemies: []
+  dialogue:
+    sentences: []
+  delayAfterAllDead: 1
+  fairyToMove: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1853,5 +2046,7 @@ SceneRoots:
   - {fileID: 1633914805}
   - {fileID: 7560878786017283221}
   - {fileID: 7860323529244255968}
+  - {fileID: 1779875865}
   - {fileID: 1838749061}
   - {fileID: 1299781796}
+  - {fileID: 68648255}
