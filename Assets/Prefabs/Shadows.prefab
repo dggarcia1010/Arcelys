@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6140668168415939330, guid: 9ecf69e59b791f191b78218edb44f7b1, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2563896680501759448, guid: 9ecf69e59b791f191b78218edb44f7b1, type: 3}
       propertyPath: m_Name
       value: Shadows

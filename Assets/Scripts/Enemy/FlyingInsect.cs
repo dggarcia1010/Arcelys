@@ -24,7 +24,7 @@ public class VueloTrayectoriasLargas : MonoBehaviour
     {
         if (target == null)
         {
-            Debug.LogError("Error: ¡Asigna un objetivo (Target)!");
+            Debug.LogError("Error: NO HAY TARGET");
             enabled = false;
             return;
         }

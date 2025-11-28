@@ -158,22 +158,22 @@ public class PlayerSpells : MonoBehaviour
 
         if (currentSpell == SpellType.Wind)
         {
-            p.damage = 1;
+            p.damage = 2;
             p.windPushForce = 2f;
         }
         else if (currentSpell == SpellType.Ice)
         {
-            p.damage = 1;
+            p.damage = 2;
             p.slowMultiplier = 0.4f;
             p.slowDuration   = 3f;
         }
         else if (currentSpell == SpellType.Fire)
         {
-            p.damage = 2;
+            p.damage = 3;
         }
         else if (currentSpell == SpellType.Light)
         {
-            p.damage = 3;
+            p.damage = 4;
         }
         else
         {
