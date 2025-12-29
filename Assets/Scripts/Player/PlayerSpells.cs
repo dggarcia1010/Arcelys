@@ -151,6 +151,8 @@ public class PlayerSpells : MonoBehaviour
 
         p.direction = direction;
         p.speed = projectileSpeed;
+        p.team = Projectile2D.Team.Player;
+        p.ownerCollider = GetComponent<Collider2D>();
 
         p.isWind = (currentSpell == SpellType.Wind);
         p.isIce  = (currentSpell == SpellType.Ice);

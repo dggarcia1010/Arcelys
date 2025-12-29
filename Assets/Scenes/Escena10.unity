@@ -345,7 +345,7 @@ MonoBehaviour:
   fireCooldown: 1
   lightCooldown: 5
   windPrefab: {fileID: 5362879128924914643, guid: 95cee4bd0d0aa4e4fbcdc0bd558f6dbb, type: 3}
-  icePrefab: {fileID: 5362879128924914643, guid: 5e184e18fe7ae484ebbdd2ddf7299a48, type: 3}
+  icePrefab: {fileID: 3221819430386385666, guid: 12287f1c791e6ba438451bc38f9359c9, type: 3}
   firePrefab: {fileID: 5362879128924914643, guid: 6de25ac6590f89d4ab080cca0fface7b, type: 3}
   lightPrefab: {fileID: 5362879128924914643, guid: 926a8b5a98f4f8b429ef223f158871ee, type: 3}
   projectileSpeed: 5
