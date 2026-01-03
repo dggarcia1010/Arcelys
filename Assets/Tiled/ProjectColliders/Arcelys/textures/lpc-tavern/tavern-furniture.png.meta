@@ -1,0 +1,1755 @@
+fileFormatVersion: 2
+guid: 092be4b4319013b45b7dd2f242e343bc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6945599700494651550
+    second: tavern-furniture_0
+  - first:
+      213: -2642989131411343258
+    second: tavern-furniture_1
+  - first:
+      213: 1006677040297222910
+    second: tavern-furniture_2
+  - first:
+      213: -6803569870773739848
+    second: tavern-furniture_3
+  - first:
+      213: -2100982680144253734
+    second: tavern-furniture_4
+  - first:
+      213: -5591047130418581139
+    second: tavern-furniture_5
+  - first:
+      213: -2572003768373584336
+    second: tavern-furniture_6
+  - first:
+      213: 5290730558756935768
+    second: tavern-furniture_7
+  - first:
+      213: 7280805296750511101
+    second: tavern-furniture_8
+  - first:
+      213: -2290087470312268964
+    second: tavern-furniture_9
+  - first:
+      213: -4968313837569181457
+    second: tavern-furniture_10
+  - first:
+      213: -357343713435854824
+    second: tavern-furniture_11
+  - first:
+      213: -7262807604965468102
+    second: tavern-furniture_12
+  - first:
+      213: 3050621949911871644
+    second: tavern-furniture_13
+  - first:
+      213: 8527526410577879398
+    second: tavern-furniture_14
+  - first:
+      213: -2031319855670065902
+    second: tavern-furniture_15
+  - first:
+      213: 403440919416655719
+    second: tavern-furniture_16
+  - first:
+      213: 7175028940543763304
+    second: tavern-furniture_17
+  - first:
+      213: -841353008787675777
+    second: tavern-furniture_18
+  - first:
+      213: 6649287931271798239
+    second: tavern-furniture_19
+  - first:
+      213: -7356814656897814655
+    second: tavern-furniture_20
+  - first:
+      213: -6733706933240417380
+    second: tavern-furniture_21
+  - first:
+      213: 6755416585710901381
+    second: tavern-furniture_22
+  - first:
+      213: -4008720701990164477
+    second: tavern-furniture_23
+  - first:
+      213: 8231206284584072201
+    second: tavern-furniture_24
+  - first:
+      213: -6180006855454392155
+    second: tavern-furniture_25
+  - first:
+      213: -2536919048683580789
+    second: tavern-furniture_26
+  - first:
+      213: 7310683641973398824
+    second: tavern-furniture_27
+  - first:
+      213: 518873819839647535
+    second: tavern-furniture_28
+  - first:
+      213: -4114406375469475819
+    second: tavern-furniture_29
+  - first:
+      213: 8022722358277103435
+    second: tavern-furniture_30
+  - first:
+      213: -6125130495681243695
+    second: tavern-furniture_31
+  - first:
+      213: 9124962005965655444
+    second: tavern-furniture_32
+  - first:
+      213: 234562828266907343
+    second: tavern-furniture_33
+  - first:
+      213: -7211255532389707594
+    second: tavern-furniture_34
+  - first:
+      213: 650804661983333906
+    second: tavern-furniture_35
+  - first:
+      213: -2554016065504373992
+    second: tavern-furniture_36
+  - first:
+      213: -778686473117794793
+    second: tavern-furniture_37
+  - first:
+      213: -2835409730220525575
+    second: tavern-furniture_38
+  - first:
+      213: -283673132571499786
+    second: tavern-furniture_39
+  - first:
+      213: -5328915493155699308
+    second: tavern-furniture_40
+  - first:
+      213: -3635467115062319990
+    second: tavern-furniture_41
+  - first:
+      213: -5173564495751051112
+    second: tavern-furniture_42
+  - first:
+      213: -8132082450230240836
+    second: tavern-furniture_43
+  - first:
+      213: -6881976294104933270
+    second: tavern-furniture_44
+  - first:
+      213: -784195573282392357
+    second: tavern-furniture_45
+  - first:
+      213: 8819685765904195527
+    second: tavern-furniture_46
+  - first:
+      213: 2446839714533293415
+    second: tavern-furniture_47
+  - first:
+      213: -6009959450055862926
+    second: tavern-furniture_48
+  - first:
+      213: -1100532106405841713
+    second: tavern-furniture_49
+  - first:
+      213: -1819361123970822700
+    second: tavern-furniture_50
+  - first:
+      213: 9118522637455028542
+    second: tavern-furniture_51
+  - first:
+      213: 364154257939016344
+    second: tavern-furniture_52
+  - first:
+      213: 5612349045687372373
+    second: tavern-furniture_53
+  - first:
+      213: -8564348941386249772
+    second: tavern-furniture_54
+  - first:
+      213: -9026128177926819619
+    second: tavern-furniture_55
+  - first:
+      213: 6538569539647383319
+    second: tavern-furniture_56
+  - first:
+      213: 6883860975055778848
+    second: tavern-furniture_57
+  - first:
+      213: -5390391376859782842
+    second: tavern-furniture_58
+  - first:
+      213: 3622331163989694860
+    second: tavern-furniture_59
+  - first:
+      213: -1530476426969802440
+    second: tavern-furniture_60
+  - first:
+      213: 7310142062216299024
+    second: tavern-furniture_61
+  - first:
+      213: 7042348294089707063
+    second: tavern-furniture_62
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tavern-furniture_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 863
+        width: 54
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26fe4fb2fd54c9f90800000000000000
+      internalID: -6945599700494651550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 927
+        width: 66
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 668320d5367325bd0800000000000000
+      internalID: -2642989131411343258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_2
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 927
+        width: 76
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef2257e3f6f68fd00800000000000000
+      internalID: 1006677040297222910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_3
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1007
+        width: 84
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8be1bf7df3dd491a0800000000000000
+      internalID: -6803569870773739848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_4
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 1006
+        width: 87
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adce0c6426fc7d2e0800000000000000
+      internalID: -2100982680144253734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_5
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 1003
+        width: 86
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d61feece14c9862b0800000000000000
+      internalID: -5591047130418581139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_6
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 915
+        width: 82
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03e502123386e4cd0800000000000000
+      internalID: -2572003768373584336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_7
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 915
+        width: 78
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 858d20569637c6940800000000000000
+      internalID: 5290730558756935768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_8
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 915
+        width: 78
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df3c89f87dd9a0560800000000000000
+      internalID: 7280805296750511101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_9
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 974
+        width: 76
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5bd6734499f730e0800000000000000
+      internalID: -2290087470312268964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_10
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 974
+        width: 75
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe8f70353e00d0bb0800000000000000
+      internalID: -4968313837569181457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_11
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 973
+        width: 76
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 818dfe139c57a0bf0800000000000000
+      internalID: -357343713435854824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_12
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 901
+        width: 76
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a38170a96f2553b90800000000000000
+      internalID: -7262807604965468102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_13
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 906
+        width: 75
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c90b184208cf55a20800000000000000
+      internalID: 3050621949911871644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_14
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 906
+        width: 76
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 661a143f61cd75670800000000000000
+      internalID: 8527526410577879398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_15
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 831
+        width: 194
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21586998a5d4fc3e0800000000000000
+      internalID: -2031319855670065902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_16
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 863
+        width: 54
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76fcfa1f06f499500800000000000000
+      internalID: 403440919416655719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_17
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 863
+        width: 64
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86322467ec2d29360800000000000000
+      internalID: 7175028940543763304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 717
+        width: 129
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f75218c65e9e254f0800000000000000
+      internalID: -841353008787675777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_19
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 719
+        width: 20
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdd5fb0e424074c50800000000000000
+      internalID: 6649287931271798239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_20
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 719
+        width: 20
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18fe7313c0857e990800000000000000
+      internalID: -7356814656897814655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_21
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 703
+        width: 290
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c93be9e88311d82a0800000000000000
+      internalID: -6733706933240417380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_22
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 799
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 588941dc79f00cd50800000000000000
+      internalID: 6755416585710901381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_23
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 767
+        width: 27
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3082f1ab2c92e58c0800000000000000
+      internalID: -4008720701990164477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_24
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 783
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 904b899418e1b3270800000000000000
+      internalID: 8231206284584072201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_25
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 783
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a0892f02843c3aa0800000000000000
+      internalID: -6180006855454392155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_26
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 799
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b821b4ff09d0bccd0800000000000000
+      internalID: -2536919048683580789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_27
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 774
+        width: 39
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82d5519e904c47560800000000000000
+      internalID: 7310683641973398824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_28
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 799
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2fcac27df8633700800000000000000
+      internalID: 518873819839647535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_29
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 799
+        width: 42
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5181a885331b6e6c0800000000000000
+      internalID: -4114406375469475819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_30
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 799
+        width: 34
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4fd0b88a7f665f60800000000000000
+      internalID: 8022722358277103435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_31
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 767
+        width: 85
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d5d10a344a2ffaa0800000000000000
+      internalID: -6125130495681243695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_32
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 784
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49dc48a299062ae70800000000000000
+      internalID: 9124962005965655444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_33
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 703
+        width: 30
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc62c5846a5514300800000000000000
+      internalID: 234562828266907343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_34
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 768
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b05757dc497ceb90800000000000000
+      internalID: -7211255532389707594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_35
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 767
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21e4fa7546f180900800000000000000
+      internalID: 650804661983333906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_36
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 703
+        width: 197
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81398f09bef4e8cd0800000000000000
+      internalID: -2554016065504373992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_37
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 703
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71e796247cc8135f0800000000000000
+      internalID: -778686473117794793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_38
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 723
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f7f48d7fd996a8d0800000000000000
+      internalID: -2835409730220525575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_39
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 719
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f2e0c4f9c0301cf0800000000000000
+      internalID: -283673132571499786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_40
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 736
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4950160c793eb06b0800000000000000
+      internalID: -5328915493155699308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_41
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 703
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a84a81e9be93c8dc0800000000000000
+      internalID: -3635467115062319990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_42
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 710
+        width: 39
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8988f28708ec338b0800000000000000
+      internalID: -5173564495751051112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_43
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 703
+        width: 16
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb996ddd81a052f80800000000000000
+      internalID: -8132082450230240836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 582
+        width: 129
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6c5735d50f4e70a0800000000000000
+      internalID: -6881976294104933270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_45
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 593
+        width: 22
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd6b11ce74afd15f0800000000000000
+      internalID: -784195573282392357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_46
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 593
+        width: 22
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cfd943b971d56a70800000000000000
+      internalID: 8819685765904195527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_47
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 575
+        width: 290
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76d3317a1cbe4f120800000000000000
+      internalID: 2446839714533293415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_48
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 671
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2751be8e8b5589ca0800000000000000
+      internalID: -6009959450055862926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_49
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 639
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc474cd41ef1ab0f0800000000000000
+      internalID: -1100532106405841713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_50
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 639
+        width: 27
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dd409772b450c6e0800000000000000
+      internalID: -1819361123970822700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_51
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 655
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e317dd9d6008b8e70800000000000000
+      internalID: 9118522637455028542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_52
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 655
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89aa6e34e5cbd0500800000000000000
+      internalID: 364154257939016344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_53
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 671
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55ac2b7b8b113ed40800000000000000
+      internalID: 5612349045687372373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_54
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 640
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d90e208302552980800000000000000
+      internalID: -8564348941386249772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_55
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 645
+        width: 39
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd03781ae30ccb280800000000000000
+      internalID: -9026128177926819619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_56
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 575
+        width: 26
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7172fdd7a5aadba50800000000000000
+      internalID: 6538569539647383319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_57
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 575
+        width: 29
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 024bf55a513688f50800000000000000
+      internalID: 6883860975055778848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_58
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 595
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 641a1fd2a9b7135b0800000000000000
+      internalID: -5390391376859782842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_59
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 589
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c89de60700b154230800000000000000
+      internalID: 3622331163989694860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_60
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 608
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8391b596cc7a2cae0800000000000000
+      internalID: -1530476426969802440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_61
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 575
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0124b0c8977d27560800000000000000
+      internalID: 7310142062216299024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tavern-furniture_62
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 581
+        width: 39
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73e8bc526727bb160800000000000000
+      internalID: 7042348294089707063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      tavern-furniture_0: -6945599700494651550
+      tavern-furniture_1: -2642989131411343258
+      tavern-furniture_10: -4968313837569181457
+      tavern-furniture_11: -357343713435854824
+      tavern-furniture_12: -7262807604965468102
+      tavern-furniture_13: 3050621949911871644
+      tavern-furniture_14: 8527526410577879398
+      tavern-furniture_15: -2031319855670065902
+      tavern-furniture_16: 403440919416655719
+      tavern-furniture_17: 7175028940543763304
+      tavern-furniture_18: -841353008787675777
+      tavern-furniture_19: 6649287931271798239
+      tavern-furniture_2: 1006677040297222910
+      tavern-furniture_20: -7356814656897814655
+      tavern-furniture_21: -6733706933240417380
+      tavern-furniture_22: 6755416585710901381
+      tavern-furniture_23: -4008720701990164477
+      tavern-furniture_24: 8231206284584072201
+      tavern-furniture_25: -6180006855454392155
+      tavern-furniture_26: -2536919048683580789
+      tavern-furniture_27: 7310683641973398824
+      tavern-furniture_28: 518873819839647535
+      tavern-furniture_29: -4114406375469475819
+      tavern-furniture_3: -6803569870773739848
+      tavern-furniture_30: 8022722358277103435
+      tavern-furniture_31: -6125130495681243695
+      tavern-furniture_32: 9124962005965655444
+      tavern-furniture_33: 234562828266907343
+      tavern-furniture_34: -7211255532389707594
+      tavern-furniture_35: 650804661983333906
+      tavern-furniture_36: -2554016065504373992
+      tavern-furniture_37: -778686473117794793
+      tavern-furniture_38: -2835409730220525575
+      tavern-furniture_39: -283673132571499786
+      tavern-furniture_4: -2100982680144253734
+      tavern-furniture_40: -5328915493155699308
+      tavern-furniture_41: -3635467115062319990
+      tavern-furniture_42: -5173564495751051112
+      tavern-furniture_43: -8132082450230240836
+      tavern-furniture_44: -6881976294104933270
+      tavern-furniture_45: -784195573282392357
+      tavern-furniture_46: 8819685765904195527
+      tavern-furniture_47: 2446839714533293415
+      tavern-furniture_48: -6009959450055862926
+      tavern-furniture_49: -1100532106405841713
+      tavern-furniture_5: -5591047130418581139
+      tavern-furniture_50: -1819361123970822700
+      tavern-furniture_51: 9118522637455028542
+      tavern-furniture_52: 364154257939016344
+      tavern-furniture_53: 5612349045687372373
+      tavern-furniture_54: -8564348941386249772
+      tavern-furniture_55: -9026128177926819619
+      tavern-furniture_56: 6538569539647383319
+      tavern-furniture_57: 6883860975055778848
+      tavern-furniture_58: -5390391376859782842
+      tavern-furniture_59: 3622331163989694860
+      tavern-furniture_6: -2572003768373584336
+      tavern-furniture_60: -1530476426969802440
+      tavern-furniture_61: 7310142062216299024
+      tavern-furniture_62: 7042348294089707063
+      tavern-furniture_7: 5290730558756935768
+      tavern-furniture_8: 7280805296750511101
+      tavern-furniture_9: -2290087470312268964
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

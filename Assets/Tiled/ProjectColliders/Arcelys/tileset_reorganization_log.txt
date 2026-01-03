@@ -1,0 +1,240 @@
+======================================================================
+REPORTE DE REORGANIZACIÓN DE TILESETS
+======================================================================
+
+Fecha y hora: 2024
+Directorio base: /home/lula/Tiled/Projects/Arcelys
+Carpeta textures: /home/lula/Tiled/Projects/Arcelys/textures
+
+----------------------------------------------------------------------
+ESTADÍSTICAS
+----------------------------------------------------------------------
+Archivos .tsx procesados: 30
+Archivos .tsx actualizados: 30
+Imágenes copiadas: 30
+Imágenes omitidas (ya en textures/): 0
+Errores encontrados: 0
+
+----------------------------------------------------------------------
+DETALLE POR ARCHIVO
+----------------------------------------------------------------------
+
+/home/lula/Tiled/Projects/Arcelys/Tilesheet.tsx:
+--------------------------------------------------
+  ✓ ../../../Downloads/EraOfFantasy_Grasslands_v2/Update_1/Tiles_Darker/Tilesheet.png
+    → textures/Tilesheet.png (Copiado como Tilesheet.png)
+
+
+/home/lula/Tiled/Projects/Arcelys/Tilesheet_Shadow.tsx:
+--------------------------------------------------
+  ✓ ../../../Downloads/EraOfFantasy_Grasslands_v2/Tileset/Tilesheet_Shadow.png
+    → textures/Tilesheet_Shadow.png (Copiado como Tilesheet_Shadow.png)
+
+
+/home/lula/Tiled/Projects/Arcelys/Overworld.tsx:
+--------------------------------------------------
+  ✓ ../../../Downloads/gfx/Overworld.png
+    → textures/Overworld.png (Copiado como Overworld.png)
+
+
+/home/lula/Tiled/Projects/Arcelys/Decorations_c2.tsx:
+--------------------------------------------------
+  ✓ ../../../Downloads/EraOfFantasy_Grasslands_v2/Decorations/Decorations_c2.png
+    → textures/Decorations_c2.png (Copiado como Decorations_c2.png)
+
+
+/home/lula/Tiled/Projects/Arcelys/Decorations_c1.tsx:
+--------------------------------------------------
+  ✓ ../../../Downloads/EraOfFantasy_Grasslands_v2/Decorations/Decorations_c1.png
+    → textures/Decorations_c1.png (Copiado como Decorations_c1.png)
+
+
+/home/lula/Tiled/Projects/Arcelys/U1_decorations_c2.tsx:
+--------------------------------------------------
+  ✓ ../../../Downloads/EraOfFantasy_Grasslands_v2/Update_1/Decors/U1_decorations_c2.png
+    → textures/U1_decorations_c2.png (Copiado como U1_decorations_c2.png)
+
+
+/home/lula/Tiled/Projects/Arcelys/U1_decorations_c1.tsx:
+--------------------------------------------------
+  ✓ ../../../Downloads/EraOfFantasy_Grasslands_v2/Update_1/Decors/U1_decorations_c1.png
+    → textures/U1_decorations_c1.png (Copiado como U1_decorations_c1.png)
+
+
+/home/lula/Tiled/Projects/Arcelys/Tilesheet_Shadow_color.tsx:
+--------------------------------------------------
+  ✓ ../../../Downloads/Tilesheet_Shadow_color.png
+    → textures/Tilesheet_Shadow_color.png (Copiado como Tilesheet_Shadow_color.png)
+
+
+/home/lula/Tiled/Projects/Arcelys/Tilesheet_Shadow_colorShadow.tsx:
+--------------------------------------------------
+  ✓ ../../../Downloads/Tilesheet_Shadow_colorShadow.png
+    → textures/Tilesheet_Shadow_colorShadow.png (Copiado como Tilesheet_Shadow_colorShadow.png)
+
+
+/home/lula/Tiled/Projects/Arcelys/Tilesheet_Shadow_colorShadow_v2.tsx:
+--------------------------------------------------
+  ✓ ../../../Downloads/Tilesheet_Shadow_colorShadow_v2.png
+    → textures/Tilesheet_Shadow_colorShadow_v2.png (Copiado como Tilesheet_Shadow_colorShadow_v2.png)
+
+
+/home/lula/Tiled/Projects/Arcelys/hada.tsx:
+--------------------------------------------------
+  ✓ ../../../Downloads/monstro-fada.png
+    → textures/monstro-fada.png (Copiado como monstro-fada.png)
+
+
+/home/lula/Tiled/Projects/Arcelys/House_exterior.tsx:
+--------------------------------------------------
+  ✓ ../../../Downloads/Art/House/exterior.png
+    → textures/exterior.png (Copiado como exterior.png)
+
+
+/home/lula/Tiled/Projects/Arcelys/Interior.tsx:
+--------------------------------------------------
+  ✓ ../../../Downloads/Art/House/Interior.png
+    → textures/Interior.png (Copiado como Interior.png)
+
+
+/home/lula/Tiled/Projects/Arcelys/walls_floor.tsx:
+--------------------------------------------------
+  ✓ ../../../Downloads/Art/House/walls_floor.png
+    → textures/walls_floor.png (Copiado como walls_floor.png)
+
+
+/home/lula/Tiled/Projects/Arcelys/Plants.tsx:
+--------------------------------------------------
+  ✓ ../../../Downloads/Art/Garden/Plants.png
+    → textures/Plants.png (Copiado como Plants.png)
+
+
+/home/lula/Tiled/Projects/Arcelys/Supplies.tsx:
+--------------------------------------------------
+  ✓ ../../../Downloads/Art/Garden/Supplies.png
+    → textures/Supplies.png (Copiado como Supplies.png)
+
+
+/home/lula/Tiled/Projects/Arcelys/Smoke_animation.tsx:
+--------------------------------------------------
+  ✓ ../../../Downloads/Art/House/Smoke_animation.png
+    → textures/Smoke_animation.png (Copiado como Smoke_animation.png)
+
+
+/home/lula/Tiled/Projects/Arcelys/Antique furniture sheet.tsx:
+--------------------------------------------------
+  ✓ ../../../Downloads/interior/Antique furniture 2.0/Antique furniture sheet 1.0.png
+    → textures/Antique furniture sheet 1.0.png (Copiado como Antique furniture sheet 1.0.png)
+
+
+/home/lula/Tiled/Projects/Arcelys/mini antique stuff.tsx:
+--------------------------------------------------
+  ✓ ../../../Downloads/interior/Antique furniture 2.0/mini antique stuff.png
+    → textures/mini antique stuff.png (Copiado como mini antique stuff.png)
+
+
+/home/lula/Tiled/Projects/Arcelys/beds_BR.tsx:
+--------------------------------------------------
+  ✓ ../../../Downloads/interior/beds_BR.png
+    → textures/beds_BR.png (Copiado como beds_BR.png)
+
+
+/home/lula/Tiled/Projects/Arcelys/cabinets_LRK.tsx:
+--------------------------------------------------
+  ✓ ../../../Downloads/interior/cabinets_LRK.png
+    → textures/cabinets_LRK.png (Copiado como cabinets_LRK.png)
+
+
+/home/lula/Tiled/Projects/Arcelys/decorations_LRK.tsx:
+--------------------------------------------------
+  ✓ ../../../Downloads/interior/decorations_LRK.png
+    → textures/decorations_LRK.png (Copiado como decorations_LRK.png)
+
+
+/home/lula/Tiled/Projects/Arcelys/doorswindowsstairs_LRK.tsx:
+--------------------------------------------------
+  ✓ ../../../Downloads/interior/doorswindowsstairs_LRK.png
+    → textures/doorswindowsstairs_LRK.png (Copiado como doorswindowsstairs_LRK.png)
+
+
+/home/lula/Tiled/Projects/Arcelys/kitchen_LRK.tsx:
+--------------------------------------------------
+  ✓ ../../../Downloads/interior/kitchen_LRK.png
+    → textures/kitchen_LRK.png (Copiado como kitchen_LRK.png)
+
+
+/home/lula/Tiled/Projects/Arcelys/livingroom_LRK.tsx:
+--------------------------------------------------
+  ✓ ../../../Downloads/interior/livingroom_LRK.png
+    → textures/livingroom_LRK.png (Copiado como livingroom_LRK.png)
+
+
+/home/lula/Tiled/Projects/Arcelys/textiles_BA.tsx:
+--------------------------------------------------
+  ✓ ../../../Downloads/interior/textiles_BA.png
+    → textures/textiles_BA.png (Copiado como textiles_BA.png)
+
+
+/home/lula/Tiled/Projects/Arcelys/wardrobes_BR.tsx:
+--------------------------------------------------
+  ✓ ../../../Downloads/interior/wardrobes_BR.png
+    → textures/wardrobes_BR.png (Copiado como wardrobes_BR.png)
+
+
+/home/lula/Tiled/Projects/Arcelys/Inner.tsx:
+--------------------------------------------------
+  ✓ ../../../Downloads/gfx/Inner.png
+    → textures/Inner.png (Copiado como Inner.png)
+
+
+/home/lula/Tiled/Projects/Arcelys/climb.tsx:
+--------------------------------------------------
+  ✓ ../../../Downloads/Art/climb.png
+    → textures/climb.png (Copiado como climb.png)
+
+
+/home/lula/Tiled/Projects/Arcelys/idle.tsx:
+--------------------------------------------------
+  ✓ ../../../Downloads/Art/Player/idle.png
+    → textures/idle.png (Copiado como idle.png)
+
+----------------------------------------------------------------------
+ARCHIVOS COPIADOS A TEXTURES/
+----------------------------------------------------------------------
+  • Antique furniture sheet 1.0.png
+  • Decorations_c1.png
+  • Decorations_c2.png
+  • Inner.png
+  • Interior.png
+  • Overworld.png
+  • Plants.png
+  • Smoke_animation.png
+  • Supplies.png
+  • Tilesheet.png
+  • Tilesheet_Shadow.png
+  • Tilesheet_Shadow_color.png
+  • Tilesheet_Shadow_colorShadow.png
+  • Tilesheet_Shadow_colorShadow_v2.png
+  • U1_decorations_c1.png
+  • U1_decorations_c2.png
+  • beds_BR.png
+  • cabinets_LRK.png
+  • climb.png
+  • decorations_LRK.png
+  • doorswindowsstairs_LRK.png
+  • exterior.png
+  • idle.png
+  • kitchen_LRK.png
+  • livingroom_LRK.png
+  • mini antique stuff.png
+  • monstro-fada.png
+  • textiles_BA.png
+  • walls_floor.png
+  • wardrobes_BR.png
+
+Total: 30 archivos
+
+======================================================================
+PROCESO COMPLETADO
+✓ ¡Todas las imágenes fueron procesadas exitosamente!
+======================================================================

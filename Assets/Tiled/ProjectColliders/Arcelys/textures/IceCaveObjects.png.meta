@@ -1,0 +1,1079 @@
+fileFormatVersion: 2
+guid: b8efc6ef7eb37a54d982e7c406225d76
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6852555240884738124
+    second: IceCaveObjects_0
+  - first:
+      213: 2249852336298425903
+    second: IceCaveObjects_1
+  - first:
+      213: 1209203184101484274
+    second: IceCaveObjects_2
+  - first:
+      213: -5422399836618645939
+    second: IceCaveObjects_3
+  - first:
+      213: 3397172082402601278
+    second: IceCaveObjects_4
+  - first:
+      213: -8800832665710230537
+    second: IceCaveObjects_5
+  - first:
+      213: 7042223796820453161
+    second: IceCaveObjects_6
+  - first:
+      213: -4466386779375817270
+    second: IceCaveObjects_7
+  - first:
+      213: 5319898839520563084
+    second: IceCaveObjects_8
+  - first:
+      213: -6648999398775442461
+    second: IceCaveObjects_9
+  - first:
+      213: -7440724926664638963
+    second: IceCaveObjects_10
+  - first:
+      213: -92097435421778629
+    second: IceCaveObjects_11
+  - first:
+      213: -5780933223925003361
+    second: IceCaveObjects_12
+  - first:
+      213: -1723139933679268888
+    second: IceCaveObjects_13
+  - first:
+      213: 932955316140400856
+    second: IceCaveObjects_14
+  - first:
+      213: 6261864184308073565
+    second: IceCaveObjects_15
+  - first:
+      213: 2522584950489889270
+    second: IceCaveObjects_16
+  - first:
+      213: -3933959275050441014
+    second: IceCaveObjects_17
+  - first:
+      213: -870185846403963992
+    second: IceCaveObjects_18
+  - first:
+      213: -7137331997241700455
+    second: IceCaveObjects_19
+  - first:
+      213: -1651418947783049913
+    second: IceCaveObjects_20
+  - first:
+      213: -5131881713627296023
+    second: IceCaveObjects_21
+  - first:
+      213: 8944168923838672418
+    second: IceCaveObjects_22
+  - first:
+      213: 7636132136641214048
+    second: IceCaveObjects_23
+  - first:
+      213: 4127285655600438508
+    second: IceCaveObjects_24
+  - first:
+      213: 2668264155686318345
+    second: IceCaveObjects_25
+  - first:
+      213: -6383612523489688586
+    second: IceCaveObjects_26
+  - first:
+      213: 7873333951061227932
+    second: IceCaveObjects_27
+  - first:
+      213: 650721898042787885
+    second: IceCaveObjects_28
+  - first:
+      213: 3629362653702277789
+    second: IceCaveObjects_29
+  - first:
+      213: -7007065926670494944
+    second: IceCaveObjects_30
+  - first:
+      213: -3144440626433797549
+    second: IceCaveObjects_31
+  - first:
+      213: -8981702256327873596
+    second: IceCaveObjects_32
+  - first:
+      213: -4892151834314255245
+    second: IceCaveObjects_33
+  - first:
+      213: 2986558984770368978
+    second: IceCaveObjects_34
+  - first:
+      213: 3543262600087010446
+    second: IceCaveObjects_35
+  - first:
+      213: -1599474945940616806
+    second: IceCaveObjects_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: IceCaveObjects_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 165
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b7e2579055d6e0a0800000000000000
+      internalID: -6852555240884738124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCaveObjects_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 63
+        width: 32
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2e762697c4193f10800000000000000
+      internalID: 2249852336298425903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCaveObjects_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 63
+        width: 32
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f6e3a9a3e3f7c010800000000000000
+      internalID: 1209203184101484274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCaveObjects_3
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 95
+        width: 60
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4e9534e314cfb4b0800000000000000
+      internalID: -5422399836618645939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCaveObjects_4
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 165
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e392b7c820e252f20800000000000000
+      internalID: 3397172082402601278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCaveObjects_5
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 164
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f300b0c1592dd580800000000000000
+      internalID: -8800832665710230537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCaveObjects_6
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 26
+        width: 24
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 927294e5b310bb160800000000000000
+      internalID: 7042223796820453161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCaveObjects_7
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 31
+        width: 32
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acdadc953e43402c0800000000000000
+      internalID: -4466386779375817270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCaveObjects_8
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 163
+        width: 65
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8fc2aafec314d940800000000000000
+      internalID: 5319898839520563084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCaveObjects_9
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 128
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e3343456420ab3a0800000000000000
+      internalID: -6648999398775442461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCaveObjects_10
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 127
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0e72c21a1c3db890800000000000000
+      internalID: -7440724926664638963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCaveObjects_11
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 24
+        width: 31
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3dd5f4deddc8bef0800000000000000
+      internalID: -92097435421778629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCaveObjects_12
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 131
+        width: 65
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9b42bd8cdff5cfa0800000000000000
+      internalID: -5780933223925003361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCaveObjects_13
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 102
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ebc1c22c5d2618e0800000000000000
+      internalID: -1723139933679268888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCaveObjects_14
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 95
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d06cd1cae582fc00800000000000000
+      internalID: 932955316140400856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCaveObjects_15
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 99
+        width: 65
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d548c618c4c96e650800000000000000
+      internalID: 6261864184308073565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCaveObjects_16
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 66
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f932b1b5a5020320800000000000000
+      internalID: 2522584950489889270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCaveObjects_17
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 68
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac6e3c1e1e4c769c0800000000000000
+      internalID: -3933959275050441014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCaveObjects_18
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 68
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a3e488459a7ce3f0800000000000000
+      internalID: -870185846403963992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCaveObjects_19
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 63
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99f016c1d5a13fc90800000000000000
+      internalID: -7137331997241700455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCaveObjects_20
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 31
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74dba02773bf419e0800000000000000
+      internalID: -1651418947783049913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCaveObjects_21
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 0
+        width: 19
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ee0ce575c4e7c8b0800000000000000
+      internalID: -5131881713627296023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCaveObjects_22
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 34
+        width: 33
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22eed7c7f32102c70800000000000000
+      internalID: 8944168923838672418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCaveObjects_23
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 34
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 066b17668bdf8f960800000000000000
+      internalID: 7636132136641214048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCaveObjects_24
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 34
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cec11acbf60174930800000000000000
+      internalID: 4127285655600438508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCaveObjects_25
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 26
+        width: 33
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 901379ecc14970520800000000000000
+      internalID: 2668264155686318345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCaveObjects_26
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 34
+        width: 33
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f389a15b3ad867a0800000000000000
+      internalID: -6383612523489688586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCaveObjects_27
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 29
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c99f6078383b34d60800000000000000
+      internalID: 7873333951061227932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCaveObjects_28
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 0
+        width: 9
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d28886c5e14d70900800000000000000
+      internalID: 650721898042787885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCaveObjects_29
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 0
+        width: 9
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9a4ef6ba161e5230800000000000000
+      internalID: 3629362653702277789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCaveObjects_30
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 0
+        width: 9
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 023df0b2aa6e1ce90800000000000000
+      internalID: -7007065926670494944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCaveObjects_31
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 0
+        width: 9
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3525b1409e3bc54d0800000000000000
+      internalID: -3144440626433797549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCaveObjects_32
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 6
+        width: 9
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cba04d82659a5380800000000000000
+      internalID: -8981702256327873596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCaveObjects_33
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 6
+        width: 9
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3745c6093d59b1cb0800000000000000
+      internalID: -4892151834314255245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCaveObjects_34
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 6
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d53dfbb293627920800000000000000
+      internalID: 2986558984770368978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCaveObjects_35
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 6
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8cfc10df823c2130800000000000000
+      internalID: 3543262600087010446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCaveObjects_36
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 0
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a998214d2068dc9e0800000000000000
+      internalID: -1599474945940616806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      IceCaveObjects_0: -6852555240884738124
+      IceCaveObjects_1: 2249852336298425903
+      IceCaveObjects_10: -7440724926664638963
+      IceCaveObjects_11: -92097435421778629
+      IceCaveObjects_12: -5780933223925003361
+      IceCaveObjects_13: -1723139933679268888
+      IceCaveObjects_14: 932955316140400856
+      IceCaveObjects_15: 6261864184308073565
+      IceCaveObjects_16: 2522584950489889270
+      IceCaveObjects_17: -3933959275050441014
+      IceCaveObjects_18: -870185846403963992
+      IceCaveObjects_19: -7137331997241700455
+      IceCaveObjects_2: 1209203184101484274
+      IceCaveObjects_20: -1651418947783049913
+      IceCaveObjects_21: -5131881713627296023
+      IceCaveObjects_22: 8944168923838672418
+      IceCaveObjects_23: 7636132136641214048
+      IceCaveObjects_24: 4127285655600438508
+      IceCaveObjects_25: 2668264155686318345
+      IceCaveObjects_26: -6383612523489688586
+      IceCaveObjects_27: 7873333951061227932
+      IceCaveObjects_28: 650721898042787885
+      IceCaveObjects_29: 3629362653702277789
+      IceCaveObjects_3: -5422399836618645939
+      IceCaveObjects_30: -7007065926670494944
+      IceCaveObjects_31: -3144440626433797549
+      IceCaveObjects_32: -8981702256327873596
+      IceCaveObjects_33: -4892151834314255245
+      IceCaveObjects_34: 2986558984770368978
+      IceCaveObjects_35: 3543262600087010446
+      IceCaveObjects_36: -1599474945940616806
+      IceCaveObjects_4: 3397172082402601278
+      IceCaveObjects_5: -8800832665710230537
+      IceCaveObjects_6: 7042223796820453161
+      IceCaveObjects_7: -4466386779375817270
+      IceCaveObjects_8: 5319898839520563084
+      IceCaveObjects_9: -6648999398775442461
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
