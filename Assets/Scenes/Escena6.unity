@@ -1312,6 +1312,37 @@ CanvasGroup:
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
+--- !u!1 &918003559
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 918003560}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &918003560
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918003559}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 21.21, y: -40.76, z: 3.2870781}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1030169566
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1363,7 +1394,7 @@ PrefabInstance:
     - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 918003560}
     - target: {fileID: 8970227463591268721, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
       propertyPath: m_Name
       value: Beetle_0 (2)
@@ -1424,7 +1455,7 @@ PrefabInstance:
     - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 918003560}
     - target: {fileID: 8970227463591268721, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
       propertyPath: m_Name
       value: Beetle_0 (4)
@@ -1830,7 +1861,7 @@ PrefabInstance:
     - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 918003560}
     - target: {fileID: 8970227463591268721, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
       propertyPath: m_Name
       value: Beetle_0 (1)
@@ -2431,7 +2462,7 @@ PrefabInstance:
     - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 918003560}
     - target: {fileID: 8970227463591268721, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
       propertyPath: m_Name
       value: Beetle_0 (3)
@@ -2803,7 +2834,7 @@ PrefabInstance:
     - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 918003560}
     - target: {fileID: 8970227463591268721, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
       propertyPath: m_Name
       value: Beetle_0
@@ -2838,3 +2869,4 @@ SceneRoots:
   - {fileID: 1459701839}
   - {fileID: 69141349}
   - {fileID: 1984940026}
+  - {fileID: 918003560}
