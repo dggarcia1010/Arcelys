@@ -13,18 +13,21 @@ public class FairyUnlock : MonoBehaviour
     public GameObject interactText; // tooltip encima del hada
 
     [Header("Panel de instrucciones")]
-    public InstructionPanel instructionPanel; // <-- arrástralo desde el Canvas
+    public InstructionPanel instructionPanel;
 
     [Header("Diálogo del hada")]
-    public Dialogue fairyDialogue; // <-- diálogo que se mostrará antes del panel
+    public Dialogue fairyDialogue;
 
     [Header("Estado")]
-    public bool unlocked = false;     // ya se ha desbloqueado todo
-    public bool oneTime = true;       // solo se puede hacer una vez
+    public bool unlocked = false;
+    public bool oneTime = true;
 
-    private bool isUnlocking = false; // se está ejecutando la secuencia (dialogo + unlock)
+    private bool isUnlocking = false;
 
-    Collider2D triggerCol;
+    private Collider2D triggerCol;
+
+    // ✅ Referencia al script que copia animación
+    private FairyCopyPlayerAnim fairyCopy;
 
     void Awake()
     {
@@ -32,6 +35,16 @@ public class FairyUnlock : MonoBehaviour
         triggerCol.isTrigger = true;
 
         if (followFairy == null) followFairy = GetComponentInParent<FollowFairy>();
+
+        // ✅ Buscar FairyCopyPlayerAnim en el padre o hijos del hada
+        if (followFairy != null)
+            fairyCopy = followFairy.GetComponentInChildren<FairyCopyPlayerAnim>(true);
+        else
+            fairyCopy = GetComponentInParent<FairyCopyPlayerAnim>();
+
+        // ✅ Al inicio NO copia, y fuerza idle down
+        if (fairyCopy != null)
+            fairyCopy.SetCopyEnabled(false);
 
         if (playerSpells == null)
         {
@@ -66,9 +79,6 @@ public class FairyUnlock : MonoBehaviour
             interactText.SetActive(false);
     }
 
-    /// <summary>
-    /// Empieza la secuencia: primero diálogo, luego desbloquear y mostrar panel.
-    /// </summary>
     void StartUnlockSequence()
     {
         isUnlocking = true;
@@ -76,26 +86,21 @@ public class FairyUnlock : MonoBehaviour
         if (interactText != null)
             interactText.SetActive(false);
 
-        // Si hay diálogo y DialogueManager, lo mostramos primero
         if (fairyDialogue != null && DialogueManager.Instance != null)
         {
             DialogueManager.Instance.StartDialogue(fairyDialogue, AfterDialogue);
         }
         else
         {
-            // Si no hay diálogo, vamos directos al desbloqueo
             AfterDialogue();
         }
     }
 
-    /// <summary>
-    /// Lógica que antes estaba en Unlock: se ejecuta al terminar el diálogo.
-    /// </summary>
     void AfterDialogue()
     {
         unlocked = true;
 
-        if (playerSpells != null) 
+        if (playerSpells != null)
             playerSpells.UnlockMagic();
 
         if (followFairy != null)
@@ -105,14 +110,16 @@ public class FairyUnlock : MonoBehaviour
             if (phys != null) phys.isTrigger = true;
         }
 
-        // Mostrar panel con instrucciones
         if (instructionPanel != null)
         {
             instructionPanel.Show(
                 "Para seleccionar un hechizo pulsa 1 (Viento), 2 (Hielo), 3 (Fuego), 4 (Luz). Por ahora solo tienes desbloqueado el Viento. \n Pulsa Click Izquierdo para lanzarlo donde apuntes con el cursor.\n Para interactuar utiliza la tecla E.\n Para avanzar en los dialogos utiliza la tecla Espacio o la Z.",
-                0f // 0 = no autocierra
+                0f
             );
         }
+
+        if (fairyCopy != null)
+            fairyCopy.SetCopyEnabled(true);
 
         if (oneTime) Destroy(this);
 
