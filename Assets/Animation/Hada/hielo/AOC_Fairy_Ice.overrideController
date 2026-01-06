@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AOC_Fairy_Ice
+  m_Controller: {fileID: 9100000, guid: 3db24d149468cf447bb60052127a668f, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: c955fc4df1ad4514fbb5308a92bd10c9, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 633e2759d240d9d4a96b6a0f2b7d6467, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 091ba3ce9c5036546b1d79588205da31, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 256bdcf3d163b1f4aaebdfc86351645c, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: caf76be5d54562749b229c805f7b515f, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 3bc07cb698f3ffe4daf3df88f5eaa68f, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 35862ca77c10c6243bb6ba96fae4aea2, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f3c3d85f2267f8d47b1b46a7b06f273e, type: 2}

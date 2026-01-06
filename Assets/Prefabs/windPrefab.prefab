@@ -79,7 +79,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 13
   m_Sprite: {fileID: 21300000, guid: f3e38011be81d8047bb4a3008f9280b1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -130,9 +130,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4737ad7ff88ebc43b06466bd2ccc103, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  team: 0
+  ownerCollider: {fileID: 0}
+  spawnOffset: 0.3
   direction: {x: 0, y: 1}
   speed: 5
   lifeTime: 2
+  rotateToDirection: 1
+  spriteAngleOffset: 0
   damage: 1
   isWind: 0
   pushableTag: Pushable

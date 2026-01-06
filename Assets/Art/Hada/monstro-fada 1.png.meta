@@ -1,0 +1,1547 @@
+fileFormatVersion: 2
+guid: 0bbfe1eb80e7b944ebedcb71f74365be
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -162472011804478627
+    second: monstro-fada 1_0
+  - first:
+      213: 6016349662283965887
+    second: monstro-fada 1_1
+  - first:
+      213: 3262483184254527576
+    second: monstro-fada 1_2
+  - first:
+      213: 382329308618905045
+    second: monstro-fada 1_3
+  - first:
+      213: 7942448074251715577
+    second: monstro-fada 1_4
+  - first:
+      213: -1807721635779619009
+    second: monstro-fada 1_5
+  - first:
+      213: -8869640953196531763
+    second: monstro-fada 1_6
+  - first:
+      213: 8873550405550627790
+    second: monstro-fada 1_7
+  - first:
+      213: -2243726043926647003
+    second: monstro-fada 1_8
+  - first:
+      213: 7834435861466658246
+    second: monstro-fada 1_9
+  - first:
+      213: 8170635294586888762
+    second: monstro-fada 1_10
+  - first:
+      213: 2651500008689332899
+    second: monstro-fada 1_11
+  - first:
+      213: 8947098323961303547
+    second: monstro-fada 1_12
+  - first:
+      213: 3716936494096208533
+    second: monstro-fada 1_13
+  - first:
+      213: -3866051002706668226
+    second: monstro-fada 1_14
+  - first:
+      213: 7035706880265163889
+    second: monstro-fada 1_15
+  - first:
+      213: 2625047235695060946
+    second: monstro-fada 1_16
+  - first:
+      213: -6034902725133891292
+    second: monstro-fada 1_17
+  - first:
+      213: -5304961995339260904
+    second: monstro-fada 1_18
+  - first:
+      213: 3597757781032297742
+    second: monstro-fada 1_19
+  - first:
+      213: 1956723243575393564
+    second: monstro-fada 1_20
+  - first:
+      213: 6083252811472523065
+    second: monstro-fada 1_21
+  - first:
+      213: 8466530814711527313
+    second: monstro-fada 1_22
+  - first:
+      213: 5935140990846829583
+    second: monstro-fada 1_23
+  - first:
+      213: 7441206026618136014
+    second: monstro-fada 1_24
+  - first:
+      213: 2094727169408108020
+    second: monstro-fada 1_25
+  - first:
+      213: 2243506913962580296
+    second: monstro-fada 1_26
+  - first:
+      213: 7931040398995523135
+    second: monstro-fada 1_27
+  - first:
+      213: -8828098921862349874
+    second: monstro-fada 1_28
+  - first:
+      213: 5471764299575371782
+    second: monstro-fada 1_29
+  - first:
+      213: 6313312421609827571
+    second: monstro-fada 1_30
+  - first:
+      213: -2551694785502231514
+    second: monstro-fada 1_31
+  - first:
+      213: -3389591367076769803
+    second: monstro-fada 1_32
+  - first:
+      213: 643872791168172934
+    second: monstro-fada 1_33
+  - first:
+      213: -465074008115324005
+    second: monstro-fada 1_34
+  - first:
+      213: -2062925569828015796
+    second: monstro-fada 1_35
+  - first:
+      213: -8267948156964321694
+    second: monstro-fada 1_36
+  - first:
+      213: 247062420025056982
+    second: monstro-fada 1_37
+  - first:
+      213: -5424750480388059066
+    second: monstro-fada 1_38
+  - first:
+      213: -6072152863812724118
+    second: monstro-fada 1_39
+  - first:
+      213: -9180782396495815359
+    second: monstro-fada 1_40
+  - first:
+      213: 7834417362192635665
+    second: monstro-fada 1_41
+  - first:
+      213: -7850310338998804201
+    second: monstro-fada 1_42
+  - first:
+      213: -1083172067802082354
+    second: monstro-fada 1_43
+  - first:
+      213: -1461618814773918989
+    second: monstro-fada 1_44
+  - first:
+      213: 3672194605643339974
+    second: monstro-fada 1_45
+  - first:
+      213: 4550096858309803555
+    second: monstro-fada 1_46
+  - first:
+      213: 148051968909035045
+    second: monstro-fada 1_47
+  - first:
+      213: -2354719278186250444
+    second: monstro-fada 1_48
+  - first:
+      213: 6854065292676967830
+    second: monstro-fada 1_49
+  - first:
+      213: -1441898756856375735
+    second: monstro-fada 1_50
+  - first:
+      213: -8358733702480882478
+    second: monstro-fada 1_51
+  - first:
+      213: 1841168206570505521
+    second: monstro-fada 1_52
+  - first:
+      213: -3703990539092560461
+    second: monstro-fada 1_53
+  - first:
+      213: 5204200609302520978
+    second: monstro-fada 1_54
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: monstro-fada 1_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 314
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d53737ae098cebdf0800000000000000
+      internalID: -162472011804478627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 314
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb52af0542e5e7350800000000000000
+      internalID: 6016349662283965887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_2
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 314
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8582d23bb2ba64d20800000000000000
+      internalID: 3262483184254527576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_3
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 314
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d553730b7e4e4500800000000000000
+      internalID: 382329308618905045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_4
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 314
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f342c0517e393e60800000000000000
+      internalID: 7942448074251715577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_5
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 314
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f37519effbea9e6e0800000000000000
+      internalID: -1807721635779619009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_6
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 313
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcfa673eb84b8e480800000000000000
+      internalID: -8869640953196531763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_7
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 311
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecb5e5b641f252b70800000000000000
+      internalID: 8873550405550627790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_8
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 314
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52fa5720d0facd0e0800000000000000
+      internalID: -2243726043926647003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_9
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 257
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c53d4a48e189bc60800000000000000
+      internalID: 7834435861466658246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_10
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 257
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a32ee13b28de36170800000000000000
+      internalID: 8170635294586888762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_11
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 257
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a27fdba5350cc420800000000000000
+      internalID: 2651500008689332899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_12
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 257
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf1d43a958a7a2c70800000000000000
+      internalID: 8947098323961303547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_13
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 257
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5925a475c06359330800000000000000
+      internalID: 3716936494096208533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_14
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 257
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e355024a817095ac0800000000000000
+      internalID: -3866051002706668226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_15
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 256
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1741afd712ad3a160800000000000000
+      internalID: 7035706880265163889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_16
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 254
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d7a9328d8a0e6420800000000000000
+      internalID: 2625047235695060946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_17
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 257
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4298b5e12f7bf3ca0800000000000000
+      internalID: -6034902725133891292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_18
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 197
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81c1bd01c2df066b0800000000000000
+      internalID: -5304961995339260904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_19
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 197
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e05e35ed3adcde130800000000000000
+      internalID: 3597757781032297742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_20
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 197
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1dbf014c6da72b10800000000000000
+      internalID: 1956723243575393564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_21
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 197
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93f47ba933e0c6450800000000000000
+      internalID: 6083252811472523065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_22
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 197
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19777ca1be82f7570800000000000000
+      internalID: 8466530814711527313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_23
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 197
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f040943194bdd5250800000000000000
+      internalID: 5935140990846829583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_24
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 197
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec5e11db479744760800000000000000
+      internalID: 7441206026618136014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_25
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 193
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f50ee12347f11d10800000000000000
+      internalID: 2094727169408108020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_26
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 197
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8495fd1d6a9822f10800000000000000
+      internalID: 2243506913962580296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_27
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 141
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f368661f837b01e60800000000000000
+      internalID: 7931040398995523135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_28
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 141
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecbb268cdca4c7580800000000000000
+      internalID: -8828098921862349874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_29
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 141
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 608aadac3ac9feb40800000000000000
+      internalID: 5471764299575371782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_30
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 141
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fc6d16b2346d9750800000000000000
+      internalID: 6313312421609827571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_31
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 141
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6244ceeac1f869cd0800000000000000
+      internalID: -2551694785502231514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_32
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 141
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ff88a74c90c5f0d0800000000000000
+      internalID: -3389591367076769803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_33
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 141
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6834e1664ee7fe800800000000000000
+      internalID: 643872791168172934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_34
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 138
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9bd40857a9bb89f0800000000000000
+      internalID: -465074008115324005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_35
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 141
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c41b454cf140f53e0800000000000000
+      internalID: -2062925569828015796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_36
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 82
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 266cbcae4f8524d80800000000000000
+      internalID: -8267948156964321694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_37
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 84
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6de11f646fdbd6300800000000000000
+      internalID: 247062420025056982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_38
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 86
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 640175dfd2a67b4b0800000000000000
+      internalID: -5424750480388059066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_39
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 90
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6a529a54216bbba0800000000000000
+      internalID: -6072152863812724118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_40
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 89
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14d15b06d0f479080800000000000000
+      internalID: -9180782396495815359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_41
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 84
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11715a7151179bc60800000000000000
+      internalID: 7834417362192635665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_42
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 23
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7116663e6581e0390800000000000000
+      internalID: -7850310338998804201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_43
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 23
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec318044ebcc7f0f0800000000000000
+      internalID: -1083172067802082354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_44
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 23
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f28f549e6947bbe0800000000000000
+      internalID: -1461618814773918989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_45
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 43
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c81a77a98146f230800000000000000
+      internalID: 3672194605643339974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_46
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 30
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32e3d253cf0352f30800000000000000
+      internalID: 4550096858309803555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_47
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 14
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 526ce173b7cfd0200800000000000000
+      internalID: 148051968909035045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_48
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 22
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43fb1f5da4b525fd0800000000000000
+      internalID: -2354719278186250444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_49
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 22
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69d285db1188e1f50800000000000000
+      internalID: 6854065292676967830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_50
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 6
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9469f7b58b85dfbe0800000000000000
+      internalID: -1441898756856375735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_51
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 13
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d49a8bebffcffb80800000000000000
+      internalID: -8358733702480882478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_52
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 3
+        width: 60
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 135c06c9ab42d8910800000000000000
+      internalID: 1841168206570505521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_53
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 5
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b5faf1ba38c89cc0800000000000000
+      internalID: -3703990539092560461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro-fada 1_54
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 5
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 294295191e8093840800000000000000
+      internalID: 5204200609302520978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      monstro-fada 1_0: -162472011804478627
+      monstro-fada 1_1: 6016349662283965887
+      monstro-fada 1_10: 8170635294586888762
+      monstro-fada 1_11: 2651500008689332899
+      monstro-fada 1_12: 8947098323961303547
+      monstro-fada 1_13: 3716936494096208533
+      monstro-fada 1_14: -3866051002706668226
+      monstro-fada 1_15: 7035706880265163889
+      monstro-fada 1_16: 2625047235695060946
+      monstro-fada 1_17: -6034902725133891292
+      monstro-fada 1_18: -5304961995339260904
+      monstro-fada 1_19: 3597757781032297742
+      monstro-fada 1_2: 3262483184254527576
+      monstro-fada 1_20: 1956723243575393564
+      monstro-fada 1_21: 6083252811472523065
+      monstro-fada 1_22: 8466530814711527313
+      monstro-fada 1_23: 5935140990846829583
+      monstro-fada 1_24: 7441206026618136014
+      monstro-fada 1_25: 2094727169408108020
+      monstro-fada 1_26: 2243506913962580296
+      monstro-fada 1_27: 7931040398995523135
+      monstro-fada 1_28: -8828098921862349874
+      monstro-fada 1_29: 5471764299575371782
+      monstro-fada 1_3: 382329308618905045
+      monstro-fada 1_30: 6313312421609827571
+      monstro-fada 1_31: -2551694785502231514
+      monstro-fada 1_32: -3389591367076769803
+      monstro-fada 1_33: 643872791168172934
+      monstro-fada 1_34: -465074008115324005
+      monstro-fada 1_35: -2062925569828015796
+      monstro-fada 1_36: -8267948156964321694
+      monstro-fada 1_37: 247062420025056982
+      monstro-fada 1_38: -5424750480388059066
+      monstro-fada 1_39: -6072152863812724118
+      monstro-fada 1_4: 7942448074251715577
+      monstro-fada 1_40: -9180782396495815359
+      monstro-fada 1_41: 7834417362192635665
+      monstro-fada 1_42: -7850310338998804201
+      monstro-fada 1_43: -1083172067802082354
+      monstro-fada 1_44: -1461618814773918989
+      monstro-fada 1_45: 3672194605643339974
+      monstro-fada 1_46: 4550096858309803555
+      monstro-fada 1_47: 148051968909035045
+      monstro-fada 1_48: -2354719278186250444
+      monstro-fada 1_49: 6854065292676967830
+      monstro-fada 1_5: -1807721635779619009
+      monstro-fada 1_50: -1441898756856375735
+      monstro-fada 1_51: -8358733702480882478
+      monstro-fada 1_52: 1841168206570505521
+      monstro-fada 1_53: -3703990539092560461
+      monstro-fada 1_54: 5204200609302520978
+      monstro-fada 1_6: -8869640953196531763
+      monstro-fada 1_7: 8873550405550627790
+      monstro-fada 1_8: -2243726043926647003
+      monstro-fada 1_9: 7834435861466658246
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

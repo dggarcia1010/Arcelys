@@ -249,6 +249,9 @@ GameObject:
   - component: {fileID: 294758875}
   - component: {fileID: 294758881}
   - component: {fileID: 294758882}
+  - component: {fileID: 294758883}
+  - component: {fileID: 294758885}
+  - component: {fileID: 294758884}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -269,7 +272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
-  speed: 5
+  speed: 6
 --- !u!61 &294758876
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -459,7 +462,7 @@ MonoBehaviour:
   fireCooldown: 1
   lightCooldown: 5
   windPrefab: {fileID: 5362879128924914643, guid: 95cee4bd0d0aa4e4fbcdc0bd558f6dbb, type: 3}
-  icePrefab: {fileID: 5362879128924914643, guid: 5e184e18fe7ae484ebbdd2ddf7299a48, type: 3}
+  icePrefab: {fileID: 3221819430386385666, guid: 12287f1c791e6ba438451bc38f9359c9, type: 3}
   firePrefab: {fileID: 5362879128924914643, guid: 6de25ac6590f89d4ab080cca0fface7b, type: 3}
   lightPrefab: {fileID: 5362879128924914643, guid: 926a8b5a98f4f8b429ef223f158871ee, type: 3}
   projectileSpeed: 5
@@ -524,6 +527,57 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &294758883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294758874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd1a2ce6ab8ec541a28470f4d9c5983, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slideSpeed: 2
+  slideDecay: 6
+  minSlideSpeed: 0.05
+  onIce: 0
+  lastMoveDir: {x: 0, y: -1}
+  slideVel: {x: 0, y: 0}
+--- !u!114 &294758884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294758874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efde2668cd873d342967e992c724107e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalMovement: {fileID: 294758875}
+  iceMovement: {fileID: 294758885}
+--- !u!114 &294758885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294758874}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 661646b0e636e6a46be8283a69120a7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  acceleration: 40
+  deceleration: 12
+  maxSpeed: 6
+  rb: {fileID: 0}
+  animator: {fileID: 0}
+  input: {x: 0, y: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

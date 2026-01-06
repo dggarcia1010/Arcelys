@@ -3,7 +3,7 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "Arcelys/tavern 1.tmx",
+    "activeFile": "Arcelys/laberinto.tmx",
     "expandedProjectPaths": [
         "Arcelys",
         "."
@@ -352,11 +352,11 @@
             "expandedObjectLayers": [
                 19
             ],
-            "scale": 3,
+            "scale": 0.75,
             "selectedLayer": 15,
             "viewCenter": {
-                "x": 232,
-                "y": 184.16666666666669
+                "x": 395.9999999999999,
+                "y": 335.33333333333326
             }
         },
         "Arcelys/luciernagas.tmx": {
