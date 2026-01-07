@@ -226,8 +226,8 @@ Transform:
   m_GameObject: {fileID: 146260151}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29.7, y: -23.6, z: 0}
-  m_LocalScale: {x: 5.5, y: 5.5, z: 1}
+  m_LocalPosition: {x: 14.95, y: -32.92, z: 0}
+  m_LocalScale: {x: 6.53785, y: 6.6352, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -353,17 +353,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - "\"Encapuchado\": \xBFAs\xED que la camarera te envi\xF3 conmigo\u2026? Deb\xED
-      suponerlo. Ella siempre ve m\xE1s de lo que deber\xEDa."
-    - "\"Encapuchado\": Lo que vi no es una criatura del bosque\u2026 ni algo que
-      deba estar en este pueblo."
-    - "\"Encapuchado\": Yo lo segu\xED anoche. Una fuerza extra\xF1a proven\xEDa
-      de una de las casas."
-    - "\"Encapuchado\": La del norte\u2026 la que est\xE1 un poco apartada del resto."
-    - "\"Encapuchado\": Su due\xF1o ha estado actuando raro \xFAltimamente, demasiado
-      nervioso."
-    - "\"Encapuchado\": No puedo decirte m\xE1s. Pero si quieres respuestas, all\xED
-      es donde debes ir."
+    - "\"Forastero\": \xBFTe ha enviado el herrero, verdad? Siempre acaba metiendo
+      las narices donde no debe\u2026"
+    - "\"Forastero\": No es asunto suyo, pero ya que preguntas\u2026 s\xED, he o\xEDdo
+      cosas extra\xF1as \xFAltimamente."
+    - '"Forastero": No vienen del bosque ni de las casas del sur. Tampoco del mercado.'
+    - "\"Forastero\": El problema est\xE1 donde la gente baja la guardia\u2026 donde
+      todos creen que solo se viene a beber."
+    - "\"Forastero\": La taberna. All\xED se escucha m\xE1s de lo que parece, sobre
+      todo cuando cae la noche."
+    - '"Forastero": Habla con el tipo del gorrito, el que siempre anda cerca de la
+      entrada.'
+    - "\"Forastero\": Parece inofensivo\u2026 pero observa demasiado. Y eso nunca
+      es buena se\xF1al."
   npcName: Encapuchado
   isCorrectNPC: 0
   interactKey: 101
@@ -454,7 +456,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 10
   m_Sprite: {fileID: 5780535508464526938, guid: e3311328ef4ebc74fa880e873dc188fb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -475,8 +477,8 @@ Transform:
   m_GameObject: {fileID: 152901013}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.2, y: -21.38, z: 0}
-  m_LocalScale: {x: 6.5, y: 6.5, z: 1}
+  m_LocalPosition: {x: 32.44, y: -37.89, z: 0}
+  m_LocalScale: {x: 6.8301997, y: 8.24395, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1060,7 +1062,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 10
   m_Sprite: {fileID: -133703497319170325, guid: 1dac5b4aeb7cba54b930c353f747c7c9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1081,8 +1083,8 @@ Transform:
   m_GameObject: {fileID: 330659517}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27.9, y: -25.8, z: 0}
-  m_LocalScale: {x: 5.5, y: 5.5, z: 1}
+  m_LocalPosition: {x: 37.78, y: -22.51, z: 0}
+  m_LocalScale: {x: 5.5, y: 5.3746, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1334,8 +1336,8 @@ Transform:
   m_GameObject: {fileID: 495389615}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.44, y: -21.15, z: 0}
-  m_LocalScale: {x: 7.66645, y: 7.66645, z: 1.3939}
+  m_LocalPosition: {x: 12.75, y: -22.39, z: 0}
+  m_LocalScale: {x: 6.7104435, y: 7.2125964, z: 1.3939}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1428,7 +1430,7 @@ MonoBehaviour:
       Pero no ven\xEDa de ning\xFAn comercio."
     - "\"Aventurero\": No soy de meterme en los asuntos de otros, pero m\xE1s de
       un aldeano est\xE1 inquieto."
-    - "\"Aventurero\": Si quieres saber m\xE1s, habla con el mercader de la izquierda.
+    - "\"Aventurero\": Si quieres saber m\xE1s, habla con el mercader de ahi arriba.
       Seguro que sabe algo."
   npcName: Aventurero1
   isCorrectNPC: 0
@@ -1846,7 +1848,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 10
   m_Sprite: {fileID: 3804479572961737211, guid: a94f86884a250104899dfe9164d1a390, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1867,8 +1869,8 @@ Transform:
   m_GameObject: {fileID: 573774053}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 28.53, y: -21.07, z: 0}
-  m_LocalScale: {x: 5.5, y: 5.5, z: 1}
+  m_LocalPosition: {x: 41.6827, y: -13.6455, z: 0}
+  m_LocalScale: {x: 7.5503893, y: 6.801916, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2307,7 +2309,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 10
   m_Sprite: {fileID: -5613256900710961332, guid: d36512c3d2a14e449872a34cbc7a5bbc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2328,8 +2330,8 @@ Transform:
   m_GameObject: {fileID: 631481993}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23, y: -19.6, z: 0}
-  m_LocalScale: {x: 5.5, y: 5.5, z: 1}
+  m_LocalPosition: {x: 11.76, y: -41.94, z: 0}
+  m_LocalScale: {x: 6.7716, y: 6.7892003, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2447,10 +2449,12 @@ MonoBehaviour:
     - "\"Herrero\": No viene del mercado. Tampoco de la taberna. Y desde luego no
       son herramientas m\xEDas."
     - "\"Herrero\": Vienen de la zona este de la aldea\u2026"
-    - "\"Herrero\": No quiero se\xF1alar a nadie, pero la gente que vive por ah\xED
-      es muy extra\xF1a."
-    - '"Herrero": Quizas alguien en la taberna ha visto  algo, por alli pasa todo
-      el mundo.'
+    - "\"Herrero\": No quiero se\xF1alar a nadie, pero la gente de por ah\xED es
+      muy extra\xF1a."
+    - "\"Herrero\": Aunque\u2026 hay uno que no es del pueblo. Va y viene, siempre
+      rondando por aqui cerca."
+    - "\"Herrero\": Quiz\xE1 deber\xEDas hablar con \xE9l, lleva una armadura azul,
+      parece peligroso, \xA1Ten cuidado!"
   npcName: Herrero
   isCorrectNPC: 0
   interactKey: 101
@@ -2878,8 +2882,8 @@ Transform:
   m_GameObject: {fileID: 1067048569}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.1, y: -19.6, z: 0}
-  m_LocalScale: {x: 5.5, y: 5.5, z: 1}
+  m_LocalPosition: {x: 20.8512, y: -23.6679, z: 0}
+  m_LocalScale: {x: 6.7166, y: 5.9741, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3084,7 +3088,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 10
   m_Sprite: {fileID: 844137435738636940, guid: ad265368576648e428c1845cfda62850, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3105,8 +3109,8 @@ Transform:
   m_GameObject: {fileID: 1087888095}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25.7, y: -24.4, z: 0}
-  m_LocalScale: {x: 5.5, y: 5.5, z: 1}
+  m_LocalPosition: {x: 34.45, y: -21.08, z: 0}
+  m_LocalScale: {x: 7.079906, y: 6.878165, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3217,7 +3221,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.035725355, y: -0.006128624}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3227,7 +3231,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.23, y: 0.29}
+  m_Size: {x: 0.30145067, y: 0.37090084}
   m_EdgeRadius: 0
 --- !u!114 &1087888101
 MonoBehaviour:
@@ -3243,32 +3247,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - "\"Extra\xF1o\": \xBFT\xFA otra vez\u2026? No suelo recibir visitas. Deber\xEDas
-      marcharte."
-    - "\"Extra\xF1o\": No tengo nada que ver con los rumores del pueblo, \xBFqueda
-      claro?"
-    - "\"Extra\xF1o\": La gente habla demasiado\u2026 y entiende muy poco."
-    - "\"Extra\xF1o\": \xBFRuidos extra\xF1os? Tonter\xEDas. El viento hace sonidos
-      raros por aqu\xED."
-    - "\"Extra\xF1o\": Mira, estoy ocupado. No tengo tiempo para chismes ni viajeros
-      curiosos."
-    - "\"Extra\xF1o\": \u2026"
-    - "\"Extra\xF1o\": \xBFSigues aqu\xED? Te he dicho que no hay nada fuera de lo
-      com\xFAn en mi casa."
-    - "\"Extra\xF1o\": Nadie entra. Nadie mira dentro. As\xED se evitan problemas,
-      \xBFentiendes?"
-    - "\"Extra\xF1o\": \xA1No te acerques a esa puerta!"
-    - "\"Extra\xF1o\": \u2026"
-    - "\"Extra\xF1o\": Hmph\u2026 solo vete. No quiero que te metas donde no debes."
-    - "\"Extra\xF1o\": Y dile a esos cotillas que dejen de mandar gente a molestarme."
-    - "\"Extra\xF1o\": Lo \xFAltimo que necesito es que alguien descubra\u2026 *\u2014*
-      nada. No he dicho nada."
-    - "\"Extra\xF1o\": Ya est\xE1 bien. L\xE1rgate."
+    - "\"Extra\xF1o\": \xBFEl forastero azul te ha enviado? Hm\u2026 ya imaginaba
+      que acabar\xEDa hablando."
+    - "\"Extra\xF1o\": La gente cree que no me fijo en nada, pero cuando uno pasa
+      tiempo en la calle\u2026 aprende a escuchar."
+    - "\"Extra\xF1o\": Los ruidos no vienen del pozo, ni del bosque, ni de las casas
+      viejas."
+    - "\"Extra\xF1o\": Vienen de un sitio donde todos entran\u2026 y casi nadie hace
+      preguntas."
+    - "\"Extra\xF1o\": La taberna. Arriba, al este de la plaza."
+    - "\"Extra\xF1o\": Habla con la camarera de la bandeja. Ve m\xE1s de lo que parece."
+    - "\"Extra\xF1o\": Y cuidado con el hombre que siempre est\xE1 cerca de ella\u2026
+      no todos los clientes van solo a beber."
   npcName: "Extra\xF1o"
-  isCorrectNPC: 1
+  isCorrectNPC: 0
   interactKey: 101
-  colliderToAffect: {fileID: 1380586336}
-  setAsTriggerInsteadOfDisable: 1
+  colliderToAffect: {fileID: 0}
+  setAsTriggerInsteadOfDisable: 0
 --- !u!1 &1130568865
 GameObject:
   m_ObjectHideFlags: 0
@@ -3355,7 +3350,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 10
   m_Sprite: {fileID: -730029537493673093, guid: 0cee74a162f037a4282331d34ba22659, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3376,8 +3371,8 @@ Transform:
   m_GameObject: {fileID: 1130568865}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25.69, y: -19.27, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalPosition: {x: 38.5632, y: -13.7746, z: 0}
+  m_LocalScale: {x: 5.82658, y: 6.3449497, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3488,20 +3483,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - "\"Camarera\": \xBFVienes por lo de esos ruidos, verdad? Cre\xED que solo eran
-      borrachos golpeando las mesas..."
-    - "\"Camarera\": Pero anoche, cuando estaba cerrando la taberna, escuch\xE9 algo
-      que no sonaba a humano."
-    - "\"Camarera\": Sal\xED un segundo para vaciar unos barriles y vi una sombra
-      movi\xE9ndose entre las casas."
-    - "\"Camarera\": No era ning\xFAn vecino. Caminaba muy r\xE1pido\u2026 como si
-      no quisiera que la vieran."
-    - "\"Camarera\": Llevaba una capucha oscura y un traje azul, parec\xEDa saber
-      exactamente hacia d\xF3nde se dirig\xEDa."
-    - "\"Camarera\": Me dio un mal presentimiento\u2026 as\xED que me encerr\xE9
-      dentro."
-    - "\"Camarera\": Si buscas pistas, deber\xEDas hablar con \xE9l. Seguro que est\xE1
-      por aqu\xED todav\xEDa."
+    - "\"Camarera\": Oh, hola\u2026 \xBFbuscas algo? Si es bebida, ahora mismo no
+      es buen momento."
+    - "\"Camarera\": La taberna est\xE1\u2026 llena. Y cuando digo llena, no me refiero
+      solo a clientes."
+    - "\"Camarera\": Adem\xE1s, no creo que te interese lo que ocurre ah\xED dentro.
+      Nada agradable, cr\xE9eme."
+    - '"Camarera": A veces es mejor seguir tu camino y fingir que ciertos ruidos
+      no existen.'
+    - "\"Camarera\": Campanillas, golpes, susurros\u2026 la madera vieja hace cosas
+      raras por la noche."
+    - "\"Camarera\": Aunque\u2026 (baja la voz) \xFAltimamente esos sonidos no vienen
+      de la madera."
+    - "\"Camarera\": Si decides entrar\u2026 hazlo r\xE1pido. Y no preguntes en voz
+      alta."
+    - "\"Camarera\": Hay alguien ah\xED dentro que no puede gritar pidiendo ayuda."
   npcName: Camarera
   isCorrectNPC: 0
   interactKey: 101
@@ -3614,8 +3610,8 @@ Transform:
   m_GameObject: {fileID: 1339735900}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.93, y: -18.76, z: 0}
-  m_LocalScale: {x: 5.5, y: 5.5, z: 1}
+  m_LocalPosition: {x: 21.94, y: -15.63, z: 0}
+  m_LocalScale: {x: 6.3475494, y: 6.90635, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3755,7 +3751,7 @@ MonoBehaviour:
     - "\"Mercader\": Yo no s\xE9 qui\xE9n ser\xE1, pero m\xEDralos a todos bien.
       A veces la mirada lo delata."
     - '"Mercader": Habla con el herrero, esas armas esconden trapos sucios. Suele
-      estar en su casa al noroeste de la aldea.'
+      estar en su casa al suoeste de la aldea.'
   npcName: Mercader
   isCorrectNPC: 0
   interactKey: 101
@@ -4508,7 +4504,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 10
   m_Sprite: {fileID: -8489645541391796817, guid: 69ab43bed2bd2e442b313c15ed8b0248, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4529,8 +4525,8 @@ Transform:
   m_GameObject: {fileID: 1900421539}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19, y: -19.59, z: 0}
-  m_LocalScale: {x: 5.5, y: 5.5, z: 1}
+  m_LocalPosition: {x: 15.04, y: -16.78, z: 0}
+  m_LocalScale: {x: 7.67965, y: 6.7892003, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -5052,7 +5048,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 10
   m_Sprite: {fileID: -1296436847249819762, guid: 4b9875bf42d884f43924d84476eb971d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5073,8 +5069,8 @@ Transform:
   m_GameObject: {fileID: 2002925700}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25, y: -23.2, z: 0}
-  m_LocalScale: {x: 5.5, y: 5.5, z: 1}
+  m_LocalPosition: {x: 29.79, y: -13.88, z: 0}
+  m_LocalScale: {x: 6.0793447, y: 6.9996767, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
