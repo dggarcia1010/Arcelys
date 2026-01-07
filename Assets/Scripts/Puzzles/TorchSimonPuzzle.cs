@@ -9,7 +9,7 @@ public class TorchSimonPuzzle : MonoBehaviour
 
     [Header("Patrones por ronda")]
     [Tooltip("Longitudes de la secuencia por ronda. Ronda 1 usa el índice 0.")]
-    public int[] patternLengths = { 3, 4, 5, 6, 7 };
+    public int[] patternLengths = { 3, 4, 5 };
 
     [Header("Configuración del puzzle")]
     public float showTime = 1f;
@@ -23,6 +23,10 @@ public class TorchSimonPuzzle : MonoBehaviour
     [Tooltip("Si está activado, se desactiva todo el GameObject del collider. Si no, solo se pone en isTrigger.")]
     public bool disableObject = true;
 
+    [Header("Recompensa al completar")]
+    [Tooltip("GameObject (sprite/objeto) que estaba desactivado y debe aparecer al completar el puzzle.")]
+    public GameObject rewardToShow;
+
     [Header("Diálogo opcional al completar puzzle")]
     public Dialogue puzzleCompleteDialogue;
 
@@ -34,7 +38,7 @@ public class TorchSimonPuzzle : MonoBehaviour
     private bool isShowingSequence = false;
 
     private int round = 1;
-    public int maxRounds = 5;
+    public int maxRounds = 4;
 
     void Update()
     {
@@ -171,6 +175,7 @@ public class TorchSimonPuzzle : MonoBehaviour
 
     void AfterDialogue()
     {
+        // ✅ Quitar/abrir collider
         if (colliderToDisable != null)
         {
             if (disableObject)
@@ -183,6 +188,13 @@ public class TorchSimonPuzzle : MonoBehaviour
                 colliderToDisable.isTrigger = true;
                 Debug.Log("✔ Collider puesto como trigger: " + colliderToDisable.name);
             }
+        }
+
+        // ✅ Mostrar sprite/objeto recompensa (estaba desactivado)
+        if (rewardToShow != null)
+        {
+            rewardToShow.SetActive(true);
+            Debug.Log("🎁 Recompensa activada: " + rewardToShow.name);
         }
     }
 

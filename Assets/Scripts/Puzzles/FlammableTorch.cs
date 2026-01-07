@@ -4,21 +4,26 @@ using System.Collections;
 
 public class FlammableTorch : MonoBehaviour
 {
+    [Header("Visual (no afecta colisiones)")]
+    [Tooltip("Objeto hijo con SpriteRenderer+Animator y/o Light2D.")]
+    public GameObject visualRoot;
+
+    [Tooltip("Si la luz no está dentro de visualRoot, asígnala aquí.")]
     public Light2D flame;
+
     public TorchSimonPuzzle puzzle;
 
     private Coroutine autoOffRoutine;
 
     void Awake()
     {
-        if (flame != null)
-            flame.enabled = false;
+        SetVisual(false);
     }
 
     // Llamado cuando el jugador enciende la antorcha (proyectil)
     public void TurnOn()
     {
-        flame.enabled = true;
+        SetVisual(true);
 
         // Reiniciar temporizador auto-apagado
         if (autoOffRoutine != null)
@@ -30,7 +35,6 @@ public class FlammableTorch : MonoBehaviour
         puzzle?.TorchActivated(this);
     }
 
-    // Apagado automático después de 2 segundos
     private IEnumerator AutoTurnOff()
     {
         yield return new WaitForSeconds(2f);
@@ -39,18 +43,24 @@ public class FlammableTorch : MonoBehaviour
 
     public void TurnOff()
     {
-        if (flame != null)
-            flame.enabled = false;
+        SetVisual(false);
     }
 
     // Para mostrar la secuencia del puzzle
     public void ShowPuzzleFlash()
     {
-        flame.enabled = true;
+        SetVisual(true);
+        // el apagado viene desde el controller (ShowSequence -> TurnOff)
+    }
 
-        // Asegurar refresco del render del Light2D
-        flame.intensity = flame.intensity;
+    private void SetVisual(bool on)
+    {
+        // 1) Enciende/apaga el hijo visual (sprites/anim)
+        if (visualRoot != null)
+            visualRoot.SetActive(on);
 
-        // Apagado después del showTime viene desde el controller
+        // 2) Enciende/apaga la luz (por si está fuera del visualRoot)
+        if (flame != null)
+            flame.enabled = on;
     }
 }
