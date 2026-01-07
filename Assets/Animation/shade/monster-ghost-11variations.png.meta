@@ -1,0 +1,1569 @@
+fileFormatVersion: 2
+guid: e3647b801dcbf1f4bbdd5c3cf78dca0a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2477601149018668090
+    second: monster-ghost-11variations_0
+  - first:
+      213: -948621563720360411
+    second: monster-ghost-11variations_1
+  - first:
+      213: -4154659470001406681
+    second: monster-ghost-11variations_2
+  - first:
+      213: -4797456535825400981
+    second: monster-ghost-11variations_3
+  - first:
+      213: -3064258873088181184
+    second: monster-ghost-11variations_4
+  - first:
+      213: -7201647425690224442
+    second: monster-ghost-11variations_5
+  - first:
+      213: -7415671288618160971
+    second: monster-ghost-11variations_6
+  - first:
+      213: -9104215477582245472
+    second: monster-ghost-11variations_7
+  - first:
+      213: 1213363138896484856
+    second: monster-ghost-11variations_8
+  - first:
+      213: -6542893962721366119
+    second: monster-ghost-11variations_9
+  - first:
+      213: 19184540270859278
+    second: monster-ghost-11variations_10
+  - first:
+      213: -8479520730532576013
+    second: monster-ghost-11variations_11
+  - first:
+      213: -6286440825342971313
+    second: monster-ghost-11variations_12
+  - first:
+      213: -6881058864492424893
+    second: monster-ghost-11variations_13
+  - first:
+      213: -5666934738046246499
+    second: monster-ghost-11variations_14
+  - first:
+      213: 158849662612088175
+    second: monster-ghost-11variations_15
+  - first:
+      213: -2347632534373129421
+    second: monster-ghost-11variations_16
+  - first:
+      213: 8789215439691129440
+    second: monster-ghost-11variations_17
+  - first:
+      213: -8312829103153274462
+    second: monster-ghost-11variations_18
+  - first:
+      213: 7636406284199089796
+    second: monster-ghost-11variations_19
+  - first:
+      213: -6839385822726656310
+    second: monster-ghost-11variations_20
+  - first:
+      213: 4619215746199009853
+    second: monster-ghost-11variations_21
+  - first:
+      213: -4725366116163240368
+    second: monster-ghost-11variations_22
+  - first:
+      213: 4790441965509036954
+    second: monster-ghost-11variations_23
+  - first:
+      213: -2441372423062392804
+    second: monster-ghost-11variations_24
+  - first:
+      213: 3435748567951202767
+    second: monster-ghost-11variations_25
+  - first:
+      213: -5995472118271890309
+    second: monster-ghost-11variations_26
+  - first:
+      213: 253601026683495435
+    second: monster-ghost-11variations_27
+  - first:
+      213: 4908823683940652628
+    second: monster-ghost-11variations_28
+  - first:
+      213: -6035164144490940061
+    second: monster-ghost-11variations_29
+  - first:
+      213: -4902525380240140400
+    second: monster-ghost-11variations_30
+  - first:
+      213: 1323997227583707805
+    second: monster-ghost-11variations_31
+  - first:
+      213: -2781031362741896435
+    second: monster-ghost-11variations_32
+  - first:
+      213: 4933419162215695397
+    second: monster-ghost-11variations_33
+  - first:
+      213: 1660520812062850455
+    second: monster-ghost-11variations_34
+  - first:
+      213: 6472236878609661079
+    second: monster-ghost-11variations_35
+  - first:
+      213: 2586667154431542247
+    second: monster-ghost-11variations_36
+  - first:
+      213: -4314327685540051353
+    second: monster-ghost-11variations_37
+  - first:
+      213: -6419917027572902378
+    second: monster-ghost-11variations_38
+  - first:
+      213: -1925878690735490566
+    second: monster-ghost-11variations_39
+  - first:
+      213: 2925219001044047798
+    second: monster-ghost-11variations_40
+  - first:
+      213: -7363646195887511515
+    second: monster-ghost-11variations_41
+  - first:
+      213: -4692587702028360360
+    second: monster-ghost-11variations_42
+  - first:
+      213: -3291766923248787106
+    second: monster-ghost-11variations_43
+  - first:
+      213: 6523328850683163529
+    second: monster-ghost-11variations_44
+  - first:
+      213: 4306442216071335402
+    second: monster-ghost-11variations_45
+  - first:
+      213: 6970658985555548137
+    second: monster-ghost-11variations_46
+  - first:
+      213: -4786979856425207068
+    second: monster-ghost-11variations_47
+  - first:
+      213: -6965378601710880969
+    second: monster-ghost-11variations_48
+  - first:
+      213: -5329675744193801212
+    second: monster-ghost-11variations_49
+  - first:
+      213: 9166042739440822910
+    second: monster-ghost-11variations_50
+  - first:
+      213: -6502094790247929984
+    second: monster-ghost-11variations_51
+  - first:
+      213: -5296047069449166828
+    second: monster-ghost-11variations_52
+  - first:
+      213: -8721759248835874278
+    second: monster-ghost-11variations_53
+  - first:
+      213: -1277507270951230506
+    second: monster-ghost-11variations_54
+  - first:
+      213: -5074503535138549381
+    second: monster-ghost-11variations_55
+  - first:
+      213: 4062851018400197633
+    second: monster-ghost-11variations_56
+  - first:
+      213: -4382547282475791687
+    second: monster-ghost-11variations_57
+  - first:
+      213: 5167990145232978103
+    second: monster-ghost-11variations_58
+  - first:
+      213: 9124844515714848314
+    second: monster-ghost-11variations_59
+  - first:
+      213: -4700736661792188864
+    second: monster-ghost-11variations_60
+  - first:
+      213: 6447160172258747526
+    second: monster-ghost-11variations_61
+  - first:
+      213: -5032342165121278341
+    second: monster-ghost-11variations_62
+  - first:
+      213: -5451393361823589062
+    second: monster-ghost-11variations_63
+  - first:
+      213: 3249828902931990767
+    second: monster-ghost-11variations_64
+  - first:
+      213: 5533801172049077820
+    second: monster-ghost-11variations_65
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: monster-ghost-11variations_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 319
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3c7b5e3e15326220800000000000000
+      internalID: 2477601149018668090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_1
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 287
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52e1c2cb6b1d5d2f0800000000000000
+      internalID: -948621563720360411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_2
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 319
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72d7adf693fa756c0800000000000000
+      internalID: -4154659470001406681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_3
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 287
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6b30ccd2b20c6db0800000000000000
+      internalID: -4797456535825400981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_4
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 319
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04c7db14ac09975d0800000000000000
+      internalID: -3064258873088181184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_5
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 287
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c8b02282db9e0c90800000000000000
+      internalID: -7201647425690224442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_6
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 319
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bce9deb04e361990800000000000000
+      internalID: -7415671288618160971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_7
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 287
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a1d814624457a180800000000000000
+      internalID: -9104215477582245472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_8
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 319
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f95a7d985bb6d010800000000000000
+      internalID: 1213363138896484856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_9
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 287
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99fe1fc4b98f235a0800000000000000
+      internalID: -6542893962721366119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_10
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 320
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e04160cdc38244000800000000000000
+      internalID: 19184540270859278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_11
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 288
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f48b0f62d0b25a80800000000000000
+      internalID: -8479520730532576013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_12
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 255
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f423be7506312c8a0800000000000000
+      internalID: -6286440825342971313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_13
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 223
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 341506f8b619180a0800000000000000
+      internalID: -6881058864492424893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_14
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 255
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d91ae6561e00b51b0800000000000000
+      internalID: -5666934738046246499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_15
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 223
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f652fa03de8543200800000000000000
+      internalID: 158849662612088175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_16
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 255
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3332a85f5a88b6fd0800000000000000
+      internalID: -2347632534373129421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_17
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 223
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0622b2900e099f970800000000000000
+      internalID: 8789215439691129440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_18
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 255
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a1250459f5e2ac80800000000000000
+      internalID: -8312829103153274462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_19
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 223
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4865f3a5e07f9f960800000000000000
+      internalID: 7636406284199089796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_20
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 255
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acee882b4de9511a0800000000000000
+      internalID: -6839385822726656310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_21
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 223
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3a351d5f30ca1040800000000000000
+      internalID: 4619215746199009853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_22
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 256
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05e3c6cad802c6eb0800000000000000
+      internalID: -4725366116163240368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_23
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 224
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9b4a4736911b7240800000000000000
+      internalID: 4790441965509036954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_24
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 191
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c107ee657b08e1ed0800000000000000
+      internalID: -2441372423062392804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_25
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 159
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc9d9428e1b3eaf20800000000000000
+      internalID: 3435748567951202767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_26
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 191
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7c25a1bfddcbcca0800000000000000
+      internalID: -5995472118271890309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_27
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 159
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b04e4264ac8f48300800000000000000
+      internalID: 253601026683495435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_28
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 191
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4569e4ae125af1440800000000000000
+      internalID: 4908823683940652628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_29
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 159
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 369717eaf2ace3ca0800000000000000
+      internalID: -6035164144490940061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_30
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 191
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0971370342bb6fbb0800000000000000
+      internalID: -4902525380240140400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_31
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 159
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9a9ab1b678cf5210800000000000000
+      internalID: 1323997227583707805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_32
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 191
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0b7c8ac5bac769d0800000000000000
+      internalID: -2781031362741896435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_33
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 159
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 524c8f3f696077440800000000000000
+      internalID: 4933419162215695397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_34
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 192
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79d362971ea5b0710800000000000000
+      internalID: 1660520812062850455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_35
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 160
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79c36b3562102d950800000000000000
+      internalID: 6472236878609661079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_36
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 127
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e3001c7210b5e320800000000000000
+      internalID: 2586667154431542247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_38
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 127
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61619044a7fd7e6a0800000000000000
+      internalID: -6419917027572902378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_40
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 127
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b71477de27789820800000000000000
+      internalID: 2925219001044047798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_42
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 127
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 855ab3fe85490eeb0800000000000000
+      internalID: -4692587702028360360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_44
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 127
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 983f6021705878a50800000000000000
+      internalID: 6523328850683163529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_46
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 128
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e75c6c4a61ccb060800000000000000
+      internalID: 6970658985555548137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_48
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 64
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7377aeed011065f90800000000000000
+      internalID: -6965378601710880969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_50
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 64
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7a2b68ce43543f70800000000000000
+      internalID: 9166042739440822910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_52
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 64
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 410ebbfff39a086b0800000000000000
+      internalID: -5296047069449166828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_54
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 64
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d329f4d7e1654ee0800000000000000
+      internalID: -1277507270951230506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_56
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 64
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10ce31fa975226830800000000000000
+      internalID: 4062851018400197633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_58
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 64
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b0c459e7a368b740800000000000000
+      internalID: 5167990145232978103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_60
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 046983369e0a3ceb0800000000000000
+      internalID: -4700736661792188864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_61
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 0
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6846785a40ae87950800000000000000
+      internalID: 6447160172258747526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_62
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 0
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7ed9bb9677892ab0800000000000000
+      internalID: -5032342165121278341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_63
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 0
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3d1591ce92c854b0800000000000000
+      internalID: -5451393361823589062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_64
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 0
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe80f0c3b26b91d20800000000000000
+      internalID: 3249828902931990767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-ghost-11variations_65
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 0
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3620adb8d20ccc40800000000000000
+      internalID: 5533801172049077820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 340524672e359cb42998cdbf493eb0c2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      monster-ghost-11variations_0: 2477601149018668090
+      monster-ghost-11variations_1: -948621563720360411
+      monster-ghost-11variations_10: 19184540270859278
+      monster-ghost-11variations_11: -8479520730532576013
+      monster-ghost-11variations_12: -6286440825342971313
+      monster-ghost-11variations_13: -6881058864492424893
+      monster-ghost-11variations_14: -5666934738046246499
+      monster-ghost-11variations_15: 158849662612088175
+      monster-ghost-11variations_16: -2347632534373129421
+      monster-ghost-11variations_17: 8789215439691129440
+      monster-ghost-11variations_18: -8312829103153274462
+      monster-ghost-11variations_19: 7636406284199089796
+      monster-ghost-11variations_2: -4154659470001406681
+      monster-ghost-11variations_20: -6839385822726656310
+      monster-ghost-11variations_21: 4619215746199009853
+      monster-ghost-11variations_22: -4725366116163240368
+      monster-ghost-11variations_23: 4790441965509036954
+      monster-ghost-11variations_24: -2441372423062392804
+      monster-ghost-11variations_25: 3435748567951202767
+      monster-ghost-11variations_26: -5995472118271890309
+      monster-ghost-11variations_27: 253601026683495435
+      monster-ghost-11variations_28: 4908823683940652628
+      monster-ghost-11variations_29: -6035164144490940061
+      monster-ghost-11variations_3: -4797456535825400981
+      monster-ghost-11variations_30: -4902525380240140400
+      monster-ghost-11variations_31: 1323997227583707805
+      monster-ghost-11variations_32: -2781031362741896435
+      monster-ghost-11variations_33: 4933419162215695397
+      monster-ghost-11variations_34: 1660520812062850455
+      monster-ghost-11variations_35: 6472236878609661079
+      monster-ghost-11variations_36: 2586667154431542247
+      monster-ghost-11variations_37: -4314327685540051353
+      monster-ghost-11variations_38: -6419917027572902378
+      monster-ghost-11variations_39: -1925878690735490566
+      monster-ghost-11variations_4: -3064258873088181184
+      monster-ghost-11variations_40: 2925219001044047798
+      monster-ghost-11variations_41: -7363646195887511515
+      monster-ghost-11variations_42: -4692587702028360360
+      monster-ghost-11variations_43: -3291766923248787106
+      monster-ghost-11variations_44: 6523328850683163529
+      monster-ghost-11variations_45: 4306442216071335402
+      monster-ghost-11variations_46: 6970658985555548137
+      monster-ghost-11variations_47: -4786979856425207068
+      monster-ghost-11variations_48: -6965378601710880969
+      monster-ghost-11variations_49: -5329675744193801212
+      monster-ghost-11variations_5: -7201647425690224442
+      monster-ghost-11variations_50: 9166042739440822910
+      monster-ghost-11variations_51: -6502094790247929984
+      monster-ghost-11variations_52: -5296047069449166828
+      monster-ghost-11variations_53: -8721759248835874278
+      monster-ghost-11variations_54: -1277507270951230506
+      monster-ghost-11variations_55: -5074503535138549381
+      monster-ghost-11variations_56: 4062851018400197633
+      monster-ghost-11variations_57: -4382547282475791687
+      monster-ghost-11variations_58: 5167990145232978103
+      monster-ghost-11variations_59: 9124844515714848314
+      monster-ghost-11variations_6: -7415671288618160971
+      monster-ghost-11variations_60: -4700736661792188864
+      monster-ghost-11variations_61: 6447160172258747526
+      monster-ghost-11variations_62: -5032342165121278341
+      monster-ghost-11variations_63: -5451393361823589062
+      monster-ghost-11variations_64: 3249828902931990767
+      monster-ghost-11variations_65: 5533801172049077820
+      monster-ghost-11variations_7: -9104215477582245472
+      monster-ghost-11variations_8: 1213363138896484856
+      monster-ghost-11variations_9: -6542893962721366119
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
