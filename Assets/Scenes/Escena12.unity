@@ -3499,10 +3499,10 @@ MonoBehaviour:
       alta."
     - "\"Camarera\": Hay alguien ah\xED dentro que no puede gritar pidiendo ayuda."
   npcName: Camarera
-  isCorrectNPC: 0
+  isCorrectNPC: 1
   interactKey: 101
-  colliderToAffect: {fileID: 0}
-  setAsTriggerInsteadOfDisable: 0
+  colliderToAffect: {fileID: 1380586336}
+  setAsTriggerInsteadOfDisable: 1
 --- !u!1 &1339735900
 GameObject:
   m_ObjectHideFlags: 0
