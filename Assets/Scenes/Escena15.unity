@@ -3893,30 +3893,31 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1541492841656835551, guid: 4c40738dde630f346bf961f3878efebe, type: 3}
       propertyPath: introDialogue.sentences.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1541492841656835551, guid: 4c40738dde630f346bf961f3878efebe, type: 3}
       propertyPath: 'introDialogue.sentences.Array.data[0]'
-      value: '"Lira Hada de Viento" : Vaya... Esas sombras parecen peligrosas.'
+      value: '"Kira Hada de Hielo" : Creo que hemos llegado... Este debe ser el castillo
+        del Ente Oscuro.'
       objectReference: {fileID: 0}
     - target: {fileID: 1541492841656835551, guid: 4c40738dde630f346bf961f3878efebe, type: 3}
       propertyPath: 'introDialogue.sentences.Array.data[1]'
+      value: '"Lira Hada de Viento" : Tenemos que avanzar pero esta lleno de esas
+        sombras que parecen peligrosas.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1541492841656835551, guid: 4c40738dde630f346bf961f3878efebe, type: 3}
+      propertyPath: 'introDialogue.sentences.Array.data[2]'
       value: '"Ela Hada de Fuego" : Intentemos evitarlas. Sera mejor no tocarlas
         ni pasar demasiado cerca de ellas.'
       objectReference: {fileID: 0}
     - target: {fileID: 1541492841656835551, guid: 4c40738dde630f346bf961f3878efebe, type: 3}
-      propertyPath: 'introDialogue.sentences.Array.data[2]'
+      propertyPath: 'introDialogue.sentences.Array.data[3]'
       value: '"Lira Hada de Viento" : Espera, eso que estoy viendo alli alfinal no
         sera...'
       objectReference: {fileID: 0}
     - target: {fileID: 1541492841656835551, guid: 4c40738dde630f346bf961f3878efebe, type: 3}
-      propertyPath: 'introDialogue.sentences.Array.data[3]'
-      value: '"Kira Hada de Hielo" : Hermanaaaa!!! Achisss! '
-      objectReference: {fileID: 0}
-    - target: {fileID: 1541492841656835551, guid: 4c40738dde630f346bf961f3878efebe, type: 3}
       propertyPath: 'introDialogue.sentences.Array.data[4]'
-      value: "\"Kyra Hada de Hielo\": No grites Lira, r\xE1pido Aurelio l\xE1nzale
-        un hechizo de hielo para ralentizarlo."
+      value: '"Kira Hada de Hielo" : Hermanaaaa!!! Achisss! '
       objectReference: {fileID: 0}
     - target: {fileID: 4615073786270039285, guid: 4c40738dde630f346bf961f3878efebe, type: 3}
       propertyPath: m_Name

@@ -65,6 +65,10 @@ public class EnemyHealth : MonoBehaviour
 
     void Die()
     {
+        var manager = FindObjectOfType<EnemiesDefeatedUnlock>();
+        if (manager != null)
+            manager.NotifyEnemyDied(gameObject);
+
         Destroy(gameObject);
     }
 }

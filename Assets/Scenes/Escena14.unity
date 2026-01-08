@@ -3267,17 +3267,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1541492841656835551, guid: 4c40738dde630f346bf961f3878efebe, type: 3}
       propertyPath: 'introDialogue.sentences.Array.data[3]'
-      value: '"Kyra Hada de Hielo": Antes estaban calientes y parece que se encienden
-        de forma expontanea.'
+      value: '"Kyra Hada de Hielo": Hay restos de cenizas parece que antes estaban
+        encendidas.'
       objectReference: {fileID: 0}
     - target: {fileID: 1541492841656835551, guid: 4c40738dde630f346bf961f3878efebe, type: 3}
       propertyPath: 'introDialogue.sentences.Array.data[4]'
-      value: '"Ela Hada del fuego": Acercate al medio de las antorchas y prendelas
+      value: '"Ela Hada del fuego": Acercate al centro de las antorchas y prendelas
         con mi poder.'
       objectReference: {fileID: 0}
     - target: {fileID: 1541492841656835551, guid: 4c40738dde630f346bf961f3878efebe, type: 3}
       propertyPath: 'introDialogue.sentences.Array.data[5]'
-      value: Pulsa la tecla E cuando estes en el centro para empezar el puzzle
+      value: "INFORMACI\xD3N: Pulsa la tecla E cuando estes en el centro para empezar
+        el puzzle."
       objectReference: {fileID: 0}
     - target: {fileID: 4615073786270039285, guid: 4c40738dde630f346bf961f3878efebe, type: 3}
       propertyPath: m_Name
