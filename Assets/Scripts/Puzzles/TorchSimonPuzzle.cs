@@ -1,58 +1,129 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 
 public class TorchSimonPuzzle : MonoBehaviour
 {
-    [Header("Antorchas en orden (1–6)")]
+    [Header("Antorchas")]
     public List<FlammableTorch> torches;
 
     [Header("Patrones por ronda")]
-    [Tooltip("Longitudes de la secuencia por ronda. Ronda 1 usa el índice 0.")]
     public int[] patternLengths = { 3, 4, 5 };
 
-    [Header("Configuración del puzzle")]
+    [Header("Configuración")]
     public float showTime = 1f;
     public float delayBetween = 0.4f;
     public float timeLimit = 10f;
     public float nextRoundDelay = 2f;
 
-    [Header("Acciones al completar puzzle")]
-    [Tooltip("Collider que desaparecerá al completar la última ronda del puzzle.")]
+    [Header("UI")]
+    public TMP_Text uiText;
+    public TMP_Text uiTimerText;
+    public TMP_Text uiRoundText;
+
+    [Header("Final del puzzle")]
     public Collider2D colliderToDisable;
-    [Tooltip("Si está activado, se desactiva todo el GameObject del collider. Si no, solo se pone en isTrigger.")]
     public bool disableObject = true;
-
-    [Header("Recompensa al completar")]
-    [Tooltip("GameObject (sprite/objeto) que estaba desactivado y debe aparecer al completar el puzzle.")]
     public GameObject rewardToShow;
-
-    [Header("Diálogo opcional al completar puzzle")]
     public Dialogue puzzleCompleteDialogue;
 
-    private List<int> sequence = new List<int>();
+    // Estado interno
+    private List<int> sequence = new();
     private int inputIndex = 0;
     private float timer = 0f;
+
     private bool puzzleActive = false;
-    private bool playerInside = false;
     private bool isShowingSequence = false;
+    private bool playerInside = false;
+    private bool waitingForRestart = false;
 
     private int round = 1;
     public int maxRounds = 4;
 
+    void Start()
+    {
+        ClearUI();
+    }
+
     void Update()
     {
-        if (playerInside && !puzzleActive && !isShowingSequence && Input.GetKeyDown(KeyCode.E))
+        // ▶️ Empezar o repetir SOLO tras fallo
+        if (playerInside && waitingForRestart && Input.GetKeyDown(KeyCode.E))
         {
-            Debug.Log("Puzzle iniciado");
+            waitingForRestart = false;
+            round = 1;
             StartCoroutine(StartRound());
         }
 
+        // ▶️ Empezar primera vez
+        if (playerInside && !puzzleActive && !isShowingSequence && !waitingForRestart && round == 1 && Input.GetKeyDown(KeyCode.E))
+        {
+            StartCoroutine(StartRound());
+        }
+
+        // ⏱️ Timer de la ronda
         if (puzzleActive)
         {
             timer -= Time.deltaTime;
-            if (timer <= 0)
+            SetTimerText($"Tiempo: {Mathf.Max(0f, timer):0.0}s");
+
+            if (timer <= 0f)
                 PuzzleFailed();
+        }
+        else
+        {
+            SetTimerText("");
+        }
+    }
+
+    // =======================
+    // PUZZLE CORE
+    // =======================
+
+    IEnumerator StartRound()
+    {
+        puzzleActive = false;
+        isShowingSequence = true;
+
+        TurnOffAllTorches();
+        yield return new WaitForSeconds(0.25f);
+
+        sequence.Clear();
+
+        int lengthIndex = Mathf.Clamp(round - 1, 0, patternLengths.Length - 1);
+        int patternLength = patternLengths[lengthIndex];
+
+        SetRoundText($"Ronda {round}/{maxRounds}");
+
+        // ✅ Ajuste: quitamos el "Memoriza la secuencia..."
+        SetMainText("");
+
+        for (int i = 0; i < patternLength; i++)
+            sequence.Add(Random.Range(0, torches.Count));
+
+        yield return ShowSequence();
+
+        // ▶️ Ya puede jugar
+        inputIndex = 0;
+        timer = timeLimit;
+        puzzleActive = true;
+        isShowingSequence = false;
+
+        SetMainText("Repite la secuencia");
+    }
+
+    IEnumerator ShowSequence()
+    {
+        foreach (int index in sequence)
+        {
+            var t = torches[index];
+            if (t == null) continue;
+
+            t.ShowPuzzleFlash();
+            yield return new WaitForSeconds(showTime);
+            t.TurnOff();
+            yield return new WaitForSeconds(delayBetween);
         }
     }
 
@@ -66,11 +137,10 @@ public class TorchSimonPuzzle : MonoBehaviour
         if (idx == sequence[inputIndex])
         {
             inputIndex++;
+            SetMainText($"✔ Bien ({inputIndex}/{sequence.Count})");
 
             if (inputIndex >= sequence.Count)
-            {
                 PuzzleCompletedRound();
-            }
         }
         else
         {
@@ -78,125 +148,79 @@ public class TorchSimonPuzzle : MonoBehaviour
         }
     }
 
-    IEnumerator StartRound()
-    {
-        puzzleActive = false;
-        isShowingSequence = true;
-
-        TurnOffAllTorches();
-        yield return new WaitForSeconds(0.2f);
-
-        sequence.Clear();
-
-        int lengthIndex = Mathf.Clamp(round - 1, 0, patternLengths.Length - 1);
-        int patternLength = patternLengths[lengthIndex];
-
-        Debug.Log($"Ronda {round} → patrón de {patternLength} pasos");
-
-        for (int i = 0; i < patternLength; i++)
-            sequence.Add(Random.Range(0, torches.Count));
-
-        yield return ShowSequence();
-
-        inputIndex = 0;
-        timer = timeLimit;
-        puzzleActive = true;
-        isShowingSequence = false;
-
-        Debug.Log("Introduce la secuencia ahora.");
-    }
-
-    IEnumerator ShowSequence()
-    {
-        Debug.Log("Mostrando secuencia…");
-
-        foreach (int index in sequence)
-        {
-            var t = torches[index];
-            if (t == null) continue;
-
-            t.ShowPuzzleFlash();
-            yield return null;
-            yield return new WaitForSeconds(showTime);
-            t.TurnOff();
-            yield return new WaitForSeconds(delayBetween);
-        }
-    }
+    // =======================
+    // RESULTADOS
+    // =======================
 
     void PuzzleFailed()
     {
-        Debug.Log("❌ Puzzle fallado. Reinicia con E.");
-
         puzzleActive = false;
-        inputIndex = 0;
         isShowingSequence = false;
+        waitingForRestart = true;
+
+        inputIndex = 0;
         round = 1;
 
         TurnOffAllTorches();
+        SetTimerText("");
+        SetRoundText("");
+
+        // ✅ Ajuste: quitamos el emoji que te rompe la X
+        SetMainText("Has fallado\nPulsa <b>E</b> para repetir");
     }
 
     void PuzzleCompletedRound()
     {
-        Debug.Log("✔ Ronda superada");
-
         puzzleActive = false;
         isShowingSequence = false;
-
         round++;
 
         if (round > maxRounds)
         {
-            Debug.Log("🎉 Puzzle COMPLETADO");
-            TurnOffAllTorches();
-
-            // 🔥 Lanzar diálogo si existe
-            if (puzzleCompleteDialogue != null && DialogueManager.Instance != null)
-            {
-                DialogueManager.Instance.StartDialogue(puzzleCompleteDialogue, AfterDialogue);
-            }
-            else
-            {
-                AfterDialogue();
-            }
-
+            PuzzleCompleted();
             return;
         }
 
+        SetMainText("Ronda superada");
         StartCoroutine(NextRoundCoroutine());
     }
 
     IEnumerator NextRoundCoroutine()
     {
-        yield return new WaitForSeconds(0.25f);
-        TurnOffAllTorches();
         yield return new WaitForSeconds(nextRoundDelay);
         StartCoroutine(StartRound());
     }
 
+    void PuzzleCompleted()
+    {
+        TurnOffAllTorches();
+        SetTimerText("");
+        SetRoundText($"Ronda {maxRounds}/{maxRounds}");
+        SetMainText("🎉 ¡Puzzle completado!");
+
+        if (puzzleCompleteDialogue != null && DialogueManager.Instance != null)
+            DialogueManager.Instance.StartDialogue(puzzleCompleteDialogue, AfterDialogue);
+        else
+            AfterDialogue();
+    }
+
     void AfterDialogue()
     {
-        // ✅ Quitar/abrir collider
         if (colliderToDisable != null)
         {
             if (disableObject)
-            {
                 colliderToDisable.gameObject.SetActive(false);
-                Debug.Log("✔ Collider desactivado: " + colliderToDisable.name);
-            }
             else
-            {
                 colliderToDisable.isTrigger = true;
-                Debug.Log("✔ Collider puesto como trigger: " + colliderToDisable.name);
-            }
         }
 
-        // ✅ Mostrar sprite/objeto recompensa (estaba desactivado)
         if (rewardToShow != null)
-        {
             rewardToShow.SetActive(true);
-            Debug.Log("🎁 Recompensa activada: " + rewardToShow.name);
-        }
     }
+
+    // =======================
+    // HELPERS
+    // =======================
 
     void TurnOffAllTorches()
     {
@@ -207,16 +231,37 @@ public class TorchSimonPuzzle : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
-        {
-            playerInside = true;
-            Debug.Log("Estás en el puzzle. Pulsa E para comenzar.");
-        }
+        if (!other.CompareTag("Player")) return;
+        playerInside = true;
+
+        if (!puzzleActive && !isShowingSequence && round == 1)
+            SetMainText("Pulsa <b>E</b> para empezar");
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
-            playerInside = false;
+        if (!other.CompareTag("Player")) return;
+
+        playerInside = false;
+        ClearUI();
+
+        puzzleActive = false;
+        isShowingSequence = false;
+        waitingForRestart = false;
+        inputIndex = 0;
+        round = 1;
+
+        TurnOffAllTorches();
     }
+
+    void ClearUI()
+    {
+        SetMainText("");
+        SetTimerText("");
+        SetRoundText("");
+    }
+
+    void SetMainText(string s)  { if (uiText != null) uiText.text = s; }
+    void SetTimerText(string s) { if (uiTimerText != null) uiTimerText.text = s; }
+    void SetRoundText(string s) { if (uiRoundText != null) uiRoundText.text = s; }
 }

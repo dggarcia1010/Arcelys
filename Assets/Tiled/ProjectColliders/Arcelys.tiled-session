@@ -3,11 +3,11 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "Arcelys/batallaFinal.tmx",
+    "activeFile": "Arcelys/house.tmx",
     "expandedProjectPaths": [
         "Arcelys",
-        "Arcelys/textures",
-        "."
+        ".",
+        "Arcelys/textures"
     ],
     "file.lastUsedOpenFilter": "Todos los archivos (*)",
     "fileStates": {
@@ -119,7 +119,7 @@
             "scale": 2,
             "selectedLayer": 10,
             "viewCenter": {
-                "x": 184.25,
+                "x": 184,
                 "y": 119.75
             }
         },
@@ -202,8 +202,8 @@
             "scale": 1.5,
             "selectedLayer": 8,
             "viewCenter": {
-                "x": 315.66666666666663,
-                "y": 53.33333333333334
+                "x": 176,
+                "y": 34.333333333333314
             }
         },
         "Arcelys/batallaFinal.tmx": {
@@ -211,7 +211,7 @@
             "selectedLayer": 12,
             "viewCenter": {
                 "x": 283,
-                "y": 162
+                "y": 161.75
             }
         },
         "Arcelys/beds_BR.tsx": {
@@ -233,8 +233,8 @@
             "scale": 1.5,
             "selectedLayer": 12,
             "viewCenter": {
-                "x": 226.66666666666666,
-                "y": 249.33333333333334
+                "x": 211.33333333333331,
+                "y": 484.33333333333337
             }
         },
         "Arcelys/cat_animation.tsx": {
@@ -255,7 +255,7 @@
             "scale": 2,
             "selectedLayer": 10,
             "viewCenter": {
-                "x": 200.25,
+                "x": 200,
                 "y": 175.75
             }
         },
@@ -267,7 +267,7 @@
             "selectedLayer": 10,
             "viewCenter": {
                 "x": 216,
-                "y": 120
+                "y": 119.75
             }
         },
         "Arcelys/cave_rat.tmx": {
@@ -277,7 +277,7 @@
             "scale": 1.5,
             "selectedLayer": 8,
             "viewCenter": {
-                "x": 256.33333333333337,
+                "x": 256,
                 "y": 159.66666666666666
             }
         },
@@ -318,7 +318,7 @@
             "scale": 2,
             "selectedLayer": 9,
             "viewCenter": {
-                "x": 200.25,
+                "x": 200,
                 "y": 175.75
             }
         },
@@ -333,10 +333,10 @@
                 11
             ],
             "scale": 1.5,
-            "selectedLayer": 12,
+            "selectedLayer": 6,
             "viewCenter": {
-                "x": 344.33333333333337,
-                "y": 256.33333333333337
+                "x": 87.33333333333331,
+                "y": 280.33333333333337
             }
         },
         "Arcelys/houses.tsx": {
@@ -350,8 +350,8 @@
             "scale": 2,
             "selectedLayer": 9,
             "viewCenter": {
-                "x": 111.75,
-                "y": 239.75
+                "x": 112,
+                "y": 240.25
             }
         },
         "Arcelys/idle.tsx": {
@@ -364,8 +364,8 @@
             "scale": 0.75,
             "selectedLayer": 5,
             "viewCenter": {
-                "x": 231.33333333333331,
-                "y": 183.33333333333331
+                "x": 230.66666666666663,
+                "y": 183.33333333333326
             }
         },
         "Arcelys/luciernagas.tmx": {
@@ -383,8 +383,8 @@
             "scale": 0.75,
             "selectedLayer": 4,
             "viewCenter": {
-                "x": 127.33333333333331,
-                "y": 303.3333333333333
+                "x": 126.66666666666663,
+                "y": 303.33333333333326
             }
         },
         "Arcelys/lutist.tsx": {
@@ -398,7 +398,7 @@
             "scale": 2,
             "selectedLayer": 13,
             "viewCenter": {
-                "x": 352.25,
+                "x": 352.5,
                 "y": 376.25
             }
         },
@@ -434,8 +434,8 @@
             "scale": 1.5,
             "selectedLayer": 11,
             "viewCenter": {
-                "x": 248.33333333333334,
-                "y": 280.33333333333337
+                "x": 557.3333333333333,
+                "y": 322.33333333333337
             }
         },
         "Arcelys/supplies_objects_cave.tsx": {
@@ -445,7 +445,7 @@
             "scale": 1.7690257352941174,
             "selectedLayer": 9,
             "viewCenter": {
-                "x": 272.1837169429002,
+                "x": 271.9010754922846,
                 "y": 239.96259157271265
             }
         },
@@ -463,24 +463,24 @@
             "scale": 0.75,
             "selectedLayer": 7,
             "viewCenter": {
-                "x": 271.3333333333333,
-                "y": 239.33333333333331
+                "x": 270.66666666666663,
+                "y": 239.33333333333326
             }
         },
         "Arcelys/tree.tmx": {
             "scale": 0.75,
             "selectedLayer": 4,
             "viewCenter": {
-                "x": 360.66666666666663,
-                "y": 400.66666666666663
+                "x": 360,
+                "y": 400.66666666666674
             }
         },
         "Arcelys/tutorial.tmx": {
-            "scale": 2,
-            "selectedLayer": 14,
+            "scale": 3,
+            "selectedLayer": 9,
             "viewCenter": {
-                "x": 152.25,
-                "y": 264.25
+                "x": 200,
+                "y": 338.5
             }
         },
         "Arcelys/walls.tsx": {
