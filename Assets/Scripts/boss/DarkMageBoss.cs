@@ -62,6 +62,8 @@ public class DarkMageBoss : Enemy
         // pequeño delay para que cuadre con la animación
         yield return new WaitForSeconds(0.35f);
 
+        GetComponent<EnemySFX>()?.PlayAttackSFX();
+
         Vector2 dir = ((Vector2)playerTransform.position - (Vector2)transform.position).normalized;
 
         GameObject orb = Instantiate(darkOrbPrefab, transform.position, Quaternion.identity);
@@ -103,6 +105,8 @@ public class DarkMageBoss : Enemy
         // 3️⃣ El warning desaparece
         if (warning != null)
             Destroy(warning);
+
+            GetComponent<EnemySFX>()?.PlayAttackSFX();
 
         // 4️⃣ Cae el rayo
         Instantiate(

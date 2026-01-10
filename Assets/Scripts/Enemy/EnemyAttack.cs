@@ -59,6 +59,9 @@ public class EnemyAttack : MonoBehaviour
 
         if (playerHealth != null)
         {
+
+            GetComponent<EnemySFX>()?.PlayAttackSFX();
+
             // Infligir daño
             playerHealth.TakeDamage(attackDamage);
             

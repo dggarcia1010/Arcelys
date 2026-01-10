@@ -136,6 +136,9 @@ public class PlayerSpells : MonoBehaviour
         timer = cooldown;
         Debug.Log($"Lanzaste {currentSpell}");
 
+        GetComponent<PlayerSpellSFX>()?.PlaySpell(currentSpell);
+
+
         float distToCam = Mathf.Abs(Camera.main.transform.position.z - transform.position.z);
         Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(
             new Vector3(Input.mousePosition.x, Input.mousePosition.y, distToCam)
