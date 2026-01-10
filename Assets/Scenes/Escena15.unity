@@ -513,6 +513,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 0
   speed: 6
+  onIce: 0
+  iceAcceleration: 10
+  iceFriction: 2
+  maxIceSpeedMultiplier: 1
 --- !u!61 &294758876
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3672,15 +3676,15 @@ PrefabInstance:
       objectReference: {fileID: -6965378601710880969, guid: e3647b801dcbf1f4bbdd5c3cf78dca0a, type: 3}
     - target: {fileID: 8655851259120314184, guid: 7766957790d2d8ccbb02be72a99b8e68, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.4490565
       objectReference: {fileID: 0}
     - target: {fileID: 8655851259120314184, guid: 7766957790d2d8ccbb02be72a99b8e68, type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0.4490565
       objectReference: {fileID: 0}
     - target: {fileID: 8655851259120314184, guid: 7766957790d2d8ccbb02be72a99b8e68, type: 3}
       propertyPath: m_Color.r
-      value: 1
+      value: 0.4490565
       objectReference: {fileID: 0}
     - target: {fileID: 8655851259120314184, guid: 7766957790d2d8ccbb02be72a99b8e68, type: 3}
       propertyPath: m_SortingOrder
