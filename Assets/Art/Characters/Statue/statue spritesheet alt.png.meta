@@ -1,0 +1,780 @@
+fileFormatVersion: 2
+guid: 64220b3293cdff857ae017fae5d8c132
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 164222241385481024
+    second: statue spritesheet alt_0
+  - first:
+      213: -8666797945806642251
+    second: statue spritesheet alt_1
+  - first:
+      213: -7998877830482123692
+    second: statue spritesheet alt_2
+  - first:
+      213: -8405947283221407405
+    second: statue spritesheet alt_3
+  - first:
+      213: 306543373148695479
+    second: statue spritesheet alt_4
+  - first:
+      213: 5096065550658730933
+    second: statue spritesheet alt_5
+  - first:
+      213: 2374728715030138807
+    second: statue spritesheet alt_6
+  - first:
+      213: -4597645622594247705
+    second: statue spritesheet alt_7
+  - first:
+      213: -7110639646312197730
+    second: statue spritesheet alt_8
+  - first:
+      213: -1272101130400720840
+    second: statue spritesheet alt_9
+  - first:
+      213: 4080549691230443326
+    second: statue spritesheet alt_10
+  - first:
+      213: 3189063977624762205
+    second: statue spritesheet alt_11
+  - first:
+      213: -3015587999580888429
+    second: statue spritesheet alt_12
+  - first:
+      213: -2756929838639573065
+    second: statue spritesheet alt_13
+  - first:
+      213: -7636645522541893298
+    second: statue spritesheet alt_14
+  - first:
+      213: -5037670749554860650
+    second: statue spritesheet alt_15
+  - first:
+      213: 8979846418793580675
+    second: statue spritesheet alt_16
+  - first:
+      213: -7719205876892419201
+    second: statue spritesheet alt_17
+  - first:
+      213: -7688547386244636788
+    second: statue spritesheet alt_18
+  - first:
+      213: -897677067460978173
+    second: statue spritesheet alt_19
+  - first:
+      213: 5468555401190529020
+    second: statue spritesheet alt_20
+  - first:
+      213: 875076248552826295
+    second: statue spritesheet alt_21
+  - first:
+      213: 7960089974428319331
+    second: statue spritesheet alt_22
+  - first:
+      213: 5336461392828431396
+    second: statue spritesheet alt_23
+  - first:
+      213: -8204355427098884097
+    second: statue spritesheet alt_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: statue spritesheet alt_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 191
+        width: 25
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 043000a224f674200800000000000000
+      internalID: 164222241385481024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: statue spritesheet alt_1
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 191
+        width: 30
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b32c1cdf2959b780800000000000000
+      internalID: -8666797945806642251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: statue spritesheet alt_2
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 191
+        width: 37
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 454ad583ef64ef090800000000000000
+      internalID: -7998877830482123692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: statue spritesheet alt_3
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 191
+        width: 36
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3599de68b73185b80800000000000000
+      internalID: -8405947283221407405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: statue spritesheet alt_4
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 127
+        width: 36
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bb27c0e29f014400800000000000000
+      internalID: 306543373148695479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: statue spritesheet alt_5
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 63
+        width: 30
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bb7e134e9cd8b640800000000000000
+      internalID: 5096065550658730933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: statue spritesheet alt_6
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 127
+        width: 36
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bf8a493f2bb4f020800000000000000
+      internalID: 2374728715030138807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: statue spritesheet alt_7
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 127
+        width: 36
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e3e3266aa1e130c0800000000000000
+      internalID: -4597645622594247705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: statue spritesheet alt_8
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 127
+        width: 36
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9190cb5aeee15d90800000000000000
+      internalID: -7110639646312197730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: statue spritesheet alt_9
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 127
+        width: 36
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 838971403c6985ee0800000000000000
+      internalID: -1272101130400720840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: statue spritesheet alt_10
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 127
+        width: 36
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e37de12135601a830800000000000000
+      internalID: 4080549691230443326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: statue spritesheet alt_11
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 127
+        width: 36
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5771509ac4d14c20800000000000000
+      internalID: 3189063977624762205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: statue spritesheet alt_12
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 127
+        width: 36
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 392ec0011ba7626d0800000000000000
+      internalID: -3015587999580888429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: statue spritesheet alt_13
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 63
+        width: 28
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b796392bea6db9d0800000000000000
+      internalID: -2756929838639573065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: statue spritesheet alt_14
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 63
+        width: 42
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e492051ab5f250690800000000000000
+      internalID: -7636645522541893298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: statue spritesheet alt_15
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 63
+        width: 43
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69d186dd429961ab0800000000000000
+      internalID: -5037670749554860650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: statue spritesheet alt_16
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 63
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38841c99db2de9c70800000000000000
+      internalID: 8979846418793580675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: statue spritesheet alt_17
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 36
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7b38bf272fdfd490800000000000000
+      internalID: -7719205876892419201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: statue spritesheet alt_18
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 36
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8f512c43eacc4590800000000000000
+      internalID: -7688547386244636788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: statue spritesheet alt_19
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30a59f6967fca83f0800000000000000
+      internalID: -897677067460978173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: statue spritesheet alt_20
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 47
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf7518ae92634eb40800000000000000
+      internalID: 5468555401190529020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: statue spritesheet alt_21
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 20
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b56f523635e42c00800000000000000
+      internalID: 875076248552826295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: statue spritesheet alt_22
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 10
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36eb2f948abe77e60800000000000000
+      internalID: 7960089974428319331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: statue spritesheet alt_23
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 0
+        width: 49
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42cff1dec5bee0a40800000000000000
+      internalID: 5336461392828431396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: statue spritesheet alt_24
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 49
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff709b42536442e80800000000000000
+      internalID: -8204355427098884097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      statue spritesheet alt_0: 164222241385481024
+      statue spritesheet alt_1: -8666797945806642251
+      statue spritesheet alt_10: 4080549691230443326
+      statue spritesheet alt_11: 3189063977624762205
+      statue spritesheet alt_12: -3015587999580888429
+      statue spritesheet alt_13: -2756929838639573065
+      statue spritesheet alt_14: -7636645522541893298
+      statue spritesheet alt_15: -5037670749554860650
+      statue spritesheet alt_16: 8979846418793580675
+      statue spritesheet alt_17: -7719205876892419201
+      statue spritesheet alt_18: -7688547386244636788
+      statue spritesheet alt_19: -897677067460978173
+      statue spritesheet alt_2: -7998877830482123692
+      statue spritesheet alt_20: 5468555401190529020
+      statue spritesheet alt_21: 875076248552826295
+      statue spritesheet alt_22: 7960089974428319331
+      statue spritesheet alt_23: 5336461392828431396
+      statue spritesheet alt_24: -8204355427098884097
+      statue spritesheet alt_3: -8405947283221407405
+      statue spritesheet alt_4: 306543373148695479
+      statue spritesheet alt_5: 5096065550658730933
+      statue spritesheet alt_6: 2374728715030138807
+      statue spritesheet alt_7: -4597645622594247705
+      statue spritesheet alt_8: -7110639646312197730
+      statue spritesheet alt_9: -1272101130400720840
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

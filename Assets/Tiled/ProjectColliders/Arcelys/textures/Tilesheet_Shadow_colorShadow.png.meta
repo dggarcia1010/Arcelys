@@ -1,0 +1,3393 @@
+fileFormatVersion: 2
+guid: b09954c7e371dd241aa741828890f801
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3087914757356199458
+    second: Tilesheet_Shadow_colorShadow_0
+  - first:
+      213: 5960827449985379214
+    second: Tilesheet_Shadow_colorShadow_1
+  - first:
+      213: -3635425250204647975
+    second: Tilesheet_Shadow_colorShadow_2
+  - first:
+      213: -8858544836515790833
+    second: Tilesheet_Shadow_colorShadow_3
+  - first:
+      213: 7120011564349864009
+    second: Tilesheet_Shadow_colorShadow_4
+  - first:
+      213: -686026419352885267
+    second: Tilesheet_Shadow_colorShadow_5
+  - first:
+      213: 311983033466084552
+    second: Tilesheet_Shadow_colorShadow_6
+  - first:
+      213: -5390721194697235467
+    second: Tilesheet_Shadow_colorShadow_7
+  - first:
+      213: -351243213769815252
+    second: Tilesheet_Shadow_colorShadow_8
+  - first:
+      213: 2192360835599853164
+    second: Tilesheet_Shadow_colorShadow_9
+  - first:
+      213: -5448854317568075712
+    second: Tilesheet_Shadow_colorShadow_10
+  - first:
+      213: -7909284762043972424
+    second: Tilesheet_Shadow_colorShadow_11
+  - first:
+      213: -3578234616076961202
+    second: Tilesheet_Shadow_colorShadow_12
+  - first:
+      213: 5335214355609796895
+    second: Tilesheet_Shadow_colorShadow_13
+  - first:
+      213: 3625492279320495961
+    second: Tilesheet_Shadow_colorShadow_14
+  - first:
+      213: 8747612875844380220
+    second: Tilesheet_Shadow_colorShadow_15
+  - first:
+      213: -3537143160035732415
+    second: Tilesheet_Shadow_colorShadow_16
+  - first:
+      213: 6983415274833401886
+    second: Tilesheet_Shadow_colorShadow_17
+  - first:
+      213: 7308367718623846346
+    second: Tilesheet_Shadow_colorShadow_18
+  - first:
+      213: 1452448103763265830
+    second: Tilesheet_Shadow_colorShadow_19
+  - first:
+      213: 5887270561159662855
+    second: Tilesheet_Shadow_colorShadow_20
+  - first:
+      213: -2730355270566179287
+    second: Tilesheet_Shadow_colorShadow_21
+  - first:
+      213: 2244293843787395134
+    second: Tilesheet_Shadow_colorShadow_22
+  - first:
+      213: -1047229743557471422
+    second: Tilesheet_Shadow_colorShadow_23
+  - first:
+      213: -5557359486020230606
+    second: Tilesheet_Shadow_colorShadow_24
+  - first:
+      213: 2523167287504506763
+    second: Tilesheet_Shadow_colorShadow_25
+  - first:
+      213: -2062255312225128857
+    second: Tilesheet_Shadow_colorShadow_26
+  - first:
+      213: 2133253052294836682
+    second: Tilesheet_Shadow_colorShadow_27
+  - first:
+      213: 1377677534470022302
+    second: Tilesheet_Shadow_colorShadow_28
+  - first:
+      213: -4463990494657327312
+    second: Tilesheet_Shadow_colorShadow_29
+  - first:
+      213: 7662343150756210672
+    second: Tilesheet_Shadow_colorShadow_30
+  - first:
+      213: -7880141696900962362
+    second: Tilesheet_Shadow_colorShadow_31
+  - first:
+      213: 9155830262383899679
+    second: Tilesheet_Shadow_colorShadow_32
+  - first:
+      213: 1337992710831577443
+    second: Tilesheet_Shadow_colorShadow_33
+  - first:
+      213: 441091608422721892
+    second: Tilesheet_Shadow_colorShadow_34
+  - first:
+      213: 4253588718214103003
+    second: Tilesheet_Shadow_colorShadow_35
+  - first:
+      213: -5529785290999686505
+    second: Tilesheet_Shadow_colorShadow_36
+  - first:
+      213: -2018968912590357482
+    second: Tilesheet_Shadow_colorShadow_37
+  - first:
+      213: 6850444857452595600
+    second: Tilesheet_Shadow_colorShadow_38
+  - first:
+      213: 2079384481695714776
+    second: Tilesheet_Shadow_colorShadow_39
+  - first:
+      213: 981135992432495786
+    second: Tilesheet_Shadow_colorShadow_40
+  - first:
+      213: -1844008434898816682
+    second: Tilesheet_Shadow_colorShadow_41
+  - first:
+      213: 8654901714058583430
+    second: Tilesheet_Shadow_colorShadow_42
+  - first:
+      213: 4863079262226895340
+    second: Tilesheet_Shadow_colorShadow_43
+  - first:
+      213: -6072973147589158075
+    second: Tilesheet_Shadow_colorShadow_44
+  - first:
+      213: -7633676825994361450
+    second: Tilesheet_Shadow_colorShadow_45
+  - first:
+      213: 4575630769886961486
+    second: Tilesheet_Shadow_colorShadow_46
+  - first:
+      213: 1925171852824720833
+    second: Tilesheet_Shadow_colorShadow_47
+  - first:
+      213: 5672438970343093549
+    second: Tilesheet_Shadow_colorShadow_48
+  - first:
+      213: 7783918685538199200
+    second: Tilesheet_Shadow_colorShadow_49
+  - first:
+      213: 1569308594872995455
+    second: Tilesheet_Shadow_colorShadow_50
+  - first:
+      213: 1511049336609719164
+    second: Tilesheet_Shadow_colorShadow_51
+  - first:
+      213: -7776877388124474690
+    second: Tilesheet_Shadow_colorShadow_52
+  - first:
+      213: 6356970715985144208
+    second: Tilesheet_Shadow_colorShadow_53
+  - first:
+      213: -3635761658847767652
+    second: Tilesheet_Shadow_colorShadow_54
+  - first:
+      213: 6984886156144864975
+    second: Tilesheet_Shadow_colorShadow_55
+  - first:
+      213: -1861791171792471808
+    second: Tilesheet_Shadow_colorShadow_56
+  - first:
+      213: -6403988457719573886
+    second: Tilesheet_Shadow_colorShadow_57
+  - first:
+      213: -3414854483706298292
+    second: Tilesheet_Shadow_colorShadow_58
+  - first:
+      213: -2688964099232664451
+    second: Tilesheet_Shadow_colorShadow_59
+  - first:
+      213: 2909218961066964624
+    second: Tilesheet_Shadow_colorShadow_60
+  - first:
+      213: -8087072935439159284
+    second: Tilesheet_Shadow_colorShadow_61
+  - first:
+      213: 7858097962176493918
+    second: Tilesheet_Shadow_colorShadow_62
+  - first:
+      213: -6496825306271066766
+    second: Tilesheet_Shadow_colorShadow_63
+  - first:
+      213: -4959094533460992188
+    second: Tilesheet_Shadow_colorShadow_64
+  - first:
+      213: -2619138194976062675
+    second: Tilesheet_Shadow_colorShadow_65
+  - first:
+      213: 370600878688191447
+    second: Tilesheet_Shadow_colorShadow_66
+  - first:
+      213: -6198327623391431889
+    second: Tilesheet_Shadow_colorShadow_67
+  - first:
+      213: -7122486276363921932
+    second: Tilesheet_Shadow_colorShadow_68
+  - first:
+      213: -7914310311794586850
+    second: Tilesheet_Shadow_colorShadow_69
+  - first:
+      213: -1505554300337141089
+    second: Tilesheet_Shadow_colorShadow_70
+  - first:
+      213: -2849624040748453359
+    second: Tilesheet_Shadow_colorShadow_71
+  - first:
+      213: 978221999182028061
+    second: Tilesheet_Shadow_colorShadow_72
+  - first:
+      213: -7696852344424201639
+    second: Tilesheet_Shadow_colorShadow_73
+  - first:
+      213: -5394204854347456351
+    second: Tilesheet_Shadow_colorShadow_74
+  - first:
+      213: -9040568290257177251
+    second: Tilesheet_Shadow_colorShadow_75
+  - first:
+      213: 4970461532943807901
+    second: Tilesheet_Shadow_colorShadow_76
+  - first:
+      213: 6098983397490646384
+    second: Tilesheet_Shadow_colorShadow_77
+  - first:
+      213: 3023278616856849583
+    second: Tilesheet_Shadow_colorShadow_78
+  - first:
+      213: -2314534189253569512
+    second: Tilesheet_Shadow_colorShadow_79
+  - first:
+      213: -3120045453651435530
+    second: Tilesheet_Shadow_colorShadow_80
+  - first:
+      213: -8397541543954432441
+    second: Tilesheet_Shadow_colorShadow_81
+  - first:
+      213: -6433938469409584576
+    second: Tilesheet_Shadow_colorShadow_82
+  - first:
+      213: -3134015152776522364
+    second: Tilesheet_Shadow_colorShadow_83
+  - first:
+      213: -5920093739292868497
+    second: Tilesheet_Shadow_colorShadow_84
+  - first:
+      213: 860438524267584119
+    second: Tilesheet_Shadow_colorShadow_85
+  - first:
+      213: -717587252013402310
+    second: Tilesheet_Shadow_colorShadow_86
+  - first:
+      213: -7294371557322103801
+    second: Tilesheet_Shadow_colorShadow_87
+  - first:
+      213: 3164976167128101644
+    second: Tilesheet_Shadow_colorShadow_88
+  - first:
+      213: -449925182464635312
+    second: Tilesheet_Shadow_colorShadow_89
+  - first:
+      213: 7204372673029088506
+    second: Tilesheet_Shadow_colorShadow_90
+  - first:
+      213: -600147438560345494
+    second: Tilesheet_Shadow_colorShadow_91
+  - first:
+      213: -5300093634376480356
+    second: Tilesheet_Shadow_colorShadow_92
+  - first:
+      213: 864927104319720298
+    second: Tilesheet_Shadow_colorShadow_93
+  - first:
+      213: 7102733078364502215
+    second: Tilesheet_Shadow_colorShadow_94
+  - first:
+      213: 2183926678647594117
+    second: Tilesheet_Shadow_colorShadow_95
+  - first:
+      213: 8403399427630164175
+    second: Tilesheet_Shadow_colorShadow_96
+  - first:
+      213: -7081901951298967419
+    second: Tilesheet_Shadow_colorShadow_97
+  - first:
+      213: 4474082170324959315
+    second: Tilesheet_Shadow_colorShadow_98
+  - first:
+      213: -5032376993459347324
+    second: Tilesheet_Shadow_colorShadow_99
+  - first:
+      213: -4942369027735653189
+    second: Tilesheet_Shadow_colorShadow_100
+  - first:
+      213: 286083159343145745
+    second: Tilesheet_Shadow_colorShadow_101
+  - first:
+      213: -5727746955998737837
+    second: Tilesheet_Shadow_colorShadow_102
+  - first:
+      213: -4059235097081481550
+    second: Tilesheet_Shadow_colorShadow_103
+  - first:
+      213: -1519872915761513899
+    second: Tilesheet_Shadow_colorShadow_104
+  - first:
+      213: 7688494621641141880
+    second: Tilesheet_Shadow_colorShadow_105
+  - first:
+      213: -8639605566241783883
+    second: Tilesheet_Shadow_colorShadow_106
+  - first:
+      213: 6740130805119933028
+    second: Tilesheet_Shadow_colorShadow_107
+  - first:
+      213: -6372989144935985837
+    second: Tilesheet_Shadow_colorShadow_108
+  - first:
+      213: -4479517473780301987
+    second: Tilesheet_Shadow_colorShadow_109
+  - first:
+      213: 4946849572859944094
+    second: Tilesheet_Shadow_colorShadow_110
+  - first:
+      213: 8218545390602151893
+    second: Tilesheet_Shadow_colorShadow_111
+  - first:
+      213: 8961236271099124158
+    second: Tilesheet_Shadow_colorShadow_112
+  - first:
+      213: -7608446192969088653
+    second: Tilesheet_Shadow_colorShadow_113
+  - first:
+      213: -1519352205944650857
+    second: Tilesheet_Shadow_colorShadow_114
+  - first:
+      213: 9069166250387622294
+    second: Tilesheet_Shadow_colorShadow_115
+  - first:
+      213: -6226405113740011531
+    second: Tilesheet_Shadow_colorShadow_116
+  - first:
+      213: 3405088155413475893
+    second: Tilesheet_Shadow_colorShadow_117
+  - first:
+      213: 6458575303749596907
+    second: Tilesheet_Shadow_colorShadow_118
+  - first:
+      213: -8277470760544258615
+    second: Tilesheet_Shadow_colorShadow_119
+  - first:
+      213: -708379898372803570
+    second: Tilesheet_Shadow_colorShadow_120
+  - first:
+      213: -3820443709548828363
+    second: Tilesheet_Shadow_colorShadow_121
+  - first:
+      213: -2772630456974450609
+    second: Tilesheet_Shadow_colorShadow_122
+  - first:
+      213: -3406807006387778455
+    second: Tilesheet_Shadow_colorShadow_123
+  - first:
+      213: 3504640410005688825
+    second: Tilesheet_Shadow_colorShadow_124
+  - first:
+      213: -795314655524810965
+    second: Tilesheet_Shadow_colorShadow_125
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 831
+        width: 82
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed1e81f73e58525d0800000000000000
+      internalID: -3087914757356199458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_1
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 831
+        width: 82
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8ba6c3ebfc19b250800000000000000
+      internalID: 5960827449985379214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_2
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 831
+        width: 82
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ddf01a0fff5c8dc0800000000000000
+      internalID: -3635425250204647975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_3
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 831
+        width: 82
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f000b90e760201580800000000000000
+      internalID: -8858544836515790833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_4
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 831
+        width: 82
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9483fb95bcc5fc260800000000000000
+      internalID: 7120011564349864009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_5
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 831
+        width: 82
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de720f73b9eba76f0800000000000000
+      internalID: -686026419352885267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_6
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 831
+        width: 82
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ccd1bd7ae2645400800000000000000
+      internalID: 311983033466084552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_7
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 767
+        width: 62
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f3e6ea72af4035b0800000000000000
+      internalID: -5390721194697235467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_8
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 802
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2bcb757822202bf0800000000000000
+      internalID: -351243213769815252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_9
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 767
+        width: 82
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6668697094dc6e10800000000000000
+      internalID: 2192360835599853164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_10
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 767
+        width: 62
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04850801ed7c164b0800000000000000
+      internalID: -5448854317568075712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_11
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 806
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b485f20a639c3290800000000000000
+      internalID: -7909284762043972424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_12
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 767
+        width: 62
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4af9b1339e875ec0800000000000000
+      internalID: -3578234616076961202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_13
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 802
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f11cfa2703d7a0a40800000000000000
+      internalID: 5335214355609796895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_14
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 767
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 957c1d4f406505230800000000000000
+      internalID: 3625492279320495961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_15
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 807
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3666515093c56970800000000000000
+      internalID: 8747612875844380220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_16
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 767
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1441e5a590b89eec0800000000000000
+      internalID: -3537143160035732415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_17
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 807
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e185b7751331ae060800000000000000
+      internalID: 6983415274833401886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_18
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 767
+        width: 65
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acf918cf7b98c6560800000000000000
+      internalID: 7308367718623846346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_19
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 807
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 629cf7fdad1282410800000000000000
+      internalID: 1452448103763265830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_20
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 800
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70d498e1269c3b150800000000000000
+      internalID: 5887270561159662855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_21
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 767
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92e8943f854db1ad0800000000000000
+      internalID: -2730355270566179287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_22
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 807
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e303b823c55552f10800000000000000
+      internalID: 2244293843787395134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_23
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 767
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2439801c81e7771f0800000000000000
+      internalID: -1047229743557471422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_24
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 770
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 232ed9addfa40e2b0800000000000000
+      internalID: -5557359486020230606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_25
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 767
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8f87989747140320800000000000000
+      internalID: 2523167287504506763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_26
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 774
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76ea8a648b56163e0800000000000000
+      internalID: -2062255312225128857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_27
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 767
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac13d0e3956da9d10800000000000000
+      internalID: 2133253052294836682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_28
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 770
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e942f191b6e7e1310800000000000000
+      internalID: 1377677534470022302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_29
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 767
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03fca3ddb48bc02c0800000000000000
+      internalID: -4463990494657327312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_30
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 775
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f7a8ffaf7c165a60800000000000000
+      internalID: 7662343150756210672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_31
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 767
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c76970a0ec14a290800000000000000
+      internalID: -7880141696900962362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_32
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 775
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f14f92d2d1b001f70800000000000000
+      internalID: 9155830262383899679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_33
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 767
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3699d211841819210800000000000000
+      internalID: 1337992710831577443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_34
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 775
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46921791b721f1600800000000000000
+      internalID: 441091608422721892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_35
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 768
+        width: 13
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdfb2c91768c70b30800000000000000
+      internalID: 4253588718214103003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_36
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 767
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79a98cd63914243b0800000000000000
+      internalID: -5529785290999686505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_37
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 775
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61cbe70987e2bf3e0800000000000000
+      internalID: -2018968912590357482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_38
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 703
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0990dd97d4ba11f50800000000000000
+      internalID: 6850444857452595600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_39
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 738
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ddcee64b257bdc10800000000000000
+      internalID: 2079384481695714776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_40
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 738
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aac0a41acf1bd9d00800000000000000
+      internalID: 981135992432495786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_41
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 703
+        width: 82
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65138033914c866e0800000000000000
+      internalID: -1844008434898816682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_42
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 703
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68d9168d0436c1870800000000000000
+      internalID: 8654901714058583430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_43
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 703
+        width: 82
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce15a93c2d02d7340800000000000000
+      internalID: 4863079262226895340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_44
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 703
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54b5677291778bba0800000000000000
+      internalID: -6072973147589158075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_45
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 703
+        width: 82
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69589782f5bbf0690800000000000000
+      internalID: -7633676825994361450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_46
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 703
+        width: 82
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4f957641f7ef7f30800000000000000
+      internalID: 4575630769886961486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_47
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 703
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c5b233a99597ba10800000000000000
+      internalID: 1925171852824720833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_48
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 671
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d25f16d803d88be40800000000000000
+      internalID: 5672438970343093549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_49
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 671
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a6a704bdc8060c60800000000000000
+      internalID: 7783918685538199200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_50
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 671
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7e4f5c3add47c510800000000000000
+      internalID: 1569308594872995455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_51
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 671
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7346b2ad5358f410800000000000000
+      internalID: 1511049336609719164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_52
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 671
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb2b21b183bf21490800000000000000
+      internalID: -7776877388124474690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_53
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 671
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 099eadd7f2f783850800000000000000
+      internalID: 6356970715985144208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_54
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 671
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c93d46cc80e2b8dc0800000000000000
+      internalID: -3635761658847767652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_55
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 671
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fceee8593fc4fe060800000000000000
+      internalID: 6984886156144864975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_56
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 671
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 009f95f1bc69926e0800000000000000
+      internalID: -1861791171792471808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_57
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 607
+        width: 62
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2825cef6d667027a0800000000000000
+      internalID: -6403988457719573886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_58
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 641
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c40490390fffb90d0800000000000000
+      internalID: -3414854483706298292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_59
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 607
+        width: 76
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7475730661eeaad0800000000000000
+      internalID: -2688964099232664451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_60
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 640
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0963a3c3b3f9f5820800000000000000
+      internalID: 2909218961066964624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_61
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 607
+        width: 61
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c00397a2302f4cf80800000000000000
+      internalID: -8087072935439159284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_62
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 642
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5930cd66729d0d60800000000000000
+      internalID: 7858097962176493918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_63
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 607
+        width: 76
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 275d1fb3ec3a6d5a0800000000000000
+      internalID: -6496825306271066766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_64
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 640
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44fd975dbc1cd2bb0800000000000000
+      internalID: -4959094533460992188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_65
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 607
+        width: 61
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d234bce30b3f6abd0800000000000000
+      internalID: -2619138194976062675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_66
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 642
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d348af1983a42500800000000000000
+      internalID: 370600878688191447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_67
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 607
+        width: 76
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f23334edddd1bf9a0800000000000000
+      internalID: -6198327623391431889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_68
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 640
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f5dbbbd778d72d90800000000000000
+      internalID: -7122486276363921932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_69
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 351
+        width: 90
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1bc54704b8ba2290800000000000000
+      internalID: -7914310311794586850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_70
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 609
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9ac75237523b1be0800000000000000
+      internalID: -1505554300337141089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_71
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 608
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11276cb680a1478d0800000000000000
+      internalID: -2849624040748453359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_72
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 351
+        width: 90
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1d97b4b9b7539d00800000000000000
+      internalID: 978221999182028061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_73
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 610
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95286f982994f2590800000000000000
+      internalID: -7696852344424201639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_74
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 608
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a0aee2c34fe325b0800000000000000
+      internalID: -5394204854347456351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_75
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 351
+        width: 90
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d557f8bf903798280800000000000000
+      internalID: -9040568290257177251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_76
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 610
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d95fbd8fd60aaf440800000000000000
+      internalID: 4970461532943807901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_77
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 608
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07d5f621611f3a450800000000000000
+      internalID: 6098983397490646384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_78
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 511
+        width: 18
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fac69ce42e7d4f920800000000000000
+      internalID: 3023278616856849583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_79
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 511
+        width: 18
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8145b05fa6f11efd0800000000000000
+      internalID: -2314534189253569512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_80
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 527
+        width: 50
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ff980cc03f53b4d0800000000000000
+      internalID: -3120045453651435530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_81
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 559
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74eb2063570f57b80800000000000000
+      internalID: -8397541543954432441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_82
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 511
+        width: 18
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04a0f10fc0f06b6a0800000000000000
+      internalID: -6433938469409584576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_83
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 511
+        width: 18
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4855012c2ddb184d0800000000000000
+      internalID: -3134015152776522364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_84
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 527
+        width: 50
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f604f603c1a97dda0800000000000000
+      internalID: -5920093739292868497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_85
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 559
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77ad70e6744e0fb00800000000000000
+      internalID: 860438524267584119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_86
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 511
+        width: 18
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a37746c323e9a06f0800000000000000
+      internalID: -717587252013402310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_87
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 511
+        width: 18
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7046a1247bf25ca90800000000000000
+      internalID: -7294371557322103801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_88
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 527
+        width: 50
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c037f342e014ceb20800000000000000
+      internalID: 3164976167128101644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_89
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 559
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05e41bb2e6b81c9f0800000000000000
+      internalID: -449925182464635312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_90
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 495
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af42e6596c21bf360800000000000000
+      internalID: 7204372673029088506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_91
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 495
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6200c79519dba7f0800000000000000
+      internalID: -600147438560345494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_92
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 495
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c994eaeabe84276b0800000000000000
+      internalID: -5300093634376480356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_93
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 383
+        width: 18
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6b85996e96d00c00800000000000000
+      internalID: 864927104319720298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_94
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 383
+        width: 18
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c835565a1af19260800000000000000
+      internalID: 7102733078364502215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_95
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 415
+        width: 50
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58cd9484ebdde4e10800000000000000
+      internalID: 2183926678647594117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_96
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 383
+        width: 18
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc8ed9d914fde9470800000000000000
+      internalID: 8403399427630164175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_97
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 383
+        width: 18
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 588eda262b708bd90800000000000000
+      internalID: -7081901951298967419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_98
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 415
+        width: 50
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 350c02a7702271e30800000000000000
+      internalID: 4474082170324959315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_99
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 383
+        width: 18
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 480e10189c7692ab0800000000000000
+      internalID: -5032376993459347324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_100
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 383
+        width: 18
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb47ce81e8d296bb0800000000000000
+      internalID: -4942369027735653189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_101
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 415
+        width: 50
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 113aed02e1f58f300800000000000000
+      internalID: 286083159343145745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_102
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 360
+        width: 50
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35ace5c8d74f280b0800000000000000
+      internalID: -5727746955998737837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_103
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 362
+        width: 50
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b6f8aa9f23baa7c0800000000000000
+      internalID: -4059235097081481550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_104
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 361
+        width: 50
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55a3c40c2a358eae0800000000000000
+      internalID: -1519872915761513899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_105
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 271
+        width: 71
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87eeb6c7f1503ba60800000000000000
+      internalID: 7688494621641141880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_106
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 271
+        width: 71
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bfbba81384f91880800000000000000
+      internalID: -8639605566241783883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_107
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 312
+        width: 50
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46a57daa141c98d50800000000000000
+      internalID: 6740130805119933028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_108
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 271
+        width: 69
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35d8ba263289e87a0800000000000000
+      internalID: -6372989144935985837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_109
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 271
+        width: 69
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5f7b22579e85d1c0800000000000000
+      internalID: -4479517473780301987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_110
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 314
+        width: 50
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9c1c9b1a7db6a440800000000000000
+      internalID: 4946849572859944094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_111
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 271
+        width: 70
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d7e3413d732e0270800000000000000
+      internalID: 8218545390602151893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_112
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 271
+        width: 70
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb9953fe8e4bc5c70800000000000000
+      internalID: 8961236271099124158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_113
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 313
+        width: 50
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 371876faf7e596690800000000000000
+      internalID: -7608446192969088653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_114
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 111
+        width: 230
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79386f3f73d2aeae0800000000000000
+      internalID: -1519352205944650857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_115
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 207
+        width: 82
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 699c05b77a62cdd70800000000000000
+      internalID: 9069166250387622294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_116
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 111
+        width: 230
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f7d9d7b98d5799a0800000000000000
+      internalID: -6226405113740011531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_117
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 207
+        width: 82
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5327f4ce2ad414f20800000000000000
+      internalID: 3405088155413475893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_118
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 111
+        width: 230
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be6fa1f050871a950800000000000000
+      internalID: 6458575303749596907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_119
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 207
+        width: 82
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c5b31ff234802d80800000000000000
+      internalID: -8277470760544258615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_120
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 15
+        width: 102
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e04367f4c345b26f0800000000000000
+      internalID: -708379898372803570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_121
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 15
+        width: 102
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53967ff00be0bfac0800000000000000
+      internalID: -3820443709548828363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_122
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 15
+        width: 102
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f40eb961a43a589d0800000000000000
+      internalID: -2772630456974450609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_123
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 15
+        width: 102
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96cc1f5e31798b0d0800000000000000
+      internalID: -3406807006387778455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_124
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 15
+        width: 102
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f15edf62ebf2a030800000000000000
+      internalID: 3504640410005688825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_Shadow_colorShadow_125
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 15
+        width: 102
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2f08c8d88976f4f0800000000000000
+      internalID: -795314655524810965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Tilesheet_Shadow_colorShadow_0: -3087914757356199458
+      Tilesheet_Shadow_colorShadow_1: 5960827449985379214
+      Tilesheet_Shadow_colorShadow_10: -5448854317568075712
+      Tilesheet_Shadow_colorShadow_100: -4942369027735653189
+      Tilesheet_Shadow_colorShadow_101: 286083159343145745
+      Tilesheet_Shadow_colorShadow_102: -5727746955998737837
+      Tilesheet_Shadow_colorShadow_103: -4059235097081481550
+      Tilesheet_Shadow_colorShadow_104: -1519872915761513899
+      Tilesheet_Shadow_colorShadow_105: 7688494621641141880
+      Tilesheet_Shadow_colorShadow_106: -8639605566241783883
+      Tilesheet_Shadow_colorShadow_107: 6740130805119933028
+      Tilesheet_Shadow_colorShadow_108: -6372989144935985837
+      Tilesheet_Shadow_colorShadow_109: -4479517473780301987
+      Tilesheet_Shadow_colorShadow_11: -7909284762043972424
+      Tilesheet_Shadow_colorShadow_110: 4946849572859944094
+      Tilesheet_Shadow_colorShadow_111: 8218545390602151893
+      Tilesheet_Shadow_colorShadow_112: 8961236271099124158
+      Tilesheet_Shadow_colorShadow_113: -7608446192969088653
+      Tilesheet_Shadow_colorShadow_114: -1519352205944650857
+      Tilesheet_Shadow_colorShadow_115: 9069166250387622294
+      Tilesheet_Shadow_colorShadow_116: -6226405113740011531
+      Tilesheet_Shadow_colorShadow_117: 3405088155413475893
+      Tilesheet_Shadow_colorShadow_118: 6458575303749596907
+      Tilesheet_Shadow_colorShadow_119: -8277470760544258615
+      Tilesheet_Shadow_colorShadow_12: -3578234616076961202
+      Tilesheet_Shadow_colorShadow_120: -708379898372803570
+      Tilesheet_Shadow_colorShadow_121: -3820443709548828363
+      Tilesheet_Shadow_colorShadow_122: -2772630456974450609
+      Tilesheet_Shadow_colorShadow_123: -3406807006387778455
+      Tilesheet_Shadow_colorShadow_124: 3504640410005688825
+      Tilesheet_Shadow_colorShadow_125: -795314655524810965
+      Tilesheet_Shadow_colorShadow_13: 5335214355609796895
+      Tilesheet_Shadow_colorShadow_14: 3625492279320495961
+      Tilesheet_Shadow_colorShadow_15: 8747612875844380220
+      Tilesheet_Shadow_colorShadow_16: -3537143160035732415
+      Tilesheet_Shadow_colorShadow_17: 6983415274833401886
+      Tilesheet_Shadow_colorShadow_18: 7308367718623846346
+      Tilesheet_Shadow_colorShadow_19: 1452448103763265830
+      Tilesheet_Shadow_colorShadow_2: -3635425250204647975
+      Tilesheet_Shadow_colorShadow_20: 5887270561159662855
+      Tilesheet_Shadow_colorShadow_21: -2730355270566179287
+      Tilesheet_Shadow_colorShadow_22: 2244293843787395134
+      Tilesheet_Shadow_colorShadow_23: -1047229743557471422
+      Tilesheet_Shadow_colorShadow_24: -5557359486020230606
+      Tilesheet_Shadow_colorShadow_25: 2523167287504506763
+      Tilesheet_Shadow_colorShadow_26: -2062255312225128857
+      Tilesheet_Shadow_colorShadow_27: 2133253052294836682
+      Tilesheet_Shadow_colorShadow_28: 1377677534470022302
+      Tilesheet_Shadow_colorShadow_29: -4463990494657327312
+      Tilesheet_Shadow_colorShadow_3: -8858544836515790833
+      Tilesheet_Shadow_colorShadow_30: 7662343150756210672
+      Tilesheet_Shadow_colorShadow_31: -7880141696900962362
+      Tilesheet_Shadow_colorShadow_32: 9155830262383899679
+      Tilesheet_Shadow_colorShadow_33: 1337992710831577443
+      Tilesheet_Shadow_colorShadow_34: 441091608422721892
+      Tilesheet_Shadow_colorShadow_35: 4253588718214103003
+      Tilesheet_Shadow_colorShadow_36: -5529785290999686505
+      Tilesheet_Shadow_colorShadow_37: -2018968912590357482
+      Tilesheet_Shadow_colorShadow_38: 6850444857452595600
+      Tilesheet_Shadow_colorShadow_39: 2079384481695714776
+      Tilesheet_Shadow_colorShadow_4: 7120011564349864009
+      Tilesheet_Shadow_colorShadow_40: 981135992432495786
+      Tilesheet_Shadow_colorShadow_41: -1844008434898816682
+      Tilesheet_Shadow_colorShadow_42: 8654901714058583430
+      Tilesheet_Shadow_colorShadow_43: 4863079262226895340
+      Tilesheet_Shadow_colorShadow_44: -6072973147589158075
+      Tilesheet_Shadow_colorShadow_45: -7633676825994361450
+      Tilesheet_Shadow_colorShadow_46: 4575630769886961486
+      Tilesheet_Shadow_colorShadow_47: 1925171852824720833
+      Tilesheet_Shadow_colorShadow_48: 5672438970343093549
+      Tilesheet_Shadow_colorShadow_49: 7783918685538199200
+      Tilesheet_Shadow_colorShadow_5: -686026419352885267
+      Tilesheet_Shadow_colorShadow_50: 1569308594872995455
+      Tilesheet_Shadow_colorShadow_51: 1511049336609719164
+      Tilesheet_Shadow_colorShadow_52: -7776877388124474690
+      Tilesheet_Shadow_colorShadow_53: 6356970715985144208
+      Tilesheet_Shadow_colorShadow_54: -3635761658847767652
+      Tilesheet_Shadow_colorShadow_55: 6984886156144864975
+      Tilesheet_Shadow_colorShadow_56: -1861791171792471808
+      Tilesheet_Shadow_colorShadow_57: -6403988457719573886
+      Tilesheet_Shadow_colorShadow_58: -3414854483706298292
+      Tilesheet_Shadow_colorShadow_59: -2688964099232664451
+      Tilesheet_Shadow_colorShadow_6: 311983033466084552
+      Tilesheet_Shadow_colorShadow_60: 2909218961066964624
+      Tilesheet_Shadow_colorShadow_61: -8087072935439159284
+      Tilesheet_Shadow_colorShadow_62: 7858097962176493918
+      Tilesheet_Shadow_colorShadow_63: -6496825306271066766
+      Tilesheet_Shadow_colorShadow_64: -4959094533460992188
+      Tilesheet_Shadow_colorShadow_65: -2619138194976062675
+      Tilesheet_Shadow_colorShadow_66: 370600878688191447
+      Tilesheet_Shadow_colorShadow_67: -6198327623391431889
+      Tilesheet_Shadow_colorShadow_68: -7122486276363921932
+      Tilesheet_Shadow_colorShadow_69: -7914310311794586850
+      Tilesheet_Shadow_colorShadow_7: -5390721194697235467
+      Tilesheet_Shadow_colorShadow_70: -1505554300337141089
+      Tilesheet_Shadow_colorShadow_71: -2849624040748453359
+      Tilesheet_Shadow_colorShadow_72: 978221999182028061
+      Tilesheet_Shadow_colorShadow_73: -7696852344424201639
+      Tilesheet_Shadow_colorShadow_74: -5394204854347456351
+      Tilesheet_Shadow_colorShadow_75: -9040568290257177251
+      Tilesheet_Shadow_colorShadow_76: 4970461532943807901
+      Tilesheet_Shadow_colorShadow_77: 6098983397490646384
+      Tilesheet_Shadow_colorShadow_78: 3023278616856849583
+      Tilesheet_Shadow_colorShadow_79: -2314534189253569512
+      Tilesheet_Shadow_colorShadow_8: -351243213769815252
+      Tilesheet_Shadow_colorShadow_80: -3120045453651435530
+      Tilesheet_Shadow_colorShadow_81: -8397541543954432441
+      Tilesheet_Shadow_colorShadow_82: -6433938469409584576
+      Tilesheet_Shadow_colorShadow_83: -3134015152776522364
+      Tilesheet_Shadow_colorShadow_84: -5920093739292868497
+      Tilesheet_Shadow_colorShadow_85: 860438524267584119
+      Tilesheet_Shadow_colorShadow_86: -717587252013402310
+      Tilesheet_Shadow_colorShadow_87: -7294371557322103801
+      Tilesheet_Shadow_colorShadow_88: 3164976167128101644
+      Tilesheet_Shadow_colorShadow_89: -449925182464635312
+      Tilesheet_Shadow_colorShadow_9: 2192360835599853164
+      Tilesheet_Shadow_colorShadow_90: 7204372673029088506
+      Tilesheet_Shadow_colorShadow_91: -600147438560345494
+      Tilesheet_Shadow_colorShadow_92: -5300093634376480356
+      Tilesheet_Shadow_colorShadow_93: 864927104319720298
+      Tilesheet_Shadow_colorShadow_94: 7102733078364502215
+      Tilesheet_Shadow_colorShadow_95: 2183926678647594117
+      Tilesheet_Shadow_colorShadow_96: 8403399427630164175
+      Tilesheet_Shadow_colorShadow_97: -7081901951298967419
+      Tilesheet_Shadow_colorShadow_98: 4474082170324959315
+      Tilesheet_Shadow_colorShadow_99: -5032376993459347324
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

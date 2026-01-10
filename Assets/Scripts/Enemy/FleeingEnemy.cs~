@@ -1,0 +1,141 @@
+using UnityEngine;
+
+public class FleeingEnemy : Enemy
+{
+    public float fleeDistance = 5.0f;     // Distancia a la que empieza a huir agresivamente
+    public float safeDistance = 6.0f;     // Distancia óptima que intenta mantener
+    public float stopDistance = 8.0f;     // Distancia a la que se detiene
+
+    // Nuevos parámetros para evitar quedarse pegado a la pared
+    public float avoidanceRadius = 1.5f;   // Radio para detectar obstáculos cercanos
+    public float avoidanceForce = 8f;      // Fuerza de evasión lateral
+    public LayerMask obstacleLayer;        // Layer de las paredes/obstáculos
+
+    protected override void Start()
+    {
+        base.Start();
+        if (obstacleLayer == 0) obstacleLayer = LayerMask.GetMask("Default");
+    }
+
+    protected override void Move()
+    {
+        if (playerTransform == null || rb == null) return;
+
+        Vector2 currentPosition = rb.position;
+        Vector2 toPlayer = playerTransform.position - (Vector3)currentPosition;
+        float distanceToPlayer = toPlayer.magnitude;
+
+        Vector2 totalForce = Vector2.zero;
+
+        // 1. Huida agresiva cuando está muy cerca
+        if (distanceToPlayer < fleeDistance)
+        {
+            // Dirección base de huida (lejos del jugador)
+            Vector2 fleeDirection = -toPlayer.normalized;
+
+            // --- AÑADIDO: Evitación de obstáculos ---
+            Vector2 avoidanceDirection = CalculateObstacleAvoidance();
+            if (avoidanceDirection != Vector2.zero)
+            {
+                // Combinamos: prioridad a evitar la pared, pero manteniendo dirección general de huida
+                fleeDirection = (fleeDirection + avoidanceDirection.normalized * 2f).normalized;
+            }
+
+            Vector2 desiredVelocity = fleeDirection * speed;
+            Vector2 steering = desiredVelocity - rb.linearVelocity;
+            steering = Vector2.ClampMagnitude(steering, maxForce);
+
+            totalForce += steering;
+        }
+        // 2. Mantener distancia segura
+        else if (distanceToPlayer < stopDistance)
+        {
+            float approachFactor = 0.5f;
+            Vector2 desiredVelocity;
+
+            if (distanceToPlayer > safeDistance + 0.5f)
+            {
+                // Acercarse suavemente
+                desiredVelocity = toPlayer.normalized * speed * approachFactor;
+            }
+            else if (distanceToPlayer < safeDistance - 0.5f)
+            {
+                // Alejarse suavemente
+                desiredVelocity = -toPlayer.normalized * speed * approachFactor;
+            }
+            else
+            {
+                desiredVelocity = Vector2.zero;
+            }
+
+            Vector2 steering = desiredVelocity - rb.linearVelocity;
+            steering = Vector2.ClampMagnitude(steering, maxForce);
+            totalForce += steering;
+
+            // Fricción suave para estabilizarse
+            if (rb.linearVelocity.sqrMagnitude > 0.01f)
+            {
+                totalForce += -rb.linearVelocity * maxForce * 0.2f;
+            }
+        }
+        // 3. Fuera del rango: frenado suave
+        else
+        {
+            if (rb.linearVelocity.sqrMagnitude > 0.01f)
+            {
+                totalForce += -rb.linearVelocity * maxForce * 0.8f;
+            }
+            else
+            {
+                rb.linearVelocity = Vector2.zero;
+            }
+        }
+
+        // Aplicar la fuerza total
+        if (totalForce != Vector2.zero)
+        {
+            rb.AddForce(totalForce);
+        }
+    }
+
+    // Método para detectar obstáculos delante y desviarse lateralmente
+    private Vector2 CalculateObstacleAvoidance()
+    {
+        Vector2 forward = rb.linearVelocity.magnitude > 0.1f ? rb.linearVelocity.normalized : -((Vector2)(playerTransform.position - transform.position)).normalized;
+
+        // Lanzamos 3 rayos: centro y dos laterales (forma de "bigote")
+        Vector2[] directions = new Vector2[]
+        {
+            forward,
+            Quaternion.Euler(0, 0, 45) * forward,
+            Quaternion.Euler(0, 0, -45) * forward
+        };
+
+        float longestDistance = 0f;
+        Vector2 bestDirection = Vector2.zero;
+
+        foreach (Vector2 dir in directions)
+        {
+            RaycastHit2D hit = Physics2D.Raycast(rb.position, dir, avoidanceRadius, obstacleLayer);
+            if (hit.collider == null)
+            {
+                // No hay obstáculo en esta dirección → es una buena opción
+                if (dir.magnitude > longestDistance)
+                {
+                    longestDistance = dir.magnitude;
+                    bestDirection = dir;
+                }
+            }
+        }
+
+        if (bestDirection != Vector2.zero)
+        {
+            // Devolvemos una dirección lateral para rodear el obstáculo
+            return bestDirection;
+        }
+
+        // Si todas las direcciones están bloqueadas, intentamos ir perpendicular al jugador
+        Vector2 perpendicular = Vector2.Perpendicular(-toPlayer.normalized);
+        return perpendicular;
+    }
+}

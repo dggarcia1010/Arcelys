@@ -1,0 +1,553 @@
+using UnityEngine;
+using System.Collections.Generic;
+
+public class FleeingEnemy : Enemy
+{
+    [Header("Configuración de Huida")]
+    public float fleeDistance = 5.0f;    // Distancia a la que empieza a huir agresivamente.
+    public float safeDistance = 6.0f;    // Distancia óptima que el enemigo intenta mantener.
+    public float stopDistance = 8.0f;    // Distancia a la que se detiene y frena.
+    
+    [Header("Evitación de Paredes")]
+    public float wallDetectionRadius = 2.5f; // Radio para detectar paredes cercanas
+    public float wallPushForce = 4.0f;       // Fuerza para alejarse de paredes
+    public float minWallDistance = 1.5f;     // Distancia mínima de seguridad a paredes
+    public float predictionDistance = 4.0f;  // Distancia para predecir colisiones
+    public LayerMask wallLayerMask;          // Capas de paredes/obstáculos
+    
+    [Header("Búsqueda de Rutas Seguras")]
+    public int pathCheckRays = 12;           // Número de rayos para buscar rutas
+    public float angleSearchRange = 180f;    // Rango de ángulos a buscar (grados)
+    public float pathClearanceRequired = 1.2f; // Espacio libre mínimo requerido
+    
+    [Header("Comportamiento de Escape")]
+    public float escapeBoost = 1.5f;         // Multiplicador de velocidad al escapar
+    public float panicThreshold = 0.5f;      // Distancia mínima a pared para entrar en pánico
+    public float panicDuration = 1.0f;       // Duración del estado de pánico
+    
+    // Variables de estado
+    private Vector2 lastSafePosition;
+    private float panicTimer = 0f;
+    private bool isPanicking = false;
+    private Vector2 panicDirection;
+    private List<Vector2> safePositionsHistory = new List<Vector2>();
+    private float lastPathRecalcTime = 0f;
+    private Vector2 calculatedSafeDirection;
+    
+    protected override void Start()
+    {
+        base.Start();
+        
+        // Configurar capa de paredes si no está asignada
+        if (wallLayerMask.value == 0)
+        {
+            wallLayerMask = LayerMask.GetMask("Wall", "Obstacle", "Default");
+        }
+        
+        lastSafePosition = rb.position;
+        safePositionsHistory.Add(lastSafePosition);
+    }
+
+
+    protected override void Move()
+    {
+        if (playerTransform == null || rb == null) return;
+
+        Vector2 targetPosition = playerTransform.position;
+        Vector2 currentPosition = rb.position;
+        float distanceToPlayer = Vector2.Distance(currentPosition, targetPosition);
+        
+        // 0. PRIMERO: Verificar si estamos en peligro de atrapamiento
+        bool nearWall = CheckWallProximity(currentPosition, out Vector2 wallPushVector);
+        bool headingIntoWall = PredictWallCollision(currentPosition, targetPosition, distanceToPlayer);
+        
+        // Activar pánico si está muy cerca de una pared
+        if (nearWall && wallPushVector.magnitude > panicThreshold && !isPanicking)
+        {
+            EnterPanicMode(currentPosition, targetPosition);
+        }
+        
+        Vector2 desiredVelocity;
+        
+        // MODIFICADO: Si está en pánico o cerca de pared, priorizar escape
+        if (isPanicking)
+        {
+            // Comportamiento de pánico: alejarse de paredes y buscar espacio
+            desiredVelocity = GetPanicMovement(currentPosition);
+        }
+        else if (nearWall || headingIntoWall)
+        {
+            // Evitar paredes mientras se huye del jugador
+            desiredVelocity = GetWallAwareMovement(currentPosition, targetPosition, distanceToPlayer, wallPushVector);
+        }
+        else
+        {
+            // Comportamiento normal de huida
+            desiredVelocity = GetNormalMovement(currentPosition, targetPosition, distanceToPlayer);
+        }
+        
+        // Calcular y aplicar fuerza de steering
+        Vector2 steeringForce = desiredVelocity - rb.linearVelocity;
+        steeringForce = Vector2.ClampMagnitude(steeringForce, maxForce * (isPanicking ? 1.5f : 1f));
+        
+        rb.AddForce(steeringForce);
+        
+        // Limitar velocidad máxima
+        float currentMaxSpeed = speed * (isPanicking ? escapeBoost : 1f);
+        if (rb.linearVelocity.magnitude > currentMaxSpeed)
+        {
+            rb.linearVelocity = rb.linearVelocity.normalized * currentMaxSpeed;
+        }
+        
+        // Frenado suave si está muy cerca de pared y no en pánico
+        if (nearWall && !isPanicking && rb.linearVelocity.magnitude > 3f)
+        {
+            rb.AddForce(-rb.linearVelocity * 0.3f);
+        }
+    }
+    
+    private bool CheckWallProximity(Vector2 position, out Vector2 pushVector)
+    {
+        pushVector = Vector2.zero;
+        bool wallFound = false;
+        
+        // Usar rayos en múltiples direcciones
+        for (int i = 0; i < pathCheckRays; i++)
+        {
+            float angle = i * (360f / pathCheckRays);
+            Vector2 rayDirection = Quaternion.Euler(0, 0, angle) * Vector2.right;
+            
+            RaycastHit2D hit = Physics2D.Raycast(
+                position, 
+                rayDirection, 
+                wallDetectionRadius, 
+                wallLayerMask
+            );
+            
+            if (hit.collider != null)
+            {
+                float distance = hit.distance;
+                if (distance < minWallDistance)
+                {
+                    // Calcular fuerza de empuje (inversamente proporcional a la distancia)
+                    float pushStrength = 1f - (distance / minWallDistance);
+                    Vector2 pushDirection = -rayDirection; // Alejarse de la pared
+                    
+                    pushVector += pushDirection * pushStrength;
+                    wallFound = true;
+                }
+            }
+        }
+        
+        if (wallFound)
+        {
+            pushVector = pushVector.normalized * wallPushForce;
+        }
+        
+        return wallFound;
+    }
+    
+    private bool PredictWallCollision(Vector2 currentPosition, Vector2 targetPosition, float distanceToPlayer)
+    {
+        // Calcular dirección de huida
+        Vector2 fleeDirection = (currentPosition - targetPosition).normalized;
+        
+        // Verificar si la dirección de huida lleva a una pared
+        RaycastHit2D hit = Physics2D.Raycast(
+            currentPosition, 
+            fleeDirection, 
+            Mathf.Min(predictionDistance, distanceToPlayer * 0.7f), 
+            wallLayerMask
+        );
+        
+        if (hit.collider != null)
+        {
+            // También verificar los lados
+            RaycastHit2D leftHit = Physics2D.Raycast(
+                currentPosition, 
+                Quaternion.Euler(0, 0, 30) * fleeDirection, 
+                predictionDistance * 0.8f, 
+                wallLayerMask
+            );
+            
+            RaycastHit2D rightHit = Physics2D.Raycast(
+                currentPosition, 
+                Quaternion.Euler(0, 0, -30) * fleeDirection, 
+                predictionDistance * 0.8f, 
+                wallLayerMask
+            );
+            
+            // Si todas las direcciones están bloqueadas, hay peligro
+            return hit.collider != null && leftHit.collider != null && rightHit.collider != null;
+        }
+        
+        return false;
+    }
+    
+    private void EnterPanicMode(Vector2 currentPosition, Vector2 targetPosition)
+    {
+        isPanicking = true;
+        panicTimer = panicDuration;
+        
+        // Calcular mejor dirección para escapar
+        panicDirection = FindBestEscapeDirection(currentPosition, targetPosition);
+        
+        Debug.Log("¡ENEMIGO EN PÁNICO! Buscando escape...");
+    }
+    
+    private Vector2 GetPanicMovement(Vector2 currentPosition)
+    {
+        // Durante el pánico, ignorar al jugador y solo buscar escape
+        Vector2 escapeVector = panicDirection * speed * escapeBoost;
+        
+        // Añadir componente aleatorio para evitar quedarse atascado
+        if (Time.frameCount % 30 == 0) // Cada 30 frames
+        {
+            panicDirection = Quaternion.Euler(0, 0, Random.Range(-45f, 45f)) * panicDirection;
+            panicDirection = panicDirection.normalized;
+        }
+        
+        return escapeVector;
+    }
+    
+    private Vector2 GetWallAwareMovement(Vector2 currentPosition, Vector2 targetPosition, float distanceToPlayer, Vector2 wallPushVector)
+    {
+        Vector2 baseMovement;
+        
+        // 1. Calcular movimiento base según distancia al jugador
+        if (distanceToPlayer < fleeDistance)
+        {
+            // Huida agresiva con corrección de paredes
+            Vector2 fleeDirection = (currentPosition - targetPosition).normalized;
+            
+            // Combinar dirección de huida con evitación de paredes
+            Vector2 combinedDirection = (fleeDirection + wallPushVector.normalized * 0.7f).normalized;
+            
+            // Verificar si esta dirección es segura
+            if (!IsDirectionSafe(currentPosition, combinedDirection))
+            {
+                // Buscar dirección alternativa
+                combinedDirection = FindSafeFleeDirection(currentPosition, targetPosition);
+            }
+            
+            baseMovement = combinedDirection * speed;
+        }
+        else if (distanceToPlayer >= fleeDistance && distanceToPlayer < stopDistance)
+        {
+            // Mantenimiento de distancia con corrección
+            float approachFactor = 0.5f;
+            
+            if (distanceToPlayer > safeDistance)
+            {
+                Vector2 direction = (targetPosition - currentPosition).normalized;
+                direction = AdjustDirectionForWalls(currentPosition, direction);
+                baseMovement = direction * (speed * approachFactor);
+            }
+            else if (distanceToPlayer < safeDistance)
+            {
+                Vector2 direction = (currentPosition - targetPosition).normalized;
+                direction = AdjustDirectionForWalls(currentPosition, direction);
+                baseMovement = direction * (speed * approachFactor);
+            }
+            else
+            {
+                baseMovement = Vector2.zero;
+            }
+        }
+        else
+        {
+            // Frenado con cuidado de paredes
+            if (rb.linearVelocity.sqrMagnitude > 0.01f)
+            {
+                Vector2 brakeDirection = -rb.linearVelocity.normalized;
+                brakeDirection = AdjustDirectionForWalls(currentPosition, brakeDirection);
+                baseMovement = brakeDirection * speed * 0.3f;
+            }
+            else
+            {
+                baseMovement = Vector2.zero;
+            }
+        }
+        
+        // 2. Añadir fuerza de empuje de paredes
+        Vector2 finalMovement = baseMovement + wallPushVector;
+        
+        return finalMovement;
+    }
+    
+    private Vector2 GetNormalMovement(Vector2 currentPosition, Vector2 targetPosition, float distanceToPlayer)
+    {
+        Vector2 desiredVelocity;
+        
+        // Comportamiento original modificado para incluir pequeñas correcciones
+        if (distanceToPlayer < fleeDistance)
+        {
+            Vector2 direction = (currentPosition - targetPosition).normalized;
+            
+            // Pequeña corrección preventiva
+            direction = AdjustDirectionForWalls(currentPosition, direction, 0.3f);
+            
+            desiredVelocity = direction * speed;
+        }
+        else if (distanceToPlayer >= fleeDistance && distanceToPlayer < stopDistance)
+        {
+            float approachFactor = 0.5f;
+            
+            if (distanceToPlayer > safeDistance)
+            {
+                Vector2 direction = (targetPosition - currentPosition).normalized;
+                direction = AdjustDirectionForWalls(currentPosition, direction, 0.2f);
+                desiredVelocity = direction * (speed * approachFactor);
+            }
+            else if (distanceToPlayer < safeDistance)
+            {
+                Vector2 direction = (currentPosition - targetPosition).normalized;
+                direction = AdjustDirectionForWalls(currentPosition, direction, 0.2f);
+                desiredVelocity = direction * (speed * approachFactor);
+            }
+            else
+            {
+                desiredVelocity = Vector2.zero;
+            }
+        }
+        else
+        {
+            if (rb.linearVelocity.sqrMagnitude > 0.01f)
+            {
+                desiredVelocity = -rb.linearVelocity.normalized * speed * 0.3f;
+            }
+            else
+            {
+                desiredVelocity = Vector2.zero;
+            }
+        }
+        
+        return desiredVelocity;
+    }
+    
+    private Vector2 AdjustDirectionForWalls(Vector2 position, Vector2 desiredDirection, float adjustmentStrength = 0.5f)
+    {
+        Vector2 adjustedDirection = desiredDirection;
+        
+        // Verificar si la dirección deseada lleva a una pared
+        RaycastHit2D hit = Physics2D.Raycast(
+            position, 
+            desiredDirection, 
+            predictionDistance, 
+            wallLayerMask
+        );
+        
+        if (hit.collider != null)
+        {
+            // La pared está cerca, ajustar dirección
+            float hitDistance = hit.distance;
+            float avoidanceFactor = 1f - (hitDistance / predictionDistance);
+            
+            // Buscar dirección alternativa
+            Vector2 alternativeDirection = FindAlternativeDirection(position, desiredDirection);
+            
+            // Interpolar entre dirección deseada y alternativa
+            adjustedDirection = Vector2.Lerp(desiredDirection, alternativeDirection, 
+                avoidanceFactor * adjustmentStrength).normalized;
+        }
+        
+        return adjustedDirection;
+    }
+    
+    private Vector2 FindAlternativeDirection(Vector2 position, Vector2 blockedDirection)
+    {
+        float bestScore = -1f;
+        Vector2 bestDirection = blockedDirection;
+        
+        // Buscar entre varios ángulos
+        int raysToCheck = Mathf.FloorToInt(angleSearchRange / 15f);
+        
+        for (int i = 0; i <= raysToCheck; i++)
+        {
+            float angle = -angleSearchRange / 2f + i * (angleSearchRange / raysToCheck);
+            
+            if (Mathf.Abs(angle) < 5f) continue; // Saltar ángulos muy similares
+            
+            Vector2 testDirection = Quaternion.Euler(0, 0, angle) * blockedDirection;
+            
+            // Verificar si esta dirección está clara
+            RaycastHit2D hit = Physics2D.Raycast(
+                position, 
+                testDirection, 
+                pathClearanceRequired * 1.5f, 
+                wallLayerMask
+            );
+            
+            if (hit.collider == null)
+            {
+                // Dirección clara, calcular score
+                float alignmentScore = Vector2.Dot(testDirection, blockedDirection);
+                float distanceScore = 1f; // Máximo por estar claro
+                
+                float totalScore = alignmentScore * 0.6f + distanceScore * 0.4f;
+                
+                if (totalScore > bestScore)
+                {
+                    bestScore = totalScore;
+                    bestDirection = testDirection;
+                }
+            }
+        }
+        
+        return bestDirection.normalized;
+    }
+    
+    private Vector2 FindSafeFleeDirection(Vector2 currentPosition, Vector2 targetPosition)
+    {
+        Vector2 idealFleeDirection = (currentPosition - targetPosition).normalized;
+        Vector2 bestDirection = idealFleeDirection;
+        float bestScore = 0f;
+        
+        // Buscar la mejor dirección de huida que no lleve a paredes
+        for (int i = 0; i < 12; i++)
+        {
+            float angle = -60f + i * 10f; // Buscar entre -60 y +60 grados
+            Vector2 testDirection = Quaternion.Euler(0, 0, angle) * idealFleeDirection;
+            
+            // Verificar si esta dirección es segura
+            RaycastHit2D hit = Physics2D.Raycast(
+                currentPosition, 
+                testDirection, 
+                Mathf.Max(fleeDistance * 0.7f, pathClearanceRequired), 
+                wallLayerMask
+            );
+            
+            if (hit.collider == null)
+            {
+                // Calcular score: alineación con dirección ideal + distancia al jugador
+                float alignmentScore = Vector2.Dot(testDirection, idealFleeDirection);
+                float newDistanceToPlayer = Vector2.Distance(currentPosition + testDirection * 3f, targetPosition);
+                float distanceScore = Mathf.Clamp01(newDistanceToPlayer / fleeDistance);
+                
+                float totalScore = alignmentScore * 0.7f + distanceScore * 0.3f;
+                
+                if (totalScore > bestScore)
+                {
+                    bestScore = totalScore;
+                    bestDirection = testDirection;
+                }
+            }
+        }
+        
+        return bestDirection.normalized;
+    }
+    
+    private Vector2 FindBestEscapeDirection(Vector2 currentPosition, Vector2 targetPosition)
+    {
+        Vector2 bestDirection = Vector2.zero;
+        float maxClearance = 0f;
+        
+        // Buscar en todas direcciones
+        for (int i = 0; i < 24; i++)
+        {
+            float angle = i * 15f;
+            Vector2 testDirection = Quaternion.Euler(0, 0, angle) * Vector2.right;
+            
+            // Verificar cuánto espacio hay en esta dirección
+            RaycastHit2D hit = Physics2D.Raycast(
+                currentPosition, 
+                testDirection, 
+                predictionDistance * 2f, 
+                wallLayerMask
+            );
+            
+            float clearance = hit.collider == null ? predictionDistance * 2f : hit.distance;
+            
+            // Penalizar direcciones hacia el jugador
+            float playerAngle = Vector2.Angle(testDirection, (targetPosition - currentPosition));
+            if (playerAngle < 90f)
+            {
+                clearance *= 0.7f; // Reducir score si va hacia el jugador
+            }
+            
+            if (clearance > maxClearance)
+            {
+                maxClearance = clearance;
+                bestDirection = testDirection;
+            }
+        }
+        
+        // Si no encontramos buena dirección, retroceder por el camino seguro
+        if (maxClearance < pathClearanceRequired && safePositionsHistory.Count > 1)
+        {
+            Vector2 retreatDirection = (safePositionsHistory[safePositionsHistory.Count - 2] - currentPosition).normalized;
+            return retreatDirection;
+        }
+        
+        return bestDirection.normalized;
+    }
+    
+    private bool IsDirectionSafe(Vector2 position, Vector2 direction)
+    {
+        RaycastHit2D hit = Physics2D.Raycast(
+            position, 
+            direction, 
+            pathClearanceRequired, 
+            wallLayerMask
+        );
+        
+        return hit.collider == null;
+    }
+    
+    private bool IsPositionSafe(Vector2 position)
+    {
+        Collider2D[] nearbyWalls = Physics2D.OverlapCircleAll(
+            position, 
+            minWallDistance * 0.8f, 
+            wallLayerMask
+        );
+        
+        return nearbyWalls.Length == 0;
+    }
+    
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        // Si choca con pared, activar pánico inmediato
+        if (((1 << collision.gameObject.layer) & wallLayerMask) != 0)
+        {
+            if (!isPanicking)
+            {
+                EnterPanicMode(rb.position, playerTransform.position);
+                
+                // Aplicar rebote
+                Vector2 bounceNormal = collision.contacts[0].normal;
+                rb.AddForce(bounceNormal * 5f, ForceMode2D.Impulse);
+            }
+        }
+    }
+    
+    private void OnDrawGizmosSelected()
+    {
+        if (rb == null) return;
+        
+        Vector2 currentPos = rb.position;
+        
+        // Distancia de detección de paredes
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(currentPos, wallDetectionRadius);
+        
+        // Distancia mínima de seguridad
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(currentPos, minWallDistance);
+        
+        // Dirección actual
+        if (playerTransform != null)
+        {
+            Gizmos.color = isPanicking ? Color.red : Color.blue;
+            Gizmos.DrawLine(currentPos, playerTransform.position);
+        }
+        
+        // Mostrar estado de pánico
+        if (isPanicking)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(currentPos, wallDetectionRadius * 1.2f);
+            Gizmos.DrawRay(currentPos, panicDirection * 3f);
+        }
+    }
+}

@@ -1,0 +1,553 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "Arcelys/batallaFinal.tmx",
+    "expandedProjectPaths": [
+        "Arcelys",
+        "Arcelys/textures",
+        "."
+    ],
+    "file.lastUsedOpenFilter": "Todos los archivos (*)",
+    "fileStates": {
+        "Arcelys/!CL_DEMO.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/16x16_Rock_6.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Arcelys/16x16_Water_Plants_1.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Arcelys/16x16_Water_Plants_2.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Arcelys/16x16_Water_Plants_3.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Arcelys/16x32_Rock_9.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Arcelys/16x32_water_plants_1.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Arcelys/32x32_Rock_7.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Arcelys/32x32_Rock_8.tsx": {
+            "scaleInDock": 0.6,
+            "scaleInEditor": 1
+        },
+        "Arcelys/32x32_WaterPlants_1.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Arcelys/32x32_WaterPlants_2.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Arcelys/32x32_WaterPlants_3.tsx": {
+            "scaleInDock": 0.6,
+            "scaleInEditor": 1
+        },
+        "Arcelys/32x32_WaterPlants_4.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Arcelys/32x32_WaterPlants_5.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Arcelys/32x32_WaterPlants_6.tsx": {
+            "scaleInDock": 0.6,
+            "scaleInEditor": 1
+        },
+        "Arcelys/32x32_WaterPlants_7.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Arcelys/32x32_WaterPlants_8.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Arcelys/32x48_Rock_4.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Arcelys/48x32_Rock_5.tsx": {
+            "scaleInDock": 0.6,
+            "scaleInEditor": 1
+        },
+        "Arcelys/48x48_Rock_10.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Arcelys/48x48_Rock_3.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Arcelys/Antique furniture sheet.tsx": {
+            "scaleInDock": 0.6
+        },
+        "Arcelys/Cliff_WorksForAll.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Arcelys/Decorations_c1.tsx": {
+            "scaleInDock": 0.6
+        },
+        "Arcelys/Decorations_c2.tsx": {
+            "scaleInDock": 0.6
+        },
+        "Arcelys/Esqueleto.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/House_exterior.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/House_interior.tmx": {
+            "scale": 2,
+            "selectedLayer": 10,
+            "viewCenter": {
+                "x": 184.25,
+                "y": 119.75
+            }
+        },
+        "Arcelys/IceCaveObjects.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/IceTileSet.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/Inner.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/Interior.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/Objects_cave.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/Objects_dungeon.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/Overworld.tsx": {
+            "scaleInDock": 0.7861
+        },
+        "Arcelys/Plants.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/SmallCliff_Dirt.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Arcelys/SmallCliff_Grass.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 2
+        },
+        "Arcelys/Smoke_animation.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/Supplies.tsx": {
+            "scaleInDock": 0.8
+        },
+        "Arcelys/Tailset_CaveDoor.tsx": {
+            "scaleInDock": 0.8
+        },
+        "Arcelys/Tilesheet_Shadow.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/Tilesheet_Shadow_color.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/Tilesheet_Shadow_colorShadow.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/Tilesheet_Shadow_colorShadow_v2.tsx": {
+            "scaleInDock": 0.6
+        },
+        "Arcelys/Trees_animation.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Arcelys/U1_decorations_c1.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/U1_decorations_c2.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/WaterPlants.tsx": {
+            "dynamicWrapping": true
+        },
+        "Arcelys/Waterfall.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/alchemy.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/antorchas.tmx": {
+            "expandedObjectLayers": [
+                10
+            ],
+            "scale": 1.5,
+            "selectedLayer": 8,
+            "viewCenter": {
+                "x": 315.66666666666663,
+                "y": 53.33333333333334
+            }
+        },
+        "Arcelys/batallaFinal.tmx": {
+            "scale": 2,
+            "selectedLayer": 12,
+            "viewCenter": {
+                "x": 283,
+                "y": 162
+            }
+        },
+        "Arcelys/beds_BR.tsx": {
+            "scaleInDock": 0.6,
+            "scaleInEditor": 1
+        },
+        "Arcelys/bridge.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Arcelys/cabinets_LRK.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Arcelys/cajas.tmx": {
+            "expandedObjectLayers": [
+                8
+            ],
+            "scale": 1.5,
+            "selectedLayer": 12,
+            "viewCenter": {
+                "x": 226.66666666666666,
+                "y": 249.33333333333334
+            }
+        },
+        "Arcelys/cat_animation.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/cave.tmx": {
+            "scale": 5.5,
+            "selectedLayer": 10,
+            "viewCenter": {
+                "x": 395.6363636363636,
+                "y": 360.3636363636364
+            }
+        },
+        "Arcelys/cave_entry.tmx": {
+            "expandedObjectLayers": [
+                15
+            ],
+            "scale": 2,
+            "selectedLayer": 10,
+            "viewCenter": {
+                "x": 200.25,
+                "y": 175.75
+            }
+        },
+        "Arcelys/cave_passage.tmx": {
+            "expandedObjectLayers": [
+                9
+            ],
+            "scale": 2,
+            "selectedLayer": 10,
+            "viewCenter": {
+                "x": 216,
+                "y": 120
+            }
+        },
+        "Arcelys/cave_rat.tmx": {
+            "expandedObjectLayers": [
+                15
+            ],
+            "scale": 1.5,
+            "selectedLayer": 8,
+            "viewCenter": {
+                "x": 256.33333333333337,
+                "y": 159.66666666666666
+            }
+        },
+        "Arcelys/decorations_LRK.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Arcelys/decorative_catacombs.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Arcelys/decorative_cave.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/details.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Arcelys/doorswindowsstairs_LRK.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/drummer.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/flautist.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/floor_and_decoratives_Exterior.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/floors.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/golemJefe.tmx": {
+            "expandedObjectLayers": [
+                8
+            ],
+            "scale": 2,
+            "selectedLayer": 9,
+            "viewCenter": {
+                "x": 200.25,
+                "y": 175.75
+            }
+        },
+        "Arcelys/greatTree.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/hada.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/house.tmx": {
+            "expandedObjectLayers": [
+                11
+            ],
+            "scale": 1.5,
+            "selectedLayer": 12,
+            "viewCenter": {
+                "x": 344.33333333333337,
+                "y": 256.33333333333337
+            }
+        },
+        "Arcelys/houses.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Arcelys/ice.tmx": {
+            "expandedObjectLayers": [
+                12
+            ],
+            "scale": 2,
+            "selectedLayer": 9,
+            "viewCenter": {
+                "x": 111.75,
+                "y": 239.75
+            }
+        },
+        "Arcelys/idle.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/laberinto.tmx": {
+            "expandedObjectLayers": [
+                19
+            ],
+            "scale": 0.75,
+            "selectedLayer": 5,
+            "viewCenter": {
+                "x": 231.33333333333331,
+                "y": 183.33333333333331
+            }
+        },
+        "Arcelys/luciernagas.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 539.3333333333333,
+                "y": 177.66666666666663
+            }
+        },
+        "Arcelys/luciernagasAntiguo.tmx": {
+            "expandedObjectLayers": [
+                38
+            ],
+            "scale": 0.75,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 127.33333333333331,
+                "y": 303.3333333333333
+            }
+        },
+        "Arcelys/lutist.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Arcelys/pueblo.tmx": {
+            "expandedObjectLayers": [
+                13
+            ],
+            "scale": 2,
+            "selectedLayer": 13,
+            "viewCenter": {
+                "x": 352.25,
+                "y": 376.25
+            }
+        },
+        "Arcelys/rama.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/rama2.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/ready_to_use_houses_Exterior.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/rectTileUniverse_BasicDirt_Tiles_A.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/rectTileUniverse_BasicDirt_Tiles_B.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/rectTileUniverse_BasicDirt_Tiles_C.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/rectTileUniverse_BasicDirt_Tiles_D.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Arcelys/rectTileUniverse_BasicDirt_Tiles_E.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/rectTileUniverse_BasicDirt_Tiles_F.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/rescatarHada2.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 11,
+            "viewCenter": {
+                "x": 248.33333333333334,
+                "y": 280.33333333333337
+            }
+        },
+        "Arcelys/supplies_objects_cave.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/tavern 1.tmx": {
+            "scale": 1.7690257352941174,
+            "selectedLayer": 9,
+            "viewCenter": {
+                "x": 272.1837169429002,
+                "y": 239.96259157271265
+            }
+        },
+        "Arcelys/tavern-cooking.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/tavern-deco.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/tavern-furniture.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Arcelys/tavern.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 7,
+            "viewCenter": {
+                "x": 271.3333333333333,
+                "y": 239.33333333333331
+            }
+        },
+        "Arcelys/tree.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 360.66666666666663,
+                "y": 400.66666666666663
+            }
+        },
+        "Arcelys/tutorial.tmx": {
+            "scale": 2,
+            "selectedLayer": 14,
+            "viewCenter": {
+                "x": 152.25,
+                "y": 264.25
+            }
+        },
+        "Arcelys/walls.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Arcelys/walls_floor.tsx": {
+            "scaleInDock": 1
+        },
+        "Arcelys/wardrobes_BR.tsx": {
+            "scaleInDock": 1
+        }
+    },
+    "frame.defaultDuration": 150,
+    "last.imagePath": "/home/lula/Tiled/ProjectColliders/Arcelys/textures/Animation/Rocks",
+    "map.height": 18,
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 20,
+    "openFiles": [
+        "Arcelys/beds_BR.tsx",
+        "Arcelys/bridge.tsx",
+        "Arcelys/cabinets_LRK.tsx",
+        "Arcelys/cajas.tmx",
+        "Arcelys/cave_passage.tmx",
+        "Arcelys/decorations_LRK.tsx",
+        "Arcelys/decorative_catacombs.tsx",
+        "Arcelys/antorchas.tmx",
+        "Arcelys/tutorial.tmx",
+        "Arcelys/48x32_Rock_5.tsx",
+        "Arcelys/cave_entry.tmx",
+        "Arcelys/cave_rat.tmx",
+        "Arcelys/House_interior.tmx",
+        "Arcelys/houses.tsx",
+        "Arcelys/ice.tmx",
+        "Arcelys/house.tmx",
+        "Arcelys/tree.tmx",
+        "Arcelys/Trees_animation.tsx",
+        "Arcelys/golemJefe.tmx",
+        "Arcelys/laberinto.tmx",
+        "Arcelys/luciernagasAntiguo.tmx",
+        "Arcelys/rescatarHada2.tmx",
+        "Arcelys/pueblo.tmx",
+        "Arcelys/tavern.tmx",
+        "Arcelys/tavern 1.tmx",
+        "Arcelys/batallaFinal.tmx"
+    ],
+    "project": "Arcelys.tiled-project",
+    "recentFiles": [
+        "Arcelys/beds_BR.tsx",
+        "Arcelys/bridge.tsx",
+        "Arcelys/cabinets_LRK.tsx",
+        "Arcelys/cajas.tmx",
+        "Arcelys/cave_passage.tmx",
+        "Arcelys/decorations_LRK.tsx",
+        "Arcelys/decorative_catacombs.tsx",
+        "Arcelys/antorchas.tmx",
+        "Arcelys/tutorial.tmx",
+        "Arcelys/48x32_Rock_5.tsx",
+        "Arcelys/cave_entry.tmx",
+        "Arcelys/cave_rat.tmx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    },
+    "tileset.type": 0
+}

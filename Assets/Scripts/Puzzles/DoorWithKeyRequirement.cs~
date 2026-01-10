@@ -1,0 +1,116 @@
+using UnityEngine;
+using System.Collections;
+
+[RequireComponent(typeof(Collider2D))]
+public class FollowerDoorOpener : MonoBehaviour
+{
+    [Header("Requisito del Follower")]
+    public FollowerEnemy followerEnemy; // Asigna tu FollowerEnemy aquí
+    [Header("Collider de la puerta a abrir")]
+    public Collider2D doorBlockerCollider; // Collider físico que bloquea el paso
+    public bool makeTriggerInsteadOfDisable = true; // Recomendado: true
+    [Header("Objeto visual de la puerta")]
+    public GameObject doorVisualObject; // Asigna aquí el GameObject llamado "Door" que quieres que desaparezca
+    // Si prefieres buscarlo por nombre, deja este campo vacío
+    [Header("Interacción")]
+    public KeyCode interactKey = KeyCode.E;
+    [Header("Tiempos del Fade")]
+    public float fadeDuration = 0.5f; // Tiempo que tarda en ir a negro y volver
+    public float blackScreenTime = 1f; // Tiempo que permanece negro
+    private bool playerInRange = false;
+    private bool doorAlreadyOpened = false;
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            playerInRange = true;
+            Debug.Log("Jugador cerca de la puerta. Pulsa E para intentar abrirla.");
+            // Aquí puedes mostrar UI: "Pulsa E para abrir"
+        }
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            playerInRange = false;
+        }
+    }
+    private void Update()
+    {
+        if (!playerInRange || doorAlreadyOpened) return;
+        if (Input.GetKeyDown(interactKey))
+        {
+            AttemptToOpenDoor();
+        }
+    }
+    private void AttemptToOpenDoor()
+    {
+        if (followerEnemy == null)
+        {
+            Debug.LogError("FollowerDoorOpener: Asigna el FollowerEnemy en el Inspector.");
+            return;
+        }
+        if (doorBlockerCollider == null)
+        {
+            Debug.LogError("FollowerDoorOpener: Asigna el collider bloqueante de la puerta.");
+            return;
+        }
+        if (!followerEnemy.IsFollowingPlayer())
+        {
+            Debug.Log("El guardián aún no te sigue. No puedes abrir la puerta todavía.");
+            // Opcional: sonido de "no", mensaje en pantalla, etc.
+            return;
+        }
+        // ¡Condición cumplida! Abrimos con transición
+        doorAlreadyOpened = true;
+        StartCoroutine(OpenDoorWithFade());
+    }
+    private IEnumerator OpenDoorWithFade()
+    {
+        if (ScreenFader.Instance == null)
+        {
+            Debug.LogError("No se encontró ScreenFader en la escena.");
+            yield break;
+        }
+        Debug.Log("Iniciando transición: fade a negro...");
+        // 1. Fade a negro
+        yield return ScreenFader.Instance.FadeTo(1f, fadeDuration);
+        // 2. Mantener negro 1 segundo
+        yield return new WaitForSecondsRealtime(blackScreenTime); // unscaled para que no afecte pause o time scale
+        // 3. Durante el negro: desaparecemos el objeto visual "Door"
+        if (doorVisualObject != null)
+        {
+            doorVisualObject.SetActive(false);
+            Debug.Log("Objeto visual de la puerta desactivado.");
+        }
+        else
+        {
+            // Alternativa: buscar por nombre si no lo asignaste
+            GameObject door = GameObject.Find("Door");
+            if (door != null)
+            {
+                door.SetActive(false);
+                Debug.Log("Objeto 'Door' encontrado y desactivado.");
+            }
+            else
+            {
+                Debug.LogWarning("No se encontró ningún GameObject llamado 'Door'.");
+            }
+        }
+        // 4. Abrir el paso físico
+        if (makeTriggerInsteadOfDisable)
+        {
+            doorBlockerCollider.isTrigger = true;
+        }
+        else
+        {
+            doorBlockerCollider.gameObject.SetActive(false);
+        }
+        // 5. Fade out a transparente
+        yield return ScreenFader.Instance.FadeTo(0f, fadeDuration);
+        Debug.Log("Transición completada. Puerta abierta.");
+        // Desactivamos la zona de interacción
+        GetComponent<Collider2D>().enabled = false;
+        this.enabled = false;
+    }
+}
