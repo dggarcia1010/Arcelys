@@ -1434,7 +1434,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 303628674}
         m_TargetAssemblyTypeName: RestartOnDeath, Assembly-CSharp
         m_MethodName: ReloadScene
         m_Mode: 1
@@ -1487,6 +1487,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 0
   speed: 6
+  onIce: 0
+  iceAcceleration: 10
+  iceFriction: 2
+  maxIceSpeedMultiplier: 1
 --- !u!95 &1357529515
 Animator:
   serializedVersion: 7
