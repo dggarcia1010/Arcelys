@@ -1,0 +1,29 @@
+using UnityEngine;
+
+public class CutsceneTrigger : MonoBehaviour
+{
+    public Transform cutsceneFocusPoint;   // Empty GameObject donde enfocar
+    public float duration = 4f;            // Segundos de duración
+    public string cutsceneId = "cutscene_1"; // Único por cada cutscene
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (!other.CompareTag("Player")) return;
+
+        // Solo una vez
+        if (PlayerPrefs.HasKey(cutsceneId)) return;
+
+        if (CutsceneManager.Instance != null)
+        {
+            CutsceneManager.Instance.PlayCutscene(
+                cutsceneFocusPoint,
+                duration,
+                () => {
+                    PlayerPrefs.SetInt(cutsceneId, 1);
+                    PlayerPrefs.Save();
+                    Debug.Log("Cutscene marcada como vista: " + cutsceneId);
+                }
+            );
+        }
+    }
+}

@@ -1,0 +1,139 @@
+using UnityEngine;
+using UnityEngine.Rendering.Universal;   
+using System.Collections;
+
+public class MagicSpriteEffect : MonoBehaviour
+{
+    [Header("Duraciones (segundos)")]
+    public float fadeInDuration = 1.0f;      // Tiempo de aparición gradual
+    public float riseDuration = 1.5f;         // Tiempo que tarda en alzarse
+    public float glowDuration = 2.0f;         // Tiempo brillando
+    public float fadeOutDuration = 1.0f;      // Tiempo de desaparición
+
+    [Header("Efectos visuales")]
+    public float riseHeight = 2.0f;           // Cuánto se alza en Y
+    public float glowScaleMultiplier = 1.2f;  // Escala durante brillo (1.2 = 20% más grande)
+    public Color glowColor = Color.yellow;    // Color del brillo (amarillo mágico)
+    public Light2D glowLight;                 // Light2D opcional para brillo real (arrastra si tienes)
+
+    [Header("Final")]
+    public bool destroyOnEnd = true;          // Destruir objeto al final
+
+    private SpriteRenderer spriteRenderer;
+    private Vector3 initialPosition;
+    private Vector3 initialScale;
+    private Color initialColor;
+
+    void Start()
+    {
+        // Cache componentes
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        if (spriteRenderer == null)
+        {
+            Debug.LogError("MagicSpriteEffect necesita SpriteRenderer!");
+            return;
+        }
+
+        glowLight = GetComponentInChildren<Light2D>();
+
+        // Guardar valores iniciales
+        initialPosition = transform.position;
+        initialScale = transform.localScale;
+        initialColor = spriteRenderer.color;
+
+        // Iniciar efecto automáticamente
+        StartCoroutine(PlayMagicEffect());
+    }
+
+    private IEnumerator PlayMagicEffect()
+    {
+        // 1. FADE IN (aparece gradualmente)
+        spriteRenderer.color = new Color(initialColor.r, initialColor.g, initialColor.b, 0f);
+        float timer = 0f;
+        while (timer < fadeInDuration)
+        {
+            timer += Time.deltaTime;
+            float alpha = timer / fadeInDuration;
+            spriteRenderer.color = new Color(initialColor.r, initialColor.g, initialColor.b, alpha);
+            yield return null;
+        }
+        spriteRenderer.color = initialColor; // Asegurar alpha=1
+
+        // 2. SE ALZA HACIA ARRIBA
+        Vector3 targetRisePos = initialPosition + Vector3.up * riseHeight;
+        timer = 0f;
+        while (timer < riseDuration)
+        {
+            timer += Time.deltaTime;
+            float t = timer / riseDuration;
+            t = Mathf.Sin(t * Mathf.PI * 0.5f); // Curva suave (ease out)
+            transform.position = Vector3.Lerp(initialPosition, targetRisePos, t);
+            yield return null;
+        }
+        transform.position = targetRisePos;
+
+        // 3. BRILLA (durante glowDuration segundos)
+        // Cambiar color a glowColor y escalar
+        timer = 0f;
+        while (timer < glowDuration)
+        {
+            timer += Time.deltaTime;
+            float pulse = Mathf.Sin(timer * Mathf.PI * 2f * 2f) * 0.3f + 0.7f; // Pulso suave
+
+            // Escala pulsante
+            transform.localScale = initialScale * (glowScaleMultiplier * pulse);
+
+            // Color pulsante
+            Color glowPulse = Color.Lerp(initialColor, glowColor, pulse);
+            spriteRenderer.color = glowPulse;
+
+            // Luz pulsante (si hay Light2D)
+            if (glowLight != null)
+            {
+                glowLight.intensity = pulse * 3f; // Intensidad pulsante
+                glowLight.color = glowPulse;
+            }
+
+            yield return null;
+        }
+
+        // Restaurar escala antes de fade out
+        transform.localScale = initialScale;
+
+        // 4. FADE OUT (desaparece gradualmente)
+        timer = 0f;
+        while (timer < fadeOutDuration)
+        {
+            timer += Time.deltaTime;
+            float alpha = 1f - (timer / fadeOutDuration);
+            spriteRenderer.color = new Color(initialColor.r, initialColor.g, initialColor.b, alpha);
+
+            // Luz fade out
+            if (glowLight != null)
+                glowLight.intensity = alpha * 3f;
+
+            yield return null;
+        }
+
+        // Final: volver a posición inicial y desaparecer
+        spriteRenderer.color = new Color(initialColor.r, initialColor.g, initialColor.b, 0f);
+        transform.position = initialPosition;
+
+        if (glowLight != null)
+            glowLight.intensity = 0f;
+
+        // Destruir o desactivar
+        if (destroyOnEnd)
+            Destroy(gameObject);
+        else
+            gameObject.SetActive(false);
+
+        Debug.Log("Efecto mágico completado!");
+    }
+
+    // Método público para activar manualmente (opcional)
+    public void TriggerEffect()
+    {
+        StartCoroutine(PlayMagicEffect());
+    }
+}
