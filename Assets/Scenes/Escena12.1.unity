@@ -233,6 +233,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 0
   speed: 6
+  onIce: 0
+  iceAcceleration: 10
+  iceFriction: 2
+  maxIceSpeedMultiplier: 1
 --- !u!61 &294758876
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -757,6 +761,8 @@ MonoBehaviour:
   target: {fileID: 294758879}
   smoothing: 0
   map: {fileID: 0}
+  cutsceneTarget: {fileID: 0}
+  isInCutscene: 0
 --- !u!114 &519420034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1564,11 +1570,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - '"Ela Hada del fuego": Hermanas!! Mirad lo que me ha hecho ese hombre, estoy
-      prendida en fuego.'
+    - '"Ela Hada del fuego": Hermanas!! Mirad lo que me han hecho, estoy prendida
+      en fuego.'
     - "\"Kyra Hada de Hielo\": Pero que dices Ela si tu eres as\xED desde que naciste.\r\n"
-    - '"Ela Hada del fuego": Ya... pero tambien me ha tenido encerrado, cocinando
-      la comida caliente y calentando su hogar. No me dejaba huir.
+    - '"Ela Hada del fuego": Ya... pero tambien me han tenido encerrada, cocinando
+      la comida caliente y calentando su hogar. No me dejaban irme.
 
 '
     - '"Lira Hada de Viento": No te preocupes, ya estamos aqui contigo. Te vienes
@@ -1588,6 +1594,7 @@ MonoBehaviour:
   interactKey: 101
   colliderToAffect: {fileID: 0}
   setAsTriggerInsteadOfDisable: 0
+  hideSelfAfterDialogue: 1
 --- !u!61 &1294663731
 BoxCollider2D:
   m_ObjectHideFlags: 0

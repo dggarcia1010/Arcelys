@@ -371,6 +371,7 @@ MonoBehaviour:
   interactKey: 101
   colliderToAffect: {fileID: 0}
   setAsTriggerInsteadOfDisable: 0
+  hideSelfAfterDialogue: 0
 --- !u!1 &152901013
 GameObject:
   m_ObjectHideFlags: 0
@@ -625,7 +626,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1541492841656835551, guid: 4c40738dde630f346bf961f3878efebe, type: 3}
       propertyPath: 'introDialogue.sentences.Array.data[2]'
-      value: "\"Lira Hada de Viento\" : \tQuizas alguien la ha visto en este pueblo.
+      value: "\"Lira Hada de Viento\" : \tQuizas alguien la ha visto por esta zona.
         Vamos a preguntar a la gente del pueblo."
       objectReference: {fileID: 0}
     - target: {fileID: 1541492841656835551, guid: 4c40738dde630f346bf961f3878efebe, type: 3}
@@ -725,6 +726,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 0
   speed: 6
+  onIce: 0
+  iceAcceleration: 10
+  iceFriction: 2
+  maxIceSpeedMultiplier: 1
 --- !u!61 &294758876
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1555,6 +1560,7 @@ MonoBehaviour:
   interactKey: 101
   colliderToAffect: {fileID: 0}
   setAsTriggerInsteadOfDisable: 0
+  hideSelfAfterDialogue: 0
 --- !u!61 &495389621
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1755,6 +1761,8 @@ MonoBehaviour:
   target: {fileID: 294758879}
   smoothing: 5
   map: {fileID: 331828554}
+  cutsceneTarget: {fileID: 0}
+  isInCutscene: 0
 --- !u!114 &519420034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2290,7 +2298,7 @@ MonoBehaviour:
   m_LightType: 4
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 0.7615023, g: 0.7615023, b: 0.87169814, a: 1}
+  m_Color: {r: 0.24313726, g: 0.24313726, b: 0.42352942, a: 1}
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
@@ -2578,6 +2586,7 @@ MonoBehaviour:
   interactKey: 101
   colliderToAffect: {fileID: 0}
   setAsTriggerInsteadOfDisable: 0
+  hideSelfAfterDialogue: 0
 --- !u!1 &676898124
 GameObject:
   m_ObjectHideFlags: 0
@@ -3497,6 +3506,7 @@ MonoBehaviour:
   interactKey: 101
   colliderToAffect: {fileID: 0}
   setAsTriggerInsteadOfDisable: 0
+  hideSelfAfterDialogue: 0
 --- !u!1 &1130568865
 GameObject:
   m_ObjectHideFlags: 0
@@ -3736,6 +3746,7 @@ MonoBehaviour:
   interactKey: 101
   colliderToAffect: {fileID: 1380586336}
   setAsTriggerInsteadOfDisable: 1
+  hideSelfAfterDialogue: 0
 --- !u!1 &1339735900
 GameObject:
   m_ObjectHideFlags: 0
@@ -3990,6 +4001,7 @@ MonoBehaviour:
   interactKey: 101
   colliderToAffect: {fileID: 0}
   setAsTriggerInsteadOfDisable: 0
+  hideSelfAfterDialogue: 0
 --- !u!1 &1380586335
 GameObject:
   m_ObjectHideFlags: 0
@@ -4604,6 +4616,7 @@ MonoBehaviour:
   interactKey: 101
   colliderToAffect: {fileID: 0}
   setAsTriggerInsteadOfDisable: 0
+  hideSelfAfterDialogue: 0
 --- !u!61 &1900421545
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5031,6 +5044,7 @@ MonoBehaviour:
   interactKey: 101
   colliderToAffect: {fileID: 0}
   setAsTriggerInsteadOfDisable: 0
+  hideSelfAfterDialogue: 0
 --- !u!1 &2090650188
 GameObject:
   m_ObjectHideFlags: 0

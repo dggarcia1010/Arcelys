@@ -609,7 +609,7 @@ Transform:
   m_GameObject: {fileID: 237735626}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 28.65, y: -25.94, z: 0}
+  m_LocalPosition: {x: 28.62, y: -26.7, z: 0}
   m_LocalScale: {x: 3.5, y: 3.5, z: 0.5622}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -744,13 +744,14 @@ MonoBehaviour:
       me asegurare que no la uses para el mal."
     - '"Kyra Hada de Hielo": Aunque alomejor tienes que esperar a que me recupere
       un poco para usarla.'
-    - '"Kyra Hada de Hielo": Achisss,  Creo que me he vuelto a costipar al mojarme
-      escapando hacia esa isla.'
+    - '"Kyra Hada de Hielo": Achisss, Creo que me he vuelto a costipar al mojarme
+      tratando de escapar.'
   npcName: HadaHielo
   isCorrectNPC: 0
   interactKey: 101
   colliderToAffect: {fileID: 1813899271}
   setAsTriggerInsteadOfDisable: 1
+  hideSelfAfterDialogue: 1
 --- !u!95 &237735633
 Animator:
   serializedVersion: 7
@@ -1366,8 +1367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cutsceneFocusPoint: {fileID: 2000942717}
-  duration: 2
-  cutsceneId: cutscene_1
+  duration: 2.5
 --- !u!1 &499242605
 GameObject:
   m_ObjectHideFlags: 0
@@ -2158,7 +2158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraMovement: {fileID: 519420033}
-  pauseGame: 1
+  pauseGame: 0
 --- !u!4 &1270715221
 Transform:
   m_ObjectHideFlags: 0

@@ -112,10 +112,7 @@ public class FairyUnlock : MonoBehaviour
 
         if (instructionPanel != null)
         {
-            instructionPanel.Show(
-                "Para seleccionar un hechizo pulsa 1 (Viento), 2 (Hielo), 3 (Fuego), 4 (Luz). Por ahora solo tienes desbloqueado el Viento. \n Pulsa Click Izquierdo para lanzarlo donde apuntes con el cursor.\n Para interactuar utiliza la tecla E.\n Para avanzar en los dialogos utiliza la tecla Espacio o la Z.",
-                0f
-            );
+            instructionPanel.Show(null, 0f);
         }
 
         if (fairyCopy != null)

@@ -19,8 +19,8 @@ public class PlayerSpells : MonoBehaviour
 
     [Header("Cooldowns (segundos)")]
     public float windCooldown = 2f;
-    public float iceCooldown  = 3f;
-    public float fireCooldown = 4f;
+    public float iceCooldown  = 5f;
+    public float fireCooldown = 3f;
     public float lightCooldown= 5f;
 
     private float windTimer;

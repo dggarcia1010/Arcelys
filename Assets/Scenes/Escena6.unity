@@ -215,6 +215,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 0
   speed: 6
+  onIce: 0
+  iceAcceleration: 10
+  iceFriction: 2
+  maxIceSpeedMultiplier: 1
 --- !u!61 &294758876
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -739,6 +743,8 @@ MonoBehaviour:
   target: {fileID: 294758879}
   smoothing: 5
   map: {fileID: 1310054283}
+  cutsceneTarget: {fileID: 0}
+  isInCutscene: 0
 --- !u!114 &519420034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2529,7 +2535,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1541492841656835551, guid: 4c40738dde630f346bf961f3878efebe, type: 3}
       propertyPath: introDialogue.sentences.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1541492841656835551, guid: 4c40738dde630f346bf961f3878efebe, type: 3}
       propertyPath: 'introDialogue.sentences.Array.data[0]'
@@ -2538,11 +2544,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1541492841656835551, guid: 4c40738dde630f346bf961f3878efebe, type: 3}
       propertyPath: 'introDialogue.sentences.Array.data[1]'
-      value: 
+      value: "\"Lira Hada de Viento\": Una vez, una de mis hermanas me dijo que el
+        pose\xEDa una de las tres antiguas reliquias sagradas. "
       objectReference: {fileID: 0}
     - target: {fileID: 1541492841656835551, guid: 4c40738dde630f346bf961f3878efebe, type: 3}
       propertyPath: 'introDialogue.sentences.Array.data[2]'
-      value: 
+      value: '"Lira Hada de Viento": Quizas podemos pedir que nos entregue la reliquia
+        ya que con su poder podriamos acabar con lo que sea que este pasando...'
       objectReference: {fileID: 0}
     - target: {fileID: 4615073786270039285, guid: 4c40738dde630f346bf961f3878efebe, type: 3}
       propertyPath: m_Name

@@ -9,7 +9,10 @@ public class LadderPuzzleManager : MonoBehaviour
     public GameObject ladder;
 
     [Header("Collider que bloquea el paso antes de resolver el puzzle")]
-    public Collider2D blocker;  // ← NUEVO
+    public Collider2D blocker;
+
+    [Header("Diálogo al completar el puzzle")]
+    public Dialogue puzzleCompleteDialogue;   // <-- NUEVO
 
     private bool puzzleCompleted = false;
 
@@ -18,7 +21,6 @@ public class LadderPuzzleManager : MonoBehaviour
         if (ladder != null)
             ladder.SetActive(false);
 
-        // El collider debe estar activo mientras el puzzle no esté resuelto
         if (blocker != null)
             blocker.enabled = true;
     }
@@ -35,8 +37,22 @@ public class LadderPuzzleManager : MonoBehaviour
                 ladder.SetActive(true);
 
             if (blocker != null)
-                blocker.enabled = false; // ← DESACTIVAR BLOQUEO
+                blocker.enabled = false;
+
+            // --- NUEVO: disparar diálogo al completar ---
+            TryStartCompletionDialogue();
         }
+    }
+
+    void TryStartCompletionDialogue()
+    {
+        if (puzzleCompleteDialogue == null) return;
+        if (DialogueManager.Instance == null) return;
+
+        // Si ya hay un diálogo activo, no lo lanzamos (respeta tu sistema)
+        if (DialogueManager.IsAnyDialogueActive) return;
+
+        DialogueManager.Instance.StartDialogue(puzzleCompleteDialogue);
     }
 
     bool AllGoalsSatisfied()

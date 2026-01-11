@@ -296,16 +296,19 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Para seleccionar un hechizo pulsa 1 (Viento), 2 (Hielo), 3 (Fuego), 4
-    (Luz). Por ahora solo tienes desbloqueado el Viento.
+  m_text: 'Cundo desbloques un tipo de magia, para seleccionar un hechizo pulsa 1
+    (Viento), 2 (Hielo), 3 (Fuego).
 
-    Pulsa Click Izquierdo
-    para lanzarlo donde apuntes con el cursor.
+    Por ahora solo tienes desbloqueado el Viento.
 
-    Para interactuar utiliza la tecla
-    E.
+    Pulsa
+    Click Izquierdo para lanzarlo donde apuntes con el cursor.
 
-    Para avanzar en los dialogos pulsa el espacio.'
+    Para interactuar
+    utiliza la tecla E.
+
+    Para avanzar en los dialogos utiliza la tecla Espacio
+    o la Z.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -488,6 +491,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 0
   speed: 6
+  onIce: 0
+  iceAcceleration: 10
+  iceFriction: 2
+  maxIceSpeedMultiplier: 1
 --- !u!61 &294758876
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1022,6 +1029,8 @@ MonoBehaviour:
   target: {fileID: 294758879}
   smoothing: 5
   map: {fileID: 1267730523}
+  cutsceneTarget: {fileID: 0}
+  isInCutscene: 0
 --- !u!114 &519420034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3279,6 +3288,10 @@ PrefabInstance:
       propertyPath: instructionPanel
       value: 
       objectReference: {fileID: 1944086723}
+    - target: {fileID: 3448671379801477424, guid: a9af42fffceeb8d4c886d26711b9a79d, type: 3}
+      propertyPath: m_text
+      value: Pulsa E para interactuar con el hada
+      objectReference: {fileID: 0}
     - target: {fileID: 6881925504271493075, guid: a9af42fffceeb8d4c886d26711b9a79d, type: 3}
       propertyPath: m_Name
       value: Fairy

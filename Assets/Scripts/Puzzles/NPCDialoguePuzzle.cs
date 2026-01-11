@@ -20,6 +20,10 @@ public class NPCDialoguePuzzle : MonoBehaviour
     [Tooltip("Si está activado, el collider se pondrá en isTrigger. Si está desactivado, se desactivará el GameObject.")]
     public bool setAsTriggerInsteadOfDisable = false;
 
+    [Header("Opciones extra")]
+    [Tooltip("Si está activo, el NPC desaparecerá al terminar el diálogo")]
+    public bool hideSelfAfterDialogue = false; 
+
     bool playerInRange = false;
 
     void OnTriggerEnter2D(Collider2D other)
@@ -48,12 +52,10 @@ public class NPCDialoguePuzzle : MonoBehaviour
         if (DialogueManager.IsAnyDialogueActive)
             return;
 
-        // 🔴 NUEVO: si el puzzle manager dice que NO se puede hablar con este NPC, salimos
+        // Si el puzzle manager dice que NO se puede hablar con este NPC
         if (VillagePuzzleManager.Instance != null &&
             !VillagePuzzleManager.Instance.CanTalkToNPC(this))
         {
-            // Aquí si quieres podrías poner un debug o un diálogo genérico
-            // Debug.Log($"{npcName} no quiere hablar contigo todavía.");
             return;
         }
 
@@ -81,19 +83,23 @@ public class NPCDialoguePuzzle : MonoBehaviour
     // Se llama cuando termina el ÚLTIMO cuadro de este diálogo
     void OnDialogueFinished()
     {
-        if (colliderToAffect == null) return; // si no has asignado nada, no hace nada
-
-        if (setAsTriggerInsteadOfDisable)
+        if (colliderToAffect != null)
         {
-            colliderToAffect.isTrigger = true;
-            Debug.Log("NPCDialoguePuzzle: collider puesto como trigger -> " + colliderToAffect.name);
+            if (setAsTriggerInsteadOfDisable)
+            {
+                colliderToAffect.isTrigger = true;
+                Debug.Log("NPCDialoguePuzzle: collider puesto como trigger -> " + colliderToAffect.name);
+            }
+            else
+            {
+                colliderToAffect.gameObject.SetActive(false);
+                Debug.Log("NPCDialoguePuzzle: collider desactivado -> " + colliderToAffect.name);
+            }
         }
-        else
+
+        if (hideSelfAfterDialogue)
         {
-            colliderToAffect.gameObject.SetActive(false);
-            Debug.Log("NPCDialoguePuzzle: collider desactivado -> " + colliderToAffect.name);
-            // si prefieres destruirlo:
-            // Destroy(colliderToAffect.gameObject);
+            gameObject.SetActive(false);
         }
     }
 }

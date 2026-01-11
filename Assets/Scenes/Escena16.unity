@@ -157,7 +157,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
-  speed: 7
+  speed: 6
+  onIce: 0
+  iceAcceleration: 10
+  iceFriction: 2
+  maxIceSpeedMultiplier: 1
 --- !u!61 &294758876
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -347,7 +351,7 @@ MonoBehaviour:
   fireCooldown: 1
   lightCooldown: 5
   windPrefab: {fileID: 5362879128924914643, guid: 95cee4bd0d0aa4e4fbcdc0bd558f6dbb, type: 3}
-  icePrefab: {fileID: 5362879128924914643, guid: 5e184e18fe7ae484ebbdd2ddf7299a48, type: 3}
+  icePrefab: {fileID: 3221819430386385666, guid: 12287f1c791e6ba438451bc38f9359c9, type: 3}
   firePrefab: {fileID: 5362879128924914643, guid: 6de25ac6590f89d4ab080cca0fface7b, type: 3}
   lightPrefab: {fileID: 5362879128924914643, guid: 926a8b5a98f4f8b429ef223f158871ee, type: 3}
   projectileSpeed: 5
@@ -800,12 +804,22 @@ MonoBehaviour:
   speed: 3
   maxForce: 10
   aggroDistance: 12
-  keepDistance: 6
   orbCooldown: 2.5
   lightningCooldown: 5
+  postAbilityDelay: 2
   darkOrbPrefab: {fileID: 4881223818671980872, guid: 046b2d31927f1044891f4a139dbc5b5f, type: 3}
   lightningWarningPrefab: {fileID: 8608261577614106387, guid: 32d03e4627ed5bf48bd673dd977178c4, type: 3}
   lightningStrikePrefab: {fileID: 2023853821470803938, guid: 0ef87e96e952ccf42b9d5cb6cf310da5, type: 3}
+  yMoveSpeed: 2.5
+  yChangeMinTime: 0.6
+  yChangeMaxTime: 1.6
+  minY: -1
+  maxY: -9.3
+  spreadAngles:
+  - 20
+  - 0
+  - -20
+  spreadOrbSpeed: 3
 --- !u!82 &440644157
 AudioSource:
   m_ObjectHideFlags: 0
@@ -917,7 +931,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackClips:
   - {fileID: 8300000, guid: 5769c71012e79954c9d97fbe420ddcc7, type: 3}
-  volume: 0.8
+  volume: 0.646
   pitchMin: 0.95
   pitchMax: 1.05
 --- !u!1 &606203708
@@ -1394,6 +1408,8 @@ MonoBehaviour:
   target: {fileID: 294758879}
   smoothing: 5
   map: {fileID: 822851027}
+  cutsceneTarget: {fileID: 0}
+  isInCutscene: 0
 --- !u!20 &1279654928
 Camera:
   m_ObjectHideFlags: 0
