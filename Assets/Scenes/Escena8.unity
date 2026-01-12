@@ -347,7 +347,7 @@ MonoBehaviour:
   fireEnabled: 0
   lightEnabled: 0
   windCooldown: 3
-  iceCooldown: 3
+  iceCooldown: 6
   fireCooldown: 1
   lightCooldown: 5
   windPrefab: {fileID: 5362879128924914643, guid: 95cee4bd0d0aa4e4fbcdc0bd558f6dbb, type: 3}
@@ -355,6 +355,8 @@ MonoBehaviour:
   firePrefab: {fileID: 5362879128924914643, guid: 6de25ac6590f89d4ab080cca0fface7b, type: 3}
   lightPrefab: {fileID: 5362879128924914643, guid: 926a8b5a98f4f8b429ef223f158871ee, type: 3}
   projectileSpeed: 5
+  projectileLayer: -1
+  applyLayerToChildren: 1
 --- !u!114 &294758882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2029,6 +2031,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6881925504271493075, guid: a9af42fffceeb8d4c886d26711b9a79d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1923787910}
+    - targetCorrespondingSourceObject: {fileID: 6881925504271493075, guid: a9af42fffceeb8d4c886d26711b9a79d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1923787912}
+    - targetCorrespondingSourceObject: {fileID: 6881925504271493075, guid: a9af42fffceeb8d4c886d26711b9a79d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1923787911}
   m_SourcePrefab: {fileID: 100100000, guid: a9af42fffceeb8d4c886d26711b9a79d, type: 3}
 --- !u!1 &1923787908 stripped
 GameObject:
@@ -2057,6 +2065,78 @@ MonoBehaviour:
   windOverride: {fileID: 22100000, guid: 520cc2a32bfaa4c418d5e264a5dd0d85, type: 2}
   iceOverride: {fileID: 22100000, guid: e40139b0086d0c047a2969f9d876a012, type: 2}
   fireOverride: {fileID: 22100000, guid: 7cda5afc760a9814596a06206505aa2d, type: 2}
+--- !u!114 &1923787911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923787908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a22223dd1d7c73458416a4af7923f99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerSpells: {fileID: 294758881}
+  auraLight: {fileID: 1923787912}
+  windColor: {r: 0.3, g: 1, b: 0.6, a: 1}
+  iceColor: {r: 0, g: 0.5698323, b: 1, a: 1}
+  fireColor: {r: 1, g: 0.35, b: 0.2, a: 1}
+  maxIntensity: 2
+  minIntensity: 0
+  smoothSpeed: 10
+--- !u!114 &1923787912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923787908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ComponentVersion: 2
+  m_LightType: 3
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.5
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_LightVolumeIntensity: 1
+  m_LightVolumeEnabled: 0
+  m_ApplyToSortingLayers: 00000000
+  m_LightCookieSprite: {fileID: 0}
+  m_DeprecatedPointLightCookieSprite: {fileID: 0}
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_OverlapOperation: 0
+  m_NormalMapDistance: 3
+  m_NormalMapQuality: 2
+  m_UseNormalMap: 0
+  m_ShadowsEnabled: 1
+  m_ShadowIntensity: 0.75
+  m_ShadowSoftness: 0.3
+  m_ShadowSoftnessFalloffIntensity: 0.5
+  m_ShadowVolumeIntensityEnabled: 0
+  m_ShadowVolumeIntensity: 0.75
+  m_LocalBounds:
+    m_Center: {x: 0, y: -0.00000011920929, z: 0}
+    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}
 --- !u!1 &2090650188
 GameObject:
   m_ObjectHideFlags: 0

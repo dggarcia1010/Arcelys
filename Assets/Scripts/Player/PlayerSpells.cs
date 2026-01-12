@@ -37,6 +37,13 @@ public class PlayerSpells : MonoBehaviour
     [Header("Velocidad proyectiles")]
     public float projectileSpeed = 5f;
 
+    [Header("Layer del proyectil (opcional)")]
+    [Tooltip("Si está en -1, no se cambia la layer. Si pones una layer (0..31), el proyectil se pondrá en esa layer.")]
+    public int projectileLayer = -1;
+
+    [Tooltip("Si está activo, también aplica la layer a todos los hijos del proyectil.")]
+    public bool applyLayerToChildren = true;
+
     void Update()
     {
         if (windTimer  > 0) windTimer  -= Time.deltaTime;
@@ -46,13 +53,11 @@ public class PlayerSpells : MonoBehaviour
 
         if (!magicUnlocked) return;
 
-        // Seleccionar (1–4) solo si el hechizo está habilitado en esta escena
         if (Input.GetKeyDown(KeyCode.Alpha1)) SelectSpell(SpellType.Wind);
         if (Input.GetKeyDown(KeyCode.Alpha2)) SelectSpell(SpellType.Ice);
         if (Input.GetKeyDown(KeyCode.Alpha3)) SelectSpell(SpellType.Fire);
         if (Input.GetKeyDown(KeyCode.Alpha4)) SelectSpell(SpellType.Light);
 
-        // Lanzar (Click izquierdo del ratón)
         if (Input.GetMouseButtonDown(0))
         {
             CastSelectedSpell();
@@ -98,7 +103,6 @@ public class PlayerSpells : MonoBehaviour
             return;
         }
 
-        // Por si acaso, evitar castear uno que esté deshabilitado
         if (!IsSpellEnabled(currentSpell))
         {
             Debug.Log($"El hechizo {currentSpell} está desactivado en esta escena.");
@@ -118,7 +122,7 @@ public class PlayerSpells : MonoBehaviour
             case SpellType.Fire:
                 prefab = firePrefab; cooldown = fireCooldown; timer = ref fireTimer; break;
             case SpellType.Light:
-                prefab = lightPrefab;cooldown = lightCooldown;timer = ref lightTimer;break;
+                prefab = lightPrefab; cooldown = lightCooldown; timer = ref lightTimer; break;
         }
 
         if (prefab == null)
@@ -138,7 +142,6 @@ public class PlayerSpells : MonoBehaviour
 
         GetComponent<PlayerSpellSFX>()?.PlaySpell(currentSpell);
 
-
         float distToCam = Mathf.Abs(Camera.main.transform.position.z - transform.position.z);
         Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(
             new Vector3(Input.mousePosition.x, Input.mousePosition.y, distToCam)
@@ -148,6 +151,9 @@ public class PlayerSpells : MonoBehaviour
         Vector2 direction = (mouseWorldPos - transform.position).normalized;
 
         GameObject proj = Instantiate(prefab, transform.position, Quaternion.identity);
+
+        // ✅ NUEVO: aplicar layer si corresponde
+        ApplyProjectileLayer(proj);
 
         Projectile2D p = proj.GetComponent<Projectile2D>();
         if (p == null) p = proj.AddComponent<Projectile2D>();
@@ -183,6 +189,20 @@ public class PlayerSpells : MonoBehaviour
         else
         {
             p.damage = 1;
+        }
+    }
+
+    void ApplyProjectileLayer(GameObject proj)
+    {
+        if (proj == null) return;
+        if (projectileLayer < 0 || projectileLayer > 31) return;
+
+        proj.layer = projectileLayer;
+
+        if (applyLayerToChildren)
+        {
+            foreach (Transform t in proj.GetComponentsInChildren<Transform>(true))
+                t.gameObject.layer = projectileLayer;
         }
     }
 
