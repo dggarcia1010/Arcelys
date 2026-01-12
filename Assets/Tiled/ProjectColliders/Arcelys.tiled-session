@@ -3,10 +3,10 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "Arcelys/tavern.tmx",
+    "activeFile": "Arcelys/tree.tmx",
     "expandedProjectPaths": [
-        ".",
         "Arcelys/textures",
+        ".",
         "Arcelys"
     ],
     "file.lastUsedOpenFilter": "Todos los archivos (*)",
@@ -116,11 +116,14 @@
             "scaleInDock": 1
         },
         "Arcelys/House_interior.tmx": {
+            "expandedObjectLayers": [
+                9
+            ],
             "scale": 2,
-            "selectedLayer": 10,
+            "selectedLayer": 8,
             "viewCenter": {
-                "x": 184,
-                "y": 119.75
+                "x": 183.75,
+                "y": 119.5
             }
         },
         "Arcelys/IceCaveObjects.tsx": {
@@ -181,7 +184,8 @@
             "scaleInEditor": 1
         },
         "Arcelys/U1_decorations_c1.tsx": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "Arcelys/U1_decorations_c2.tsx": {
             "scaleInDock": 1
@@ -202,16 +206,16 @@
             "scale": 1.5,
             "selectedLayer": 8,
             "viewCenter": {
-                "x": 176,
-                "y": 34.333333333333314
+                "x": 339.66666666666663,
+                "y": 91
             }
         },
         "Arcelys/batallaFinal.tmx": {
             "scale": 2,
-            "selectedLayer": 12,
+            "selectedLayer": 17,
             "viewCenter": {
-                "x": 280,
-                "y": 159.75
+                "x": 280.25,
+                "y": 159.5
             }
         },
         "Arcelys/beds_BR.tsx": {
@@ -233,8 +237,8 @@
             "scale": 1.5,
             "selectedLayer": 12,
             "viewCenter": {
-                "x": 211.33333333333331,
-                "y": 484.33333333333337
+                "x": 226.66666666666666,
+                "y": 249.33333333333334
             }
         },
         "Arcelys/cat_animation.tsx": {
@@ -255,7 +259,7 @@
             "scale": 2,
             "selectedLayer": 10,
             "viewCenter": {
-                "x": 200,
+                "x": 200.25,
                 "y": 175.75
             }
         },
@@ -264,10 +268,10 @@
                 9
             ],
             "scale": 2,
-            "selectedLayer": 10,
+            "selectedLayer": 7,
             "viewCenter": {
-                "x": 216,
-                "y": 119.75
+                "x": 216.25,
+                "y": 119.5
             }
         },
         "Arcelys/cave_rat.tmx": {
@@ -277,7 +281,7 @@
             "scale": 1.5,
             "selectedLayer": 8,
             "viewCenter": {
-                "x": 256,
+                "x": 256.33333333333337,
                 "y": 159.66666666666666
             }
         },
@@ -316,14 +320,15 @@
                 8
             ],
             "scale": 2,
-            "selectedLayer": 9,
+            "selectedLayer": 8,
             "viewCenter": {
-                "x": 200,
-                "y": 175.75
+                "x": 200.25,
+                "y": 175.5
             }
         },
         "Arcelys/greatTree.tsx": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "Arcelys/hada.tsx": {
             "scaleInDock": 1
@@ -333,10 +338,10 @@
                 11
             ],
             "scale": 1.5,
-            "selectedLayer": 6,
+            "selectedLayer": 5,
             "viewCenter": {
-                "x": 87.33333333333331,
-                "y": 280.33333333333337
+                "x": 249.66666666666663,
+                "y": 280.66666666666663
             }
         },
         "Arcelys/houses.tsx": {
@@ -350,8 +355,8 @@
             "scale": 2,
             "selectedLayer": 9,
             "viewCenter": {
-                "x": 112,
-                "y": 240.25
+                "x": 111.75,
+                "y": 240.5
             }
         },
         "Arcelys/idle.tsx": {
@@ -364,8 +369,8 @@
             "scale": 0.75,
             "selectedLayer": 5,
             "viewCenter": {
-                "x": 230.66666666666663,
-                "y": 183.33333333333326
+                "x": 229.99999999999994,
+                "y": 182.66666666666669
             }
         },
         "Arcelys/luciernagas.tmx": {
@@ -383,8 +388,8 @@
             "scale": 0.75,
             "selectedLayer": 4,
             "viewCenter": {
-                "x": 128,
-                "y": 303.3333333333333
+                "x": 127.33333333333326,
+                "y": 302.66666666666663
             }
         },
         "Arcelys/lutist 1.tsx": {
@@ -400,10 +405,10 @@
                 13
             ],
             "scale": 2,
-            "selectedLayer": 13,
+            "selectedLayer": 14,
             "viewCenter": {
-                "x": 352,
-                "y": 376.25
+                "x": 554.25,
+                "y": 359
             }
         },
         "Arcelys/rama.tsx": {
@@ -436,22 +441,29 @@
         },
         "Arcelys/rescatarHada2.tmx": {
             "scale": 1.5,
-            "selectedLayer": 11,
+            "selectedLayer": 8,
             "viewCenter": {
-                "x": 248,
-                "y": 280.3333333333333
+                "x": 247.66666666666663,
+                "y": 165.99999999999997
             }
         },
         "Arcelys/supplies_objects_cave.tsx": {
             "scaleInDock": 1
         },
         "Arcelys/tavern 1.tmx": {
+            "expandedObjectLayers": [
+                10
+            ],
             "scale": 1.7690257352941174,
-            "selectedLayer": 9,
+            "selectedLayer": 7,
             "viewCenter": {
-                "x": 271.9010754922846,
-                "y": 239.96259157271265
+                "x": 272.1837169429002,
+                "y": 240.24523302332838
             }
+        },
+        "Arcelys/tavern-cooking 1.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "Arcelys/tavern-cooking.tsx": {
             "scaleInDock": 1
@@ -467,24 +479,24 @@
             "scale": 1.5,
             "selectedLayer": 7,
             "viewCenter": {
-                "x": 266.66666666666663,
-                "y": 270.99999999999994
+                "x": 404.99999999999994,
+                "y": 272
             }
         },
         "Arcelys/tree.tmx": {
             "scale": 0.75,
             "selectedLayer": 4,
             "viewCenter": {
-                "x": 360,
-                "y": 399.3333333333333
+                "x": 359.33333333333326,
+                "y": 398.66666666666663
             }
         },
         "Arcelys/tutorial.tmx": {
             "scale": 3,
-            "selectedLayer": 9,
+            "selectedLayer": 8,
             "viewCenter": {
-                "x": 152,
-                "y": 264.16666666666663
+                "x": 152.16666666666669,
+                "y": 264
             }
         },
         "Arcelys/walls.tsx": {
@@ -532,7 +544,10 @@
         "Arcelys/tavern.tmx",
         "Arcelys/tavern 1.tmx",
         "Arcelys/batallaFinal.tmx",
-        "Arcelys/lutist 1.tsx"
+        "Arcelys/lutist 1.tsx",
+        "Arcelys/U1_decorations_c1.tsx",
+        "Arcelys/tavern-cooking 1.tsx",
+        "Arcelys/greatTree.tsx"
     ],
     "project": "Arcelys.tiled-project",
     "recentFiles": [

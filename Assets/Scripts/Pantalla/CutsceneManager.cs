@@ -6,9 +6,11 @@ public class CutsceneManager : MonoBehaviour
 {
     public static CutsceneManager Instance { get; private set; }
 
-    public CameraMovement cameraMovement;  // Asigna la cámara aquí
+    [Header("Referencias")]
+    public CameraMovement cameraMovement;
 
-    public bool pauseGame = true;          // Pausa Time.timeScale
+    [Header("Config")]
+    public bool pauseGame = true;
 
     private float prevTimeScale = 1f;
 
@@ -27,10 +29,10 @@ public class CutsceneManager : MonoBehaviour
 
     public void PlayCutscene(Transform focusPoint, float durationSeconds, Action onFinished = null)
     {
-        StartCoroutine(PlayRoutine(focusPoint, durationSeconds, onFinished));
+        StartCoroutine(PlayCutsceneRoutine(focusPoint, durationSeconds, onFinished));
     }
 
-    private IEnumerator PlayRoutine(Transform focus, float duration, Action callback)
+    private IEnumerator PlayCutsceneRoutine(Transform focus, float duration, Action callback)
     {
         if (cameraMovement == null) yield break;
 

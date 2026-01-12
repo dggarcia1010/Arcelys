@@ -1,50 +1,28 @@
-using UnityEngine;
-using UnityEngine.Tilemaps;
-
-public class CameraMovement : MonoBehaviour
+private IEnumerator PlayCutsceneRoutine(Transform focus, float duration, Action callback)
 {
-    public Transform target;
-    public float smoothing = 5f;
-    public Tilemap map; //ground
+    if (cameraMovement == null) yield break;
 
-    private Vector2 minPosition;
-    private Vector2 maxPosition;
-
-    void Start()
+    if (pauseGame)
     {
-        if (map == null) return;
-
-        map.CompressBounds();
-        Vector3 minCell = map.CellToWorld(map.cellBounds.min);
-        Vector3 maxCell = map.CellToWorld(map.cellBounds.max);
-
-        float camHalfHeight = Camera.main.orthographicSize;
-        float camHalfWidth = camHalfHeight * Camera.main.aspect;
-
-        minPosition = new Vector2(minCell.x + camHalfWidth, minCell.y + camHalfHeight);
-        maxPosition = new Vector2(maxCell.x - camHalfWidth, maxCell.y - camHalfHeight);
+        prevTimeScale = Time.timeScale;
+        Time.timeScale = 0f;
     }
 
-    void LateUpdate()
-    {
-        if (target == null) return;
-
-        if (transform.position != target.position)
-        {
-            Vector3 targetPosition = new Vector3(
-                target.position.x,
-                target.position.y,
-                transform.position.z
-            );
-
-            targetPosition.x = Mathf.Clamp(targetPosition.x, minPosition.x, maxPosition.x);
-            targetPosition.y = Mathf.Clamp(targetPosition.y, minPosition.y, maxPosition.y);
-
-            transform.position = Vector3.Lerp(
-                transform.position,
-                targetPosition,
-                smoothing * Time.deltaTime
-            );
-        }
-    }
+    // Esperar un frame para que la cámara comience a moverse suavemente
+    yield return new WaitForEndOfFrame();
+    
+    cameraMovement.StartCutscene(focus);
+    
+    // Esperar un poco más para que la cámara llegue al punto antes de la duración
+    yield return new WaitForSecondsRealtime(0.1f);
+    
+    // Ahora esperamos el tiempo restante
+    yield return new WaitForSecondsRealtime(duration - 0.1f);
+    
+    cameraMovement.EndCutscene();
+    
+    if (pauseGame)
+        Time.timeScale = prevTimeScale;
+        
+    callback?.Invoke();
 }

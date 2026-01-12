@@ -1,0 +1,45 @@
+// Script que pondrás en cada enemigo
+using UnityEngine;
+
+public class EnemyDeath : MonoBehaviour
+{
+    private static int remainingEnemies = 0;
+    private static Collider targetCollider;
+
+    [SerializeField] private Collider colliderPaso;  // ← opcional: puedes arrastrarlo solo en el primer enemigo
+
+    void Start()
+    {
+        remainingEnemies++;
+
+        // Si nadie ha registrado el collider todavía, lo hacemos aquí
+        if (targetCollider == null && colliderPaso != null)
+        {
+            targetCollider = colliderPaso;
+        }
+    }
+
+    public void Die()   // ← llámalo cuando el enemigo muera (desde salud, animación, etc)
+    {
+        remainingEnemies--;
+
+        if (remainingEnemies <= 0)
+        {
+            if (targetCollider != null)
+            {
+                targetCollider.enabled = false;
+                Debug.Log("¡Último enemigo muerto! → ColliderPaso desactivado");
+            }
+
+            remainingEnemies = 0; // evitar números negativos por si acaso
+        }
+
+        Destroy(gameObject);
+    }
+
+    // Opcional: resetear contador al cargar nueva escena
+    private void OnDestroy()
+    {
+        if (remainingEnemies > 0) remainingEnemies--;
+    }
+}

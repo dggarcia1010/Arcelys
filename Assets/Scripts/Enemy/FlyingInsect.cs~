@@ -1,0 +1,154 @@
+using UnityEngine;
+
+public class VueloInsectosMolestos : MonoBehaviour
+{
+    [Header("Objetivo principal (centro de órbita)")]
+    public Transform target;               // normalmente el objeto central o "foco"
+
+    [Header("Configuración de vuelo normal")]
+    public float flightRange = 8f;
+    public float normalSpeed = 0.5f;
+    public float normalSmoothness = 4f;
+
+    [Header("Comportamiento molesto (cuando te acercas)")]
+    [Tooltip("Distancia a partir de la cual el insecto se pone nervioso")]
+    public float aggroDistance = 3.5f;
+
+    [Tooltip("Cuánto más rápido se mueve cuando está molesto")]
+    public float aggroSpeedMultiplier = 3.5f;     // 3.5x más rápido
+
+    [Tooltip("Cuánto más brusco/errático se vuelve el movimiento")]
+    public float aggroSmoothnessMultiplier = 0.4f; // mucho menos suavizado
+
+    [Tooltip("Distancia objetivo mínima cuando está atacando/molestando")]
+    public float closeDistance = 0.8f;
+
+    [Tooltip("Probabilidad de intentar acercarse mucho por frame (0-1)")]
+    [Range(0f, 1f)] public float chanceToRush = 0.7f;
+
+    private float noiseOffsetX;
+    private float noiseOffsetY;
+    private Transform player; // ← referencia al jugador
+
+    void Start()
+    {
+        if (target == null)
+        {
+            Debug.LogError("¡Falta el TARGET en " + name + "!");
+            enabled = false;
+            return;
+        }
+
+        // Buscamos al jugador (puedes cambiar el tag si usas otro)
+        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+        if (playerObj != null)
+        {
+            player = playerObj.transform;
+        }
+        else
+        {
+            Debug.LogWarning("No se encontró objeto con tag 'Player'. El comportamiento molesto no funcionará.");
+        }
+
+        noiseOffsetX = Random.Range(0f, 100f);
+        noiseOffsetY = Random.Range(0f, 100f);
+    }
+
+    void Update()
+    {
+        if (target == null) return;
+
+        // Si no hay jugador → comportamiento normal siempre
+        if (player == null)
+        {
+            DoNormalFlight();
+            return;
+        }
+
+        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+
+        if (distanceToPlayer <= aggroDistance)
+        {
+            DoAnnoyingBehavior(distanceToPlayer);
+        }
+        else
+        {
+            DoNormalFlight();
+        }
+    }
+
+    private void DoNormalFlight()
+    {
+        float timeFactorX = Time.time * normalSpeed + noiseOffsetX;
+        float timeFactorY = Time.time * normalSpeed + noiseOffsetY;
+
+        float noiseX = Mathf.PerlinNoise(timeFactorX, 0f);
+        float noiseY = Mathf.PerlinNoise(timeFactorY, 0f);
+
+        float posX = (noiseX * 2f - 1f) * flightRange;
+        float posY = (noiseY * 2f - 1f) * flightRange;
+
+        Vector3 destination = target.position + new Vector3(posX, posY, 0);
+
+        float currentSmoothness = normalSmoothness;
+
+        transform.position = Vector3.Lerp(
+            transform.position,
+            destination,
+            Time.deltaTime * currentSmoothness
+        );
+    }
+
+    private void DoAnnoyingBehavior(float distanceToPlayer)
+    {
+        Vector3 directionToPlayer = (player.position - transform.position).normalized;
+
+        Vector3 destination;
+
+        // Dos tipos de comportamiento aleatorio cuando está molesto
+        if (Random.value < chanceToRush)
+        {
+            // Intenta acercarse mucho (modo "te voy a tocar la cara")
+            destination = player.position + directionToPlayer * closeDistance;
+        }
+        else
+        {
+            // Vuela alrededor de la cabeza muy rápido y errático
+            Vector3 randomOffset = Random.insideUnitSphere * 1.8f;
+            randomOffset.z = 0; // mantenemos 2D si es tu caso
+
+            destination = player.position + randomOffset;
+        }
+
+        // Movimiento mucho más rápido y brusco
+        float currentSpeed = normalSpeed * aggroSpeedMultiplier;
+        float currentSmoothness = normalSmoothness * aggroSmoothnessMultiplier;
+
+        // Usamos un poco de ruido incluso en modo molesto para que no sea tan predecible
+        float tX = Time.time * currentSpeed * 2.5f + noiseOffsetX;
+        float tY = Time.time * currentSpeed * 2.5f + noiseOffsetY;
+
+        float extraNoise = (Mathf.PerlinNoise(tX, tY) - 0.5f) * 1.2f;
+
+        Vector3 finalDestination = destination + directionToPlayer * extraNoise * 0.8f;
+
+        transform.position = Vector3.Lerp(
+            transform.position,
+            finalDestination,
+            Time.deltaTime * currentSmoothness
+        );
+    }
+
+ 
+    void OnDrawGizmosSelected()
+    {
+        if (player != null)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(player.position, aggroDistance);
+
+            Gizmos.color = new Color(1f, 0.3f, 0.3f, 0.4f);
+            Gizmos.DrawWireSphere(player.position, closeDistance);
+        }
+    }
+}

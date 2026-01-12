@@ -1229,6 +1229,51 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 500
   m_TargetDisplay: 0
+--- !u!1 &714150109
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 714150111}
+  - component: {fileID: 714150110}
+  m_Layer: 0
+  m_Name: EnemyManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &714150110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714150109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1047b8ad58b612efe8e5cdf19d3b29ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colliderPaso: {fileID: 0}
+--- !u!4 &714150111
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714150109}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 23.4, y: -49.91, z: 1.9567562}
+  m_LocalScale: {x: 1.0619, y: 1.0619, z: 1.0619}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &766393616
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1607,6 +1652,38 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 918003560}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: flightRange
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: normalSpeed
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: orbitRadius
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: jitterAmount
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: aggroDistance
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: jitterFrequency
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: chanceToDiveBomb
+      value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: targetCloseDistance
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 8970227463591268721, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
       propertyPath: m_Name
       value: Beetle_0 (2)
@@ -1668,6 +1745,38 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 918003560}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: flightRange
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: normalSpeed
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: orbitRadius
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: jitterAmount
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: aggroDistance
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: jitterFrequency
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: chanceToDiveBomb
+      value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: targetCloseDistance
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 8970227463591268721, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
       propertyPath: m_Name
       value: Beetle_0 (4)
@@ -1821,7 +1930,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1512727531}
   - component: {fileID: 1512727530}
-  - component: {fileID: 1512727529}
   m_Layer: 0
   m_Name: ColliderPaso
   m_TagString: Untagged
@@ -1829,19 +1937,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1512727529
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1512727528}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89b6d98cf0735cd4f98eb1cce7722b96, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  requireCatRescued: 1
 --- !u!61 &1512727530
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1896,8 +1991,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1512727528}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.4, y: -49.91, z: 1.9567562}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 23.4, y: -49.85, z: 1.9567562}
   m_LocalScale: {x: 10.2384, y: 0.591822, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1955,6 +2050,38 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 918003560}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: flightRange
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: normalSpeed
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: orbitRadius
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: jitterAmount
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: aggroDistance
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: jitterFrequency
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: chanceToDiveBomb
+      value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: targetCloseDistance
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 8970227463591268721, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
       propertyPath: m_Name
       value: Beetle_0 (1)
@@ -2380,6 +2507,38 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 918003560}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: flightRange
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: normalSpeed
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: orbitRadius
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: jitterAmount
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: aggroDistance
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: jitterFrequency
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: chanceToDiveBomb
+      value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: targetCloseDistance
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 8970227463591268721, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
       propertyPath: m_Name
       value: Beetle_0 (3)
@@ -2653,6 +2812,38 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 918003560}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: flightRange
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: normalSpeed
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: orbitRadius
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: jitterAmount
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: aggroDistance
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: jitterFrequency
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: chanceToDiveBomb
+      value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149665646877328460, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
+      propertyPath: targetCloseDistance
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 8970227463591268721, guid: 6eba0f9167c8bf8d5b43addf43fbf4da, type: 3}
       propertyPath: m_Name
       value: Beetle_0
@@ -2675,8 +2866,8 @@ SceneRoots:
   - {fileID: 1621837385}
   - {fileID: 1677870798}
   - {fileID: 593398841}
-  - {fileID: 1512727531}
   - {fileID: 628178104}
+  - {fileID: 1512727531}
   - {fileID: 766393616}
   - {fileID: 3936800040155737825}
   - {fileID: 1617157474}
@@ -2688,3 +2879,4 @@ SceneRoots:
   - {fileID: 1984940026}
   - {fileID: 918003560}
   - {fileID: 964414457}
+  - {fileID: 714150111}

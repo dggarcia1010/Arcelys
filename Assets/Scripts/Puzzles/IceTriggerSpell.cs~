@@ -1,0 +1,31 @@
+using UnityEngine;
+using UnityEngine.Tilemaps;
+
+public class IceTriggerSpell : MonoBehaviour
+{
+    [SerializeField] private Tilemap iceOverlayTilemap;  // ← arrastra el Tilemap de hielo aquí
+    [SerializeField] private GameObject colliderToDisable; // barrera / puerta / lo que sea
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (!other.CompareTag("IceSpell"))
+            return;
+
+        // 1. Activar la capa visual de hielo
+        if (iceOverlayTilemap != null)
+        {
+            iceOverlayTilemap.gameObject.SetActive(true);
+            Debug.Log("Capa de hielo activada!");
+        }
+
+        // 2. Desactivar el collider/bloqueo
+        if (colliderToDisable != null)
+        {
+            colliderToDisable.SetActive(false);
+            Debug.Log("Barrera desactivada");
+        }
+
+        // Opcional: destruir el hechizo
+        Destroy(other.gameObject);
+    }
+}
